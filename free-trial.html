@@ -487,14 +487,14 @@
   <section class="split">
     <div class="split-content">
     <div class="eyebrow">Start a free trial</div>
-    <h1 data-cms-key="hero_title">Want to evaluate the ARIANNA Product Security Management Platform in your own environment?</h1>
-    <h2 data-cms-key="trial_title">Free trial</h2>
-    <p data-cms-key="trial_body_1">Start a free trial to explore ARIANNA with your own products, stakeholders, and security workflows.</p>
-    <p data-cms-key="trial_body_2">Share your device stack, compliance requirements, and evaluation goals so we can prepare the right onboarding path.</p>
-    <p data-cms-key="trial_body_3">See how ARIANNA supports vulnerability management, SBOM and HBOM workflows, and audit readiness across the product lifecycle.</p>
+    <h1>Want to evaluate the ARIANNA Product Security Management Platform in your own environment?</h1>
+    <h2>Free trial</h2>
+    <p>Start a free trial to explore ARIANNA with your own products, stakeholders, and security workflows.</p>
+    <p>Share your device stack, compliance requirements, and evaluation goals so we can prepare the right onboarding path.</p>
+    <p>See how ARIANNA supports vulnerability management, SBOM and HBOM workflows, and audit readiness across the product lifecycle.</p>
       <p><a href="#trial-request">Start your free trial now</a> or <a href="book-a-demo.html">book a demo instead</a>.</p>
-      <h2 data-cms-key="form_title">Start your free trial</h2>
-      <p data-cms-key="form_body">Fill in the form and we will help you scope a practical trial of the ARIANNA vulnerability management platform around your environment and evaluation criteria.</p>
+      <h2>Start your free trial</h2>
+      <p>Fill in the form and we will help you scope a practical trial of the ARIANNA vulnerability management platform around your environment and evaluation criteria.</p>
       <p><strong>Response target:</strong> within 1 business day.</p>
       <p><strong>No credit card required</strong> to request a trial.</p>
       <p><strong>What happens next:</strong></p>
@@ -549,19 +549,6 @@
     </div>
   </div>
   <script src="site-shell.js?v=20260805-1"></script>
-  <script>
-    (function () {
-      fetch("content/free-trial.json")
-        .then(function (res) { return res.json(); })
-        .then(function (data) {
-          Object.keys(data).forEach(function (key) {
-            var el = document.querySelector('[data-cms-key="' + key + '"]');
-            if (el) el.textContent = data[key];
-          });
-        })
-        .catch(function () {});
-    })();
-  </script>
   <script src="attribution.js"></script>
 </body>
 </html>
