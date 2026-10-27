@@ -1,0 +1,9 @@
+{
+  "name": "arianna-team-github-io",
+  "compatibility_date": "2026-10-01",
+  "assets": {
+    "directory": "."
+  },
+  // Required by `wrangler preview` (non-production branch builds); empty because previews use the top-level settings.
+  "previews": {}
+}
