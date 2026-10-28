@@ -5,3 +5,7 @@
 .assetsignore
 wrangler.jsonc
 node_modules
+*.md
+newsletter-issue-01.txt
+CNAME
+.nojekyll
