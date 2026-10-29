@@ -1588,6 +1588,16 @@
       target: targetId
     });
 
+    // CRM forms: <div id="nutshell-form-ID" data-nutshell-form="ID"></div>
+    document.querySelectorAll("[data-nutshell-form]").forEach(function (formTarget) {
+      window.Nutsheller("initForm", {
+        form: formTarget.getAttribute("data-nutshell-form"),
+        instance: NUTSHELL_CHAT_INSTANCE,
+        authToken: "",
+        target: formTarget.id
+      });
+    });
+
     var script = document.createElement("script");
     script.type = "module";
     script.src = NUTSHELL_CHAT_SCRIPT;
