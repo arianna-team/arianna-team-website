@@ -1,5 +1,9 @@
 (function () {
   var FORM_DELIVERY_ENDPOINT = "https://formsubmit.co/hello@ariannateam.ai";
+  // Nutshell chat widget (client-side token, safe to publish).
+  var NUTSHELL_CHAT_INSTANCE = "384033";
+  var NUTSHELL_CHAT_AUTH_TOKEN = "Sc-ahUXFJgom3dQWJ3HR5NXWCgwxLu6S6WpS9d2JtHA.2";
+  var NUTSHELL_CHAT_SCRIPT = "https://growth.ariannateam.ai/nutsheller-esm.js";
   var NON_BUSINESS_EMAIL_DOMAINS = {
     "aol.com": true,
     "fastmail.com": true,
@@ -1565,6 +1569,31 @@
     });
   }
 
+  function initChatbot() {
+    var targetId = "nutshell-boot-" + NUTSHELL_CHAT_INSTANCE;
+    if (document.getElementById(targetId)) return;
+
+    var target = document.createElement("div");
+    target.id = targetId;
+    document.body.appendChild(target);
+
+    (function (n, u) {
+      n[u] = n[u] || function () {
+        (n[u].q = n[u].q || []).push(arguments);
+      };
+    }(window, "Nutsheller"));
+    window.Nutsheller("boot", {
+      instance: NUTSHELL_CHAT_INSTANCE,
+      authToken: NUTSHELL_CHAT_AUTH_TOKEN,
+      target: targetId
+    });
+
+    var script = document.createElement("script");
+    script.type = "module";
+    script.src = NUTSHELL_CHAT_SCRIPT;
+    document.body.appendChild(script);
+  }
+
 
   onReady(function () {
     ensureMontserratFont();
@@ -1578,5 +1607,6 @@
     initShowcaseCarousel();
     initNewsletterOverlay();
     initMobileNav();
+    initChatbot();
   });
 })();
