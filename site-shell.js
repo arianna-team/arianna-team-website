@@ -1598,6 +1598,16 @@
       });
     });
 
+    // Meeting schedulers: <div id="nutshell-scheduler-ID" data-nutshell-scheduler="ID"></div>
+    document.querySelectorAll("[data-nutshell-scheduler]").forEach(function (schedulerTarget) {
+      window.Nutsheller("initScheduler", {
+        meeting: schedulerTarget.getAttribute("data-nutshell-scheduler"),
+        instance: NUTSHELL_CHAT_INSTANCE,
+        authToken: "",
+        target: schedulerTarget.id
+      });
+    });
+
     var script = document.createElement("script");
     script.type = "module";
     script.src = NUTSHELL_CHAT_SCRIPT;
