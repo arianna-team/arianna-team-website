@@ -1058,7 +1058,7 @@
       banner.setAttribute("aria-label", "Cookie preferences");
       banner.innerHTML = [
         '<h3>Cookie preferences</h3>',
-        '<p>We use necessary browser storage to keep the site working. With your approval, we also store attribution details so we can understand which campaigns lead to demo, trial, or contact requests. See our <a href="privacy.html#storage">privacy notice</a>.</p>',
+        '<p>We use necessary browser storage to keep the site working. With your approval, we also load our website chat and store attribution details so we can understand which campaigns lead to demo or contact requests. See our <a href="privacy.html#storage">privacy notice</a>.</p>',
         '<div class="cookie-banner-actions">',
         '  <button class="cookie-banner-accept" type="button" data-consent-action="accepted">Accept all</button>',
         '  <button class="cookie-banner-necessary" type="button" data-consent-action="necessary">Only necessary</button>',
@@ -1569,27 +1569,31 @@
     });
   }
 
-  function initChatbot() {
-    var targetId = "nutshell-boot-" + NUTSHELL_CHAT_INSTANCE;
-    if (document.getElementById(targetId)) return;
-
-    var target = document.createElement("div");
-    target.id = targetId;
-    document.body.appendChild(target);
-
+  function ensureNutshellLoader() {
     (function (n, u) {
       n[u] = n[u] || function () {
         (n[u].q = n[u].q || []).push(arguments);
       };
     }(window, "Nutsheller"));
-    window.Nutsheller("boot", {
-      instance: NUTSHELL_CHAT_INSTANCE,
-      authToken: NUTSHELL_CHAT_AUTH_TOKEN,
-      target: targetId
-    });
+
+    if (document.getElementById("nutshell-loader")) return;
+    var script = document.createElement("script");
+    script.id = "nutshell-loader";
+    script.type = "module";
+    script.src = NUTSHELL_CHAT_SCRIPT;
+    document.body.appendChild(script);
+  }
+
+  // Forms and meeting schedulers are only on pages where the visitor asks for
+  // them (contact, demo), so they load straight away.
+  function initNutshellEmbeds() {
+    var forms = document.querySelectorAll("[data-nutshell-form]");
+    var schedulers = document.querySelectorAll("[data-nutshell-scheduler]");
+    if (!forms.length && !schedulers.length) return;
+    ensureNutshellLoader();
 
     // CRM forms: <div id="nutshell-form-ID" data-nutshell-form="ID"></div>
-    document.querySelectorAll("[data-nutshell-form]").forEach(function (formTarget) {
+    forms.forEach(function (formTarget) {
       window.Nutsheller("initForm", {
         form: formTarget.getAttribute("data-nutshell-form"),
         instance: NUTSHELL_CHAT_INSTANCE,
@@ -1599,7 +1603,7 @@
     });
 
     // Meeting schedulers: <div id="nutshell-scheduler-ID" data-nutshell-scheduler="ID"></div>
-    document.querySelectorAll("[data-nutshell-scheduler]").forEach(function (schedulerTarget) {
+    schedulers.forEach(function (schedulerTarget) {
       window.Nutsheller("initScheduler", {
         meeting: schedulerTarget.getAttribute("data-nutshell-scheduler"),
         instance: NUTSHELL_CHAT_INSTANCE,
@@ -1607,11 +1611,30 @@
         target: schedulerTarget.id
       });
     });
+  }
 
-    var script = document.createElement("script");
-    script.type = "module";
-    script.src = NUTSHELL_CHAT_SCRIPT;
-    document.body.appendChild(script);
+  // The chat widget is optional, so it only loads after "Accept all".
+  function bootChat() {
+    var targetId = "nutshell-boot-" + NUTSHELL_CHAT_INSTANCE;
+    if (document.getElementById(targetId)) return;
+
+    var target = document.createElement("div");
+    target.id = targetId;
+    document.body.appendChild(target);
+
+    ensureNutshellLoader();
+    window.Nutsheller("boot", {
+      instance: NUTSHELL_CHAT_INSTANCE,
+      authToken: NUTSHELL_CHAT_AUTH_TOKEN,
+      target: targetId
+    });
+  }
+
+  function initChatbot() {
+    if (consentStatus() === "accepted") bootChat();
+    document.addEventListener("arianna:consent-changed", function (event) {
+      if (event.detail && event.detail.status === "accepted") bootChat();
+    });
   }
 
 
@@ -1627,6 +1650,7 @@
     initShowcaseCarousel();
     initNewsletterOverlay();
     initMobileNav();
+    initNutshellEmbeds();
     initChatbot();
   });
 })();
