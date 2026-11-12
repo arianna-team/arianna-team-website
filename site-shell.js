@@ -1639,17 +1639,24 @@
 
 
   onReady(function () {
+    // Pages in the 2026 design ship their own header, footer and type styles
+    // (assets/site.css); they only use the shared consent, analytics and Nutshell parts.
+    var redesigned = document.documentElement.hasAttribute("data-site-2026");
     ensureMontserratFont();
-    ensureUppercaseTitles();
-    ensureBorderlessButtons();
+    if (!redesigned) {
+      ensureUppercaseTitles();
+      ensureBorderlessButtons();
+    }
     initWebsiteForms();
     initGoogleAnalytics();
-    initSharedNav();
+    if (!redesigned) initSharedNav();
     initCookieBanner();
-    initSharedFooter();
-    initShowcaseCarousel();
-    initNewsletterOverlay();
-    initMobileNav();
+    if (!redesigned) {
+      initSharedFooter();
+      initShowcaseCarousel();
+      initNewsletterOverlay();
+      initMobileNav();
+    }
     initNutshellEmbeds();
     initChatbot();
   });
