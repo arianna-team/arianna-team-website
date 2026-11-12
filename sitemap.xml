@@ -2,162 +2,82 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://www.ariannateam.ai/</loc>
-    <lastmod>2026-08-10</lastmod>
+    <lastmod>2026-11-12</lastmod>
   </url>
   <url>
-    <loc>https://www.ariannateam.ai/book-a-demo.html</loc>
-    <lastmod>2026-08-10</lastmod>
-  </url>
-  <url>
-    <loc>https://www.ariannateam.ai/free-trial.html</loc>
-    <lastmod>2026-08-10</lastmod>
-  </url>
-  <url>
-    <loc>https://www.ariannateam.ai/contact.html</loc>
-    <lastmod>2026-08-10</lastmod>
-  </url>
-  <url>
-    <loc>https://www.ariannateam.ai/support.html</loc>
-    <lastmod>2026-08-10</lastmod>
-  </url>
-  <url>
-    <loc>https://www.ariannateam.ai/privacy.html</loc>
-    <lastmod>2026-08-10</lastmod>
-  </url>
-  <url>
-    <loc>https://www.ariannateam.ai/company.html</loc>
-    <lastmod>2026-08-10</lastmod>
-  </url>
-  <url>
-    <loc>https://www.ariannateam.ai/compliance.html</loc>
-    <lastmod>2026-08-10</lastmod>
+    <loc>https://www.ariannateam.ai/platform.html</loc>
+    <lastmod>2026-11-12</lastmod>
   </url>
   <url>
     <loc>https://www.ariannateam.ai/industries.html</loc>
-    <lastmod>2026-08-10</lastmod>
+    <lastmod>2026-11-12</lastmod>
   </url>
   <url>
-    <loc>https://www.ariannateam.ai/partners.html</loc>
-    <lastmod>2026-08-10</lastmod>
+    <loc>https://www.ariannateam.ai/compliance.html</loc>
+    <lastmod>2026-11-12</lastmod>
   </url>
   <url>
     <loc>https://www.ariannateam.ai/resources.html</loc>
-    <lastmod>2026-08-10</lastmod>
+    <lastmod>2026-11-12</lastmod>
   </url>
   <url>
-    <loc>https://www.ariannateam.ai/blog-product-more-than-device-security-platform.html</loc>
-    <lastmod>2026-08-10</lastmod>
+    <loc>https://www.ariannateam.ai/partners.html</loc>
+    <lastmod>2026-11-12</lastmod>
   </url>
   <url>
-    <loc>https://www.ariannateam.ai/blog-reality-check-products-vulnerable.html</loc>
-    <lastmod>2026-08-10</lastmod>
+    <loc>https://www.ariannateam.ai/company.html</loc>
+    <lastmod>2026-11-12</lastmod>
   </url>
   <url>
-    <loc>https://www.ariannateam.ai/article-complyd-partnership.html</loc>
-    <lastmod>2026-08-10</lastmod>
+    <loc>https://www.ariannateam.ai/contact.html</loc>
+    <lastmod>2026-11-12</lastmod>
   </url>
   <url>
-    <loc>https://www.ariannateam.ai/article-estigiti-partnership.html</loc>
-    <lastmod>2026-08-10</lastmod>
-  </url>
-  <url>
-    <loc>https://www.ariannateam.ai/newsletter-monthly-security-briefing-may-2026.html</loc>
-    <lastmod>2026-08-10</lastmod>
-  </url>
-  <url>
-    <loc>https://www.ariannateam.ai/blog-emb3d-arianna-embedded-risk-management-operations.html</loc>
-    <lastmod>2026-08-10</lastmod>
-  </url>
-  <url>
-    <loc>https://www.ariannateam.ai/blog-nis2-ot-security-sbom-visibility.html</loc>
-    <lastmod>2026-08-10</lastmod>
-  </url>
-  <url>
-    <loc>https://www.ariannateam.ai/article-reekon-partnership-asia.html</loc>
-    <lastmod>2026-08-10</lastmod>
-  </url>
-  <url>
-    <loc>https://www.ariannateam.ai/blog-cra-24-hour-exploit-reporting-rule.html</loc>
-    <lastmod>2026-08-10</lastmod>
-  </url>
-  <url>
-    <loc>https://www.ariannateam.ai/blog-why-building-your-own-vulnerability-management-platform-is-usually-a-bad-idea.html</loc>
-    <lastmod>2026-08-10</lastmod>
-  </url>
-  <url>
-    <loc>https://www.ariannateam.ai/vulnerability-management-use-cases.html</loc>
-    <lastmod>2026-08-10</lastmod>
-  </url>
-  <url>
-    <loc>https://www.ariannateam.ai/article-arianna-spinout-press-release.html</loc>
-    <lastmod>2026-08-10</lastmod>
-  </url>
-  <url>
-    <loc>https://www.ariannateam.ai/article-sbom-governance-playbook.html</loc>
-    <lastmod>2026-08-10</lastmod>
-  </url>
-  <url>
-    <loc>https://www.ariannateam.ai/article-bridging-the-gap-vm-dev-vs-qc.html</loc>
-    <lastmod>2026-08-10</lastmod>
-  </url>
-  <url>
-    <loc>https://www.ariannateam.ai/article-cra-regulatory-watch-march-2026.html</loc>
-    <lastmod>2026-08-10</lastmod>
-  </url>
-  <url>
-    <loc>https://www.ariannateam.ai/article-device-model-to-continuous-security.html</loc>
-    <lastmod>2026-08-10</lastmod>
-  </url>
-  <url>
-    <loc>https://www.ariannateam.ai/article-embedded-world-2026.html</loc>
-    <lastmod>2026-08-10</lastmod>
-  </url>
-  <url>
-    <loc>https://www.ariannateam.ai/article-eu-cyber-resilience-act-conference.html</loc>
-    <lastmod>2026-08-10</lastmod>
-  </url>
-  <url>
-    <loc>https://www.ariannateam.ai/article-new-trial-device-model-and-sbom.html</loc>
-    <lastmod>2026-08-10</lastmod>
-  </url>
-  <url>
-    <loc>https://www.ariannateam.ai/article-operating-guidelines-vulnerability-management.html</loc>
-    <lastmod>2026-08-10</lastmod>
-  </url>
-  <url>
-    <loc>https://www.ariannateam.ai/article-risk-and-exploitability-prioritization.html</loc>
-    <lastmod>2026-08-10</lastmod>
-  </url>
-  <url>
-    <loc>https://www.ariannateam.ai/blog-cicd-vulnerability-checks-without-release-delays.html</loc>
-    <lastmod>2026-08-10</lastmod>
-  </url>
-  <url>
-    <loc>https://www.ariannateam.ai/blog-sbom-alone-is-not-enough.html</loc>
-    <lastmod>2026-08-10</lastmod>
-  </url>
-  <url>
-    <loc>https://www.ariannateam.ai/blog-top-5-triage-mistakes-device-security-programs.html</loc>
-    <lastmod>2026-08-10</lastmod>
-  </url>
-  <url>
-    <loc>https://www.ariannateam.ai/newsletter-monthly-security-briefing-april-2026.html</loc>
-    <lastmod>2026-08-10</lastmod>
-  </url>
-  <url>
-    <loc>https://www.ariannateam.ai/newsletter-monthly-security-briefing-march-2026.html</loc>
-    <lastmod>2026-08-10</lastmod>
-  </url>
-  <url>
-    <loc>https://www.ariannateam.ai/newsletter-regulatory-watch-cra-march-2026.html</loc>
-    <lastmod>2026-08-10</lastmod>
-  </url>
-  <url>
-    <loc>https://www.ariannateam.ai/newsletter-security-pattern-first-official-partner.html</loc>
-    <lastmod>2026-08-10</lastmod>
+    <loc>https://www.ariannateam.ai/book-a-demo.html</loc>
+    <lastmod>2026-11-12</lastmod>
   </url>
   <url>
     <loc>https://www.ariannateam.ai/user-manual.html</loc>
-    <lastmod>2026-08-10</lastmod>
+    <lastmod>2026-11-12</lastmod>
+  </url>
+  <url>
+    <loc>https://www.ariannateam.ai/privacy.html</loc>
+    <lastmod>2026-11-12</lastmod>
+  </url>
+  <url>
+    <loc>https://www.ariannateam.ai/blog-refrigeration-vulnerabilities.html</loc>
+    <lastmod>2026-11-12</lastmod>
+  </url>
+  <url>
+    <loc>https://www.ariannateam.ai/blog-refrigeration-attacks.html</loc>
+    <lastmod>2026-11-12</lastmod>
+  </url>
+  <url>
+    <loc>https://www.ariannateam.ai/blog-cra-24-hour-exploit-reporting-rule.html</loc>
+    <lastmod>2026-11-12</lastmod>
+  </url>
+  <url>
+    <loc>https://www.ariannateam.ai/blog-sbom-alone-is-not-enough.html</loc>
+    <lastmod>2026-11-12</lastmod>
+  </url>
+  <url>
+    <loc>https://www.ariannateam.ai/article-arianna-spinout-press-release.html</loc>
+    <lastmod>2026-11-12</lastmod>
+  </url>
+  <url>
+    <loc>https://www.ariannateam.ai/article-logic-technology-partnership.html</loc>
+    <lastmod>2026-11-12</lastmod>
+  </url>
+  <url>
+    <loc>https://www.ariannateam.ai/article-complyd-partnership.html</loc>
+    <lastmod>2026-11-12</lastmod>
+  </url>
+  <url>
+    <loc>https://www.ariannateam.ai/article-estigiti-partnership.html</loc>
+    <lastmod>2026-11-12</lastmod>
+  </url>
+  <url>
+    <loc>https://www.ariannateam.ai/article-reekon-partnership-asia.html</loc>
+    <lastmod>2026-11-12</lastmod>
   </url>
 </urlset>

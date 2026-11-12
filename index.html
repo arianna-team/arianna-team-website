@@ -1,27 +1,23 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" data-site-2026>
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <link rel="icon" href="favicon.svg" type="image/svg+xml" />
-  <link rel="shortcut icon" href="favicon.svg" type="image/svg+xml" />
-  <style data-anchor-offset>
-    :target { scroll-margin-top: 120px; }
-  </style>
-  <title>ARIANNA | SBOM & Vulnerability Management Platform for Connected Devices</title>
-  <meta name="description" content="ARIANNA helps device manufacturers manage SBOM and HBOM data, monitor vulnerabilities, prioritize remediation, and prove compliance." />
-  <link rel="canonical" href="https://www.ariannateam.ai/" />
-  <meta property="og:type" content="website" />
-  <meta property="og:site_name" content="ARIANNA" />
-  <meta property="og:title" content="ARIANNA | SBOM & Vulnerability Management Platform for Connected Devices" />
-  <meta property="og:description" content="SBOM and HBOM management, vulnerability monitoring, and compliance reporting for connected products." />
-  <meta property="og:url" content="https://www.ariannateam.ai/" />
-  <meta property="og:image" content="https://www.ariannateam.ai/images/ARIANNA_mockup-2_lores.png" />
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="ARIANNA | SBOM & Vulnerability Management Platform for Connected Devices" />
-  <meta name="twitter:description" content="SBOM and HBOM management, vulnerability monitoring, and compliance reporting for connected products." />
-  <meta name="twitter:image" content="https://www.ariannateam.ai/images/ARIANNA_mockup-2_lores.png" />
-  <script type="application/ld+json">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<title>ARIANNA | SBOM &amp; Vulnerability Management Platform for Connected Devices</title>
+<meta name="description" content="ARIANNA helps device manufacturers manage SBOM and HBOM data, monitor vulnerabilities, prioritise remediation and reach compliance with the CRA, RED DA, IEC 62443 and FDA requirements.">
+<link rel="canonical" href="https://www.ariannateam.ai/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="ARIANNA">
+<meta property="og:title" content="ARIANNA | SBOM &amp; Vulnerability Management Platform for Connected Devices">
+<meta property="og:description" content="ARIANNA helps device manufacturers manage SBOM and HBOM data, monitor vulnerabilities, prioritise remediation and reach compliance with the CRA, RED DA, IEC 62443 and FDA requirements.">
+<meta property="og:url" content="https://www.ariannateam.ai/">
+<meta property="og:image" content="https://www.ariannateam.ai/images/ARIANNA_mockup-2_lores.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="ARIANNA | SBOM &amp; Vulnerability Management Platform for Connected Devices">
+<meta name="twitter:description" content="ARIANNA helps device manufacturers manage SBOM and HBOM data, monitor vulnerabilities, prioritise remediation and reach compliance with the CRA, RED DA, IEC 62443 and FDA requirements.">
+<meta name="twitter:image" content="https://www.ariannateam.ai/images/ARIANNA_mockup-2_lores.png">
+<script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@graph": [
@@ -64,915 +60,713 @@
     ]
   }
   </script>
-  <!-- Self-contained: no external font or asset requests. -->
-  <style>
-    :root {
-      --ink: #0f1e2b;
-      --muted: #5b6b7a;
-      --accent: #1aa5a7;
-      --accent-2: #8fd7d9;
-      --bg: #f4f7f8;
-      --card: #ffffff;
-      --line: #e2e8ec;
-      --shadow: 0 24px 60px rgba(15, 30, 43, 0.12);
-    }
-    * {
-      box-sizing: border-box;
-    }
-    body {
-      margin: 0;
-      font-family: "Montserrat", "Avenir Next", "Helvetica Neue", Arial, sans-serif;
-      color: var(--ink);
-      background: var(--bg);
-      overflow-x: hidden;
-    }
-    a {
-      color: inherit;
-      text-decoration: none;
-    }
-    .nav {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      padding: 22px 8vw;
-      position: sticky;
-      top: 0;
-      background: rgba(244, 247, 248, 0.9);
-      backdrop-filter: blur(8px);
-      z-index: 10;
-      border-bottom: 1px solid rgba(226, 232, 236, 0.6);
-    }
-    .nav-links {
-      display: flex;
-      gap: 26px;
-      font-size: 14px;
-      letter-spacing: 0.02em;
-      color: var(--muted);
-    }
-    .nav-links a {
-      transition: color 0.2s ease;
-    }
-    .nav-links a:hover,
-    .nav-links a:focus-visible,
-    .nav-links a:active {
-      color: #3fbab7;
-    }
-    .nav-dropdown {
-      position: relative;
-      padding-bottom: 8px;
-    }
-    .nav-dropdown-toggle {
-      display: inline-flex;
-      align-items: center;
-      gap: 6px;
-    }
-    .nav-dropdown-caret {
-      font-size: 10px;
-      line-height: 1;
-    }
-    .nav-dropdown-menu {
-      position: absolute;
-      top: 100%;
-      left: 0;
-      min-width: 160px;
-      padding: 8px 0;
-      border-radius: 12px;
-      border: 1px solid rgba(226, 232, 236, 0.9);
-      background: #ffffff;
-      box-shadow: 0 12px 24px rgba(15, 30, 43, 0.12);
-      display: none;
-      flex-direction: column;
-      gap: 0;
-      z-index: 20;
-    }
-    .nav-dropdown-menu a {
-      display: block;
-      padding: 8px 14px;
-      white-space: nowrap;
-    }
-    .nav-dropdown:hover .nav-dropdown-menu,
-    .nav-dropdown:focus-within .nav-dropdown-menu,
-    .nav-dropdown.is-open .nav-dropdown-menu {
-      display: flex;
-    }
-    .nav-cta {
-      padding: 10px 18px;
-      background: #f28a1a;
-      color: #ffffff;
-      border-radius: 999px;
-      font-size: 13px;
-      font-weight: 600;
-      transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
-    }
-    .nav-cta:hover {
-      background: #3fbab7;
-      box-shadow: 0 12px 24px rgba(15, 30, 43, 0.18);
-      transform: translateY(-1px);
-    }
-    .nav-cta,
-    .button,
-    .form-card button,
-    .newsletter-form button,
-    .cta a {
-      min-height: 44px;
-      padding: 12px 20px;
-      font-size: 14px;
-      line-height: 1;
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      box-sizing: border-box;
-    }
-    .logo { height: 88px; width: auto; }
-    .logo svg { height: 88px; width: auto; display: block; }
-    .hero {
-      padding: 80px 8vw 60px;
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      gap: 48px;
-      align-items: center;
-      position: relative;
-    }
-    .hero::before {
-      content: "";
-      position: absolute;
-      width: 480px;
-      height: 480px;
-      right: -160px;
-      top: -160px;
-      background: radial-gradient(circle, rgba(26, 165, 167, 0.22), rgba(26, 165, 167, 0));
-      z-index: 0;
-    }
-    .hero::after {
-      content: "";
-      position: absolute;
-      width: 320px;
-      height: 320px;
-      left: -140px;
-      bottom: -120px;
-      background: radial-gradient(circle, rgba(15, 30, 43, 0.18), rgba(15, 30, 43, 0));
-      z-index: 0;
-    }
-    .hero-content {
-      position: relative;
-      z-index: 1;
-    }
-    .eyebrow {
-      font-size: 12px;
-      font-weight: 600;
-      letter-spacing: 0.2em;
-      text-transform: uppercase;
-      color: var(--accent);
-    }
-    h1 {
-      font-family: "Montserrat", "Avenir Next", "Helvetica Neue", Arial, sans-serif;
-      font-weight: 700;
-      font-size: clamp(32px, 4vw, 54px);
-      line-height: 1.1;
-      margin: 18px 0 20px;
-    }
-    h2 {
-      font-family: "Montserrat", "Avenir Next", "Helvetica Neue", Arial, sans-serif;
-      font-size: clamp(24px, 3vw, 36px);
-      margin: 0 0 10px;
-    }
-    .hero p {
-      font-size: 16px;
-      color: var(--muted);
-      line-height: 1.7;
-      margin: 0 0 28px;
-    }
-    .hero-actions {
-      display: flex;
-      gap: 16px;
-      flex-wrap: wrap;
-    }
-    .button {
-      padding: 12px 20px;
-      border-radius: 999px;
-      font-size: 14px;
-      font-weight: 600;
-      border: 1px solid var(--ink);
-      transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease, color 0.2s ease;
-    }
-    .button.primary {
-      background: #f28a1a;
-      color: white;
-    }
-    .button.ghost {
-      background: transparent;
-      color: var(--ink);
-    }
-    .button.primary:hover {
-      background: #3fbab7;
-      box-shadow: 0 12px 24px rgba(15, 30, 43, 0.18);
-      transform: translateY(-1px);
-    }
-    .button.ghost:hover {
-      background: rgba(15, 30, 43, 0.08);
-      transform: translateY(-1px);
-    }
-    .hero-card {
-      position: relative;
-      z-index: 1;
-      background: transparent;
-      border-radius: 24px;
-      padding: 0;
-      box-shadow: none;
-    }
-    .hero-card img,
-    .hero-card svg {
-      width: 100%;
-      height: auto;
-      border-radius: 18px;
-      display: block;
-      background: transparent;
-    }
-    .stats {
-      margin-top: 24px;
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
-      gap: 16px;
-    }
-    .stat {
-      background: #edf2f3;
-      border-radius: 16px;
-      padding: 16px;
-      text-align: center;
-    }
-    .stat strong {
-      display: block;
-      font-size: 20px;
-    }
-    .logo-section {
-      padding: 20px 8vw 50px;
-      max-width: 1280px;
-      margin: 0 auto;
-    }
-    .logo-section.is-disabled {
-      display: none;
-    }
-    .logo-row {
-      color: var(--muted);
-      font-size: 13px;
-      margin-bottom: 16px;
-    }
-    .logos {
-      display: grid;
-      grid-template-columns: repeat(4, minmax(0, 1fr));
-      gap: 18px;
-    }
-    .logo-card {
-      min-height: 104px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      background: rgba(255, 255, 255, 0.78);
-      border: 1px solid rgba(15, 30, 43, 0.08);
-      border-radius: 20px;
-      padding: 22px 28px;
-      box-shadow: 0 14px 28px rgba(15, 30, 43, 0.06);
-    }
-    .logo-card img {
-      max-width: 100%;
-      max-height: 63px;
-      width: auto;
-      height: auto;
-      display: block;
-      object-fit: contain;
-    }
-    @media (max-width: 1100px) {
-      .logos {
-        grid-template-columns: repeat(3, minmax(0, 1fr));
-      }
-    }
-    @media (max-width: 780px) {
-      .logos {
-        grid-template-columns: repeat(2, minmax(0, 1fr));
-      }
-    }
-    @media (max-width: 520px) {
-      .logos {
-        grid-template-columns: 1fr;
-      }
-    }
-    .section {
-      padding: 70px 8vw;
-    }
-    .section-title {
-      text-align: center;
-      max-width: 720px;
-      margin: 0 auto 42px;
-    }
-    .section-title h2 {
-      font-family: "Montserrat", "Avenir Next", "Helvetica Neue", Arial, sans-serif;
-      font-size: clamp(26px, 3vw, 40px);
-      margin: 0 0 10px;
-    }
-    .section-title p {
-      color: var(--muted);
-      margin: 0;
-    }
-    .feature-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-      gap: 24px;
-    }
-    .feature-card {
-      background: var(--card);
-      border-radius: 20px;
-      padding: 22px;
-      border: 1px solid var(--line);
-      box-shadow: 0 20px 40px rgba(15, 30, 43, 0.08);
-    }
-    .feature-card h3 {
-      margin: 14px 0 8px;
-      font-size: 18px;
-    }
-    .feature-card p {
-      margin: 0;
-      color: var(--muted);
-      font-size: 14px;
-      line-height: 1.6;
-    }
-    .icon {
-      width: 44px;
-      height: 44px;
-      border-radius: 12px;
-      background: linear-gradient(135deg, var(--accent), var(--accent-2));
-    }
-    .split {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      gap: 32px;
-      align-items: center;
-    }
-    .pill-list {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 12px;
-    }
-    .pill {
-      padding: 10px 16px;
-      background: white;
-      border-radius: 999px;
-      border: 1px solid var(--line);
-      font-size: 13px;
-      color: var(--muted);
-    }
-    blockquote {
-      margin: 0;
-      padding: 32px;
-      background: white;
-      border-radius: 20px;
-      border-left: 6px solid var(--accent);
-      font-size: 15px;
-      color: var(--muted);
-      box-shadow: 0 18px 40px rgba(15, 30, 43, 0.08);
-    }
-    .quote-name {
-      margin-top: 16px;
-      font-weight: 600;
-      color: var(--ink);
-    }
-    .form-card {
-      background: var(--ink);
-      color: white;
-      border-radius: 24px;
-      padding: 32px;
-      display: grid;
-      gap: 16px;
-    }
-    .form-card label {
-      font-size: 12px;
-      letter-spacing: 0.1em;
-      text-transform: uppercase;
-      color: rgba(255, 255, 255, 0.7);
-    }
-    .form-card input,
-    .form-card textarea {
-      width: 100%;
-      padding: 12px 14px;
-      border-radius: 12px;
-      border: none;
-      margin-top: 6px;
-      font-family: inherit;
-    }
-    .form-card button {
-      padding: 12px;
-      border-radius: 999px;
-      border: none;
-      font-weight: 600;
-      background: #f28a1a;
-      color: #ffffff;
-      transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
-    }
-    .form-card button:hover {
-      background: #3fbab7;
-      box-shadow: 0 12px 24px rgba(15, 30, 43, 0.18);
-      transform: translateY(-1px);
-    }
-    .cta {
-      background: #0b1823;
-      color: white;
-      padding: 50px 8vw;
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-      gap: 24px;
-      align-items: center;
-    }
-    .cta p {
-      color: rgba(255, 255, 255, 0.7);
-    }
-    .cta a {
-      display: inline-block;
-      padding: 12px 20px;
-      border-radius: 999px;
-      background: var(--accent);
-      color: var(--ink);
-      font-weight: 600;
-      font-size: 14px;
-      transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
-    }
-    .cta a:hover {
-      background: #f28a1a;
-      color: #ffffff;
-      box-shadow: 0 12px 24px rgba(15, 30, 43, 0.18);
-      transform: translateY(-1px);
-    }
-    footer {
-      padding: 0 8vw 60px;
-      margin-top: -160px;
-      background: #0b1823;
-      color: rgba(255, 255, 255, 0.7);
-      display: flex;
-      gap: 48px;
-      justify-content: flex-end;
-      align-items: flex-start;
-    }
-    footer h4 {
-      color: white;
-      margin: 0 0 10px;
-    }
-    footer p {
-      margin: 0 0 8px;
-      color: rgba(255, 255, 255, 0.7);
-      font-size: 14px;
-      line-height: 1.5;
-    }
-    footer a {
-      color: inherit;
-      text-decoration: none;
-      transition: color 0.2s ease;
-    }
-    footer a:hover {
-      color: var(--accent);
-    }
-    .footer-contact {
-      justify-self: end;
-      align-self: start;
-    }
-    @media (max-width: 720px) {
-      .nav {
-        flex-wrap: wrap;
-        row-gap: 10px;
-      }
-      .nav-links {
-        display: flex;
-        width: 100%;
-        flex-wrap: wrap;
-        gap: 14px;
-        order: 3;
-      }
-      .nav-dropdown {
-        padding-bottom: 0;
-      }
-      .nav-dropdown-menu {
-        position: static;
-        margin-top: 6px;
-        box-shadow: none;
-      }
-      .nav-cta {
-        margin-left: auto;
-      }
-      .hero {
-        padding-top: 50px;
-      }
-      .hero-actions {
-        flex-direction: column;
-        align-items: flex-start;
-      }
-    }
-      @media (max-width: 720px) {
-      footer {
-        display: grid;
-        grid-template-columns: 1fr;
-        justify-content: start;
-        gap: 16px;
-        padding: 32px 8vw 40px;
-        margin-top: -120px;
-      }
-      .footer-company,
-      .footer-contact {
-        grid-column: auto;
-        justify-self: start;
-        align-self: start;
-      }
-    }
-    .newsletter-overlay {
-      position: fixed;
-      inset: 0;
-      background: rgba(15, 30, 43, 0.72);
-      display: none;
-      align-items: center;
-      justify-content: center;
-      z-index: 999;
-      padding: 24px;
-    }
-    .newsletter-overlay.is-visible {
-      display: flex;
-    }
-    .newsletter-modal {
-      background: var(--ink);
-      color: #ffffff;
-      border-radius: 24px;
-      max-width: 520px;
-      width: 100%;
-      padding: 28px;
-      box-shadow: 0 30px 80px rgba(15, 30, 43, 0.25);
-      position: relative;
-    }
-    .newsletter-modal h3 {
-      margin: 0 0 8px;
-      font-size: 22px;
-      color: #ffffff;
-    }
-    .newsletter-modal p {
-      margin: 0 0 16px;
-      color: rgba(255, 255, 255, 0.8);
-    }
-    .newsletter-form {
-      display: grid;
-      gap: 12px;
-    }
-    .newsletter-form input {
-      width: 100%;
-      padding: 12px 14px;
-      border-radius: 12px;
-      border: none;
-      background: #ffffff;
-      color: var(--ink);
-      font-family: inherit;
-    }
-    .newsletter-form input::placeholder {
-      color: var(--muted);
-    }
-    .newsletter-form button {
-      padding: 12px 16px;
-      border-radius: 999px;
-      border: none;
-      background: #f28a1a;
-      color: #ffffff;
-      font-weight: 600;
-      transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
-    }
-    .newsletter-form button:hover {
-      background: #3fbab7;
-      color: #ffffff;
-      box-shadow: 0 12px 24px rgba(15, 30, 43, 0.25);
-      transform: translateY(-1px);
-    }
-    .newsletter-close {
-      position: absolute;
-      top: 12px;
-      right: 12px;
-      border: none;
-      background: transparent;
-      font-size: 18px;
-      cursor: pointer;
-      color: rgba(255, 255, 255, 0.7);
-    }
-      @media (max-width: 720px) {
-      footer {
-        display: grid;
-        grid-template-columns: 1fr;
-        justify-content: start;
-        gap: 16px;
-        padding: 32px 8vw 40px;
-      }
-      .footer-contact {
-        grid-column: auto;
-        justify-self: start;
-        align-self: start;
-      }
-    }
-  </style>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&amp;display=swap">
+<link rel="stylesheet" href="assets/site.css">
+<style>
+@keyframes logo-scroll{from{transform:translateX(0)}to{transform:translateX(calc(-50% - 12px))}}.logo-track{animation:logo-scroll 50s linear infinite}.logo-marquee:hover .logo-track{animation-play-state:paused}@media (prefers-reduced-motion: reduce){.logo-track{animation:none}}
+
+.brand-gradient{background:#7047fd url(images/site/brand-gradient.jpg) center/cover no-repeat}
+@keyframes hach0{0%,26.67%{opacity:0}29.44%,91.11%{opacity:1}95.56%,100%{opacity:0}}
+@keyframes hach1{0%,28.89%{opacity:0}31.67%,91.11%{opacity:1}95.56%,100%{opacity:0}}
+@keyframes hach2{0%,31.11%{opacity:0}33.89%,91.11%{opacity:1}95.56%,100%{opacity:0}}
+@keyframes habtn{0%,34.44%{background:#e3e7ea;color:#8a979f}36.67%,91.11%{background:#1a7472;color:#ffffff}95.56%,100%{background:#e3e7ea;color:#8a979f}}
+@keyframes hapu{0%,4.44%{opacity:0}7.22%,91.11%{opacity:1}95.56%,100%{opacity:0}}
+@keyframes hasy{0%,8.89%{opacity:0}11.67%,91.11%{opacity:1}95.56%,100%{opacity:0}}
+@keyframes havn{0%,12.22%{max-width:0}15.56%,91.11%{max-width:4ch}94.44%,100%{max-width:0}}
+@keyframes hacn{0%,16.67%{max-width:0}24.44%,91.11%{max-width:13ch}94.44%,100%{max-width:0}}
+@keyframes har1{0%,40.00%{opacity:0;transform:translateY(8px)}43.89%,91.11%{opacity:1;transform:none}95.56%,100%{opacity:0;transform:translateY(8px)}}
+@keyframes har2{0%,43.33%{opacity:0;transform:translateY(8px)}47.22%,91.11%{opacity:1;transform:none}95.56%,100%{opacity:0;transform:translateY(8px)}}
+@keyframes har3{0%,46.67%{opacity:0;transform:translateY(8px)}50.56%,91.11%{opacity:1;transform:none}95.56%,100%{opacity:0;transform:translateY(8px)}}
+@keyframes har4{0%,50.00%{opacity:0;transform:translateY(8px)}53.89%,91.11%{opacity:1;transform:none}95.56%,100%{opacity:0;transform:translateY(8px)}}
+@keyframes hahcb{0%,40.00%{opacity:1}42.78%,91.11%{opacity:0}95.56%,100%{opacity:1}}
+@keyframes hahca{0%,40.00%{opacity:0;transform:scale(.6)}43.33%,91.11%{opacity:1;transform:none}95.56%,100%{opacity:0;transform:scale(.6)}}
+.hach0{animation:hach0 9.0s ease-out infinite}
+.hach1{animation:hach1 9.0s ease-out infinite}
+.hach2{animation:hach2 9.0s ease-out infinite}
+.habtn{animation:habtn 9.0s ease-out infinite}
+.hapu{animation:hapu 9.0s ease-out infinite}
+.hasy{animation:hasy 9.0s ease-out infinite}
+.havn{animation:havn 9.0s steps(3) infinite}
+.hacn{animation:hacn 9.0s steps(12) infinite}
+.har1{animation:har1 9.0s ease-out infinite}
+.har2{animation:har2 9.0s ease-out infinite}
+.har3{animation:har3 9.0s ease-out infinite}
+.har4{animation:har4 9.0s ease-out infinite}
+.hahcb{animation:hahcb 9.0s ease-out infinite}
+.hahca{animation:hahca 9.0s ease-out infinite}
+@keyframes sbt0{0%,4.00%{opacity:0;transform:translateY(8px)}7.00%,92.00%{opacity:1;transform:none}96.00%,100%{opacity:0;transform:translateY(8px)}}
+@keyframes sbt1{0%,9.00%{opacity:0;transform:translateY(8px)}12.00%,92.00%{opacity:1;transform:none}96.00%,100%{opacity:0;transform:translateY(8px)}}
+@keyframes sbt2{0%,24.00%{opacity:0;transform:translateY(8px)}27.00%,92.00%{opacity:1;transform:none}96.00%,100%{opacity:0;transform:translateY(8px)}}
+@keyframes sbt3{0%,29.00%{opacity:0;transform:translateY(8px)}32.00%,92.00%{opacity:1;transform:none}96.00%,100%{opacity:0;transform:translateY(8px)}}
+@keyframes sbt4{0%,35.00%{opacity:0;transform:translateY(8px)}38.00%,92.00%{opacity:1;transform:none}96.00%,100%{opacity:0;transform:translateY(8px)}}
+@keyframes sbt5{0%,40.00%{opacity:0;transform:translateY(8px)}43.00%,92.00%{opacity:1;transform:none}96.00%,100%{opacity:0;transform:translateY(8px)}}
+@keyframes sbr1{0%,44.00%{opacity:0;transform:translateY(8px)}47.50%,92.00%{opacity:1;transform:none}96.00%,100%{opacity:0;transform:translateY(8px)}}
+@keyframes sbr2{0%,47.00%{opacity:0;transform:translateY(8px)}50.50%,92.00%{opacity:1;transform:none}96.00%,100%{opacity:0;transform:translateY(8px)}}
+@keyframes sbr3{0%,50.00%{opacity:0;transform:translateY(8px)}53.50%,92.00%{opacity:1;transform:none}96.00%,100%{opacity:0;transform:translateY(8px)}}
+@keyframes sbm{0%,53.00%{opacity:0;transform:translateY(8px)}56.00%,92.00%{opacity:1;transform:none}96.00%,100%{opacity:0;transform:translateY(8px)}}
+@keyframes sbscb{0%,44.00%{opacity:1}46.50%,92.00%{opacity:0}96.00%,100%{opacity:1}}
+@keyframes sbsca{0%,44.00%{opacity:0;transform:scale(.6)}47.00%,92.00%{opacity:1;transform:none}96.00%,100%{opacity:0;transform:scale(.6)}}
+.sbt0{animation:sbt0 10.0s ease-out infinite}
+.sbt1{animation:sbt1 10.0s ease-out infinite}
+.sbt2{animation:sbt2 10.0s ease-out infinite}
+.sbt3{animation:sbt3 10.0s ease-out infinite}
+.sbt4{animation:sbt4 10.0s ease-out infinite}
+.sbt5{animation:sbt5 10.0s ease-out infinite}
+.sbr1{animation:sbr1 10.0s ease-out infinite}
+.sbr2{animation:sbr2 10.0s ease-out infinite}
+.sbr3{animation:sbr3 10.0s ease-out infinite}
+.sbm{animation:sbm 10.0s ease-out infinite}
+.sbscb{animation:sbscb 10.0s ease-out infinite}
+.sbsca{animation:sbsca 10.0s ease-out infinite}
+@keyframes mplbl{0%,3.33%{opacity:0}5.56%,15.56%{opacity:1}17.78%,100%{opacity:0}}
+@keyframes mph1tb{0%,17.78%{opacity:1}20.56%,91.11%{opacity:0}95.56%,100%{opacity:1}}
+@keyframes mph1ta{0%,17.78%{opacity:0;transform:scale(.6)}21.11%,91.11%{opacity:1;transform:none}95.56%,100%{opacity:0;transform:scale(.6)}}
+@keyframes mph1s0b{0%,17.78%{opacity:1}20.56%,91.11%{opacity:0}95.56%,100%{opacity:1}}
+@keyframes mph1s0a{0%,17.78%{opacity:0;transform:scale(.6)}21.11%,91.11%{opacity:1;transform:none}95.56%,100%{opacity:0;transform:scale(.6)}}
+@keyframes mph1s1b{0%,18.33%{opacity:1}21.11%,91.11%{opacity:0}95.56%,100%{opacity:1}}
+@keyframes mph1s1a{0%,18.33%{opacity:0;transform:scale(.6)}21.67%,91.11%{opacity:1;transform:none}95.56%,100%{opacity:0;transform:scale(.6)}}
+@keyframes mph1s2b{0%,18.89%{opacity:1}21.67%,91.11%{opacity:0}95.56%,100%{opacity:1}}
+@keyframes mph1s2a{0%,18.89%{opacity:0;transform:scale(.6)}22.22%,91.11%{opacity:1;transform:none}95.56%,100%{opacity:0;transform:scale(.6)}}
+@keyframes mph1s3b{0%,19.44%{opacity:1}22.22%,91.11%{opacity:0}95.56%,100%{opacity:1}}
+@keyframes mph1s3a{0%,19.44%{opacity:0;transform:scale(.6)}22.78%,91.11%{opacity:1;transform:none}95.56%,100%{opacity:0;transform:scale(.6)}}
+@keyframes mph2tb{0%,21.11%{opacity:1}23.89%,91.11%{opacity:0}95.56%,100%{opacity:1}}
+@keyframes mph2ta{0%,21.11%{opacity:0;transform:scale(.6)}24.44%,91.11%{opacity:1;transform:none}95.56%,100%{opacity:0;transform:scale(.6)}}
+@keyframes mph2s0b{0%,21.11%{opacity:1}23.89%,91.11%{opacity:0}95.56%,100%{opacity:1}}
+@keyframes mph2s0a{0%,21.11%{opacity:0;transform:scale(.6)}24.44%,91.11%{opacity:1;transform:none}95.56%,100%{opacity:0;transform:scale(.6)}}
+@keyframes mph2s1b{0%,21.67%{opacity:1}24.44%,91.11%{opacity:0}95.56%,100%{opacity:1}}
+@keyframes mph2s1a{0%,21.67%{opacity:0;transform:scale(.6)}25.00%,91.11%{opacity:1;transform:none}95.56%,100%{opacity:0;transform:scale(.6)}}
+@keyframes mph2s2b{0%,22.22%{opacity:1}25.00%,91.11%{opacity:0}95.56%,100%{opacity:1}}
+@keyframes mph2s2a{0%,22.22%{opacity:0;transform:scale(.6)}25.56%,91.11%{opacity:1;transform:none}95.56%,100%{opacity:0;transform:scale(.6)}}
+@keyframes mph2s3b{0%,22.78%{opacity:1}25.56%,91.11%{opacity:0}95.56%,100%{opacity:1}}
+@keyframes mph2s3a{0%,22.78%{opacity:0;transform:scale(.6)}26.11%,91.11%{opacity:1;transform:none}95.56%,100%{opacity:0;transform:scale(.6)}}
+@keyframes mps1tb{0%,24.44%{opacity:1}27.22%,91.11%{opacity:0}95.56%,100%{opacity:1}}
+@keyframes mps1ta{0%,24.44%{opacity:0;transform:scale(.6)}27.78%,91.11%{opacity:1;transform:none}95.56%,100%{opacity:0;transform:scale(.6)}}
+@keyframes mps1s0b{0%,24.44%{opacity:1}27.22%,91.11%{opacity:0}95.56%,100%{opacity:1}}
+@keyframes mps1s0a{0%,24.44%{opacity:0;transform:scale(.6)}27.78%,91.11%{opacity:1;transform:none}95.56%,100%{opacity:0;transform:scale(.6)}}
+@keyframes mps1s1b{0%,25.00%{opacity:1}27.78%,91.11%{opacity:0}95.56%,100%{opacity:1}}
+@keyframes mps1s1a{0%,25.00%{opacity:0;transform:scale(.6)}28.33%,91.11%{opacity:1;transform:none}95.56%,100%{opacity:0;transform:scale(.6)}}
+@keyframes mps1s2b{0%,25.56%{opacity:1}28.33%,91.11%{opacity:0}95.56%,100%{opacity:1}}
+@keyframes mps1s2a{0%,25.56%{opacity:0;transform:scale(.6)}28.89%,91.11%{opacity:1;transform:none}95.56%,100%{opacity:0;transform:scale(.6)}}
+@keyframes mps1s3b{0%,26.11%{opacity:1}28.89%,91.11%{opacity:0}95.56%,100%{opacity:1}}
+@keyframes mps1s3a{0%,26.11%{opacity:0;transform:scale(.6)}29.44%,91.11%{opacity:1;transform:none}95.56%,100%{opacity:0;transform:scale(.6)}}
+@keyframes mps2tb{0%,27.78%{opacity:1}30.56%,91.11%{opacity:0}95.56%,100%{opacity:1}}
+@keyframes mps2ta{0%,27.78%{opacity:0;transform:scale(.6)}31.11%,91.11%{opacity:1;transform:none}95.56%,100%{opacity:0;transform:scale(.6)}}
+@keyframes mps2s0b{0%,27.78%{opacity:1}30.56%,91.11%{opacity:0}95.56%,100%{opacity:1}}
+@keyframes mps2s0a{0%,27.78%{opacity:0;transform:scale(.6)}31.11%,91.11%{opacity:1;transform:none}95.56%,100%{opacity:0;transform:scale(.6)}}
+@keyframes mps2s1b{0%,28.33%{opacity:1}31.11%,91.11%{opacity:0}95.56%,100%{opacity:1}}
+@keyframes mps2s1a{0%,28.33%{opacity:0;transform:scale(.6)}31.67%,91.11%{opacity:1;transform:none}95.56%,100%{opacity:0;transform:scale(.6)}}
+@keyframes mps2s2b{0%,28.89%{opacity:1}31.67%,91.11%{opacity:0}95.56%,100%{opacity:1}}
+@keyframes mps2s2a{0%,28.89%{opacity:0;transform:scale(.6)}32.22%,91.11%{opacity:1;transform:none}95.56%,100%{opacity:0;transform:scale(.6)}}
+@keyframes mps2s3b{0%,29.44%{opacity:1}32.22%,91.11%{opacity:0}95.56%,100%{opacity:1}}
+@keyframes mps2s3a{0%,29.44%{opacity:0;transform:scale(.6)}32.78%,91.11%{opacity:1;transform:none}95.56%,100%{opacity:0;transform:scale(.6)}}
+@keyframes mphvb{0%,33.33%{opacity:1}36.11%,91.11%{opacity:0}95.56%,100%{opacity:1}}
+@keyframes mphva{0%,33.33%{opacity:0;transform:scale(.6)}36.67%,91.11%{opacity:1;transform:none}95.56%,100%{opacity:0;transform:scale(.6)}}
+@keyframes mpsvb{0%,35.56%{opacity:1}38.33%,91.11%{opacity:0}95.56%,100%{opacity:1}}
+@keyframes mpsva{0%,35.56%{opacity:0;transform:scale(.6)}38.89%,91.11%{opacity:1;transform:none}95.56%,100%{opacity:0;transform:scale(.6)}}
+.mplbl{animation:mplbl 9.0s linear infinite}
+.mph1tb{animation:mph1tb 9.0s ease-out infinite}
+.mph1ta{animation:mph1ta 9.0s ease-out infinite}
+.mph1s0b{animation:mph1s0b 9.0s ease-out infinite}
+.mph1s0a{animation:mph1s0a 9.0s ease-out infinite}
+.mph1s1b{animation:mph1s1b 9.0s ease-out infinite}
+.mph1s1a{animation:mph1s1a 9.0s ease-out infinite}
+.mph1s2b{animation:mph1s2b 9.0s ease-out infinite}
+.mph1s2a{animation:mph1s2a 9.0s ease-out infinite}
+.mph1s3b{animation:mph1s3b 9.0s ease-out infinite}
+.mph1s3a{animation:mph1s3a 9.0s ease-out infinite}
+.mph2tb{animation:mph2tb 9.0s ease-out infinite}
+.mph2ta{animation:mph2ta 9.0s ease-out infinite}
+.mph2s0b{animation:mph2s0b 9.0s ease-out infinite}
+.mph2s0a{animation:mph2s0a 9.0s ease-out infinite}
+.mph2s1b{animation:mph2s1b 9.0s ease-out infinite}
+.mph2s1a{animation:mph2s1a 9.0s ease-out infinite}
+.mph2s2b{animation:mph2s2b 9.0s ease-out infinite}
+.mph2s2a{animation:mph2s2a 9.0s ease-out infinite}
+.mph2s3b{animation:mph2s3b 9.0s ease-out infinite}
+.mph2s3a{animation:mph2s3a 9.0s ease-out infinite}
+.mps1tb{animation:mps1tb 9.0s ease-out infinite}
+.mps1ta{animation:mps1ta 9.0s ease-out infinite}
+.mps1s0b{animation:mps1s0b 9.0s ease-out infinite}
+.mps1s0a{animation:mps1s0a 9.0s ease-out infinite}
+.mps1s1b{animation:mps1s1b 9.0s ease-out infinite}
+.mps1s1a{animation:mps1s1a 9.0s ease-out infinite}
+.mps1s2b{animation:mps1s2b 9.0s ease-out infinite}
+.mps1s2a{animation:mps1s2a 9.0s ease-out infinite}
+.mps1s3b{animation:mps1s3b 9.0s ease-out infinite}
+.mps1s3a{animation:mps1s3a 9.0s ease-out infinite}
+.mps2tb{animation:mps2tb 9.0s ease-out infinite}
+.mps2ta{animation:mps2ta 9.0s ease-out infinite}
+.mps2s0b{animation:mps2s0b 9.0s ease-out infinite}
+.mps2s0a{animation:mps2s0a 9.0s ease-out infinite}
+.mps2s1b{animation:mps2s1b 9.0s ease-out infinite}
+.mps2s1a{animation:mps2s1a 9.0s ease-out infinite}
+.mps2s2b{animation:mps2s2b 9.0s ease-out infinite}
+.mps2s2a{animation:mps2s2a 9.0s ease-out infinite}
+.mps2s3b{animation:mps2s3b 9.0s ease-out infinite}
+.mps2s3a{animation:mps2s3a 9.0s ease-out infinite}
+.mphvb{animation:mphvb 9.0s ease-out infinite}
+.mphva{animation:mphva 9.0s ease-out infinite}
+.mpsvb{animation:mpsvb 9.0s ease-out infinite}
+.mpsva{animation:mpsva 9.0s ease-out infinite}
+@keyframes prpol{0%,6.67%{opacity:0;transform:translateY(8px)}11.11%,91.11%{opacity:1;transform:none}95.56%,100%{opacity:0;transform:translateY(8px)}}
+@keyframes pric0{0%,31.11%{opacity:0}34.44%,91.11%{opacity:1}95.56%,100%{opacity:0}}
+@keyframes prbg0{0%,30.00%{background:#fff;box-shadow:inset 3px 0 0 transparent}34.44%,91.11%{background:#fff7f9;box-shadow:inset 3px 0 0 #e0245e}95.56%,100%{background:#fff;box-shadow:inset 3px 0 0 transparent}}
+@keyframes prcl1{0%,26.67%{max-height:60px;opacity:1}33.33%,91.11%{max-height:0;opacity:0}95.56%,100%{max-height:60px;opacity:1}}
+@keyframes pric2{0%,31.11%{opacity:0}34.44%,91.11%{opacity:1}95.56%,100%{opacity:0}}
+@keyframes prbg2{0%,30.00%{background:#fff;box-shadow:inset 3px 0 0 transparent}34.44%,91.11%{background:#fff7f9;box-shadow:inset 3px 0 0 #e0245e}95.56%,100%{background:#fff;box-shadow:inset 3px 0 0 transparent}}
+@keyframes prcl3{0%,26.67%{max-height:60px;opacity:1}33.33%,91.11%{max-height:0;opacity:0}95.56%,100%{max-height:60px;opacity:1}}
+@keyframes pric4{0%,31.11%{opacity:0}34.44%,91.11%{opacity:1}95.56%,100%{opacity:0}}
+@keyframes prbg4{0%,30.00%{background:#fff;box-shadow:inset 3px 0 0 transparent}34.44%,91.11%{background:#fff7f9;box-shadow:inset 3px 0 0 #e0245e}95.56%,100%{background:#fff;box-shadow:inset 3px 0 0 transparent}}
+@keyframes prhb{0%,28.89%{opacity:1}31.67%,91.11%{opacity:0}95.56%,100%{opacity:1}}
+@keyframes prha{0%,30.00%{opacity:0}33.33%,91.11%{opacity:1}95.56%,100%{opacity:0}}
+@keyframes prnb{0%,28.89%{opacity:1}31.67%,91.11%{opacity:0}95.56%,100%{opacity:1}}
+@keyframes prna{0%,30.00%{opacity:0}33.33%,91.11%{opacity:1}95.56%,100%{opacity:0}}
+@keyframes prgl{0%,31.11%{box-shadow:0 0 0 1px #e3e7ea}36.67%,91.11%{box-shadow:0 0 0 2px #e0245e,0 10px 26px -10px rgba(224,36,94,.5)}95.56%,100%{box-shadow:0 0 0 1px #e3e7ea}}
+.prpol{animation:prpol 9.0s ease-out infinite}
+.pric0{animation:pric0 9.0s ease-out infinite}
+.prbg0{animation:prbg0 9.0s ease-out infinite}
+.prcl1{animation:prcl1 9.0s ease-out infinite}
+.pric2{animation:pric2 9.0s ease-out infinite}
+.prbg2{animation:prbg2 9.0s ease-out infinite}
+.prcl3{animation:prcl3 9.0s ease-out infinite}
+.pric4{animation:pric4 9.0s ease-out infinite}
+.prbg4{animation:prbg4 9.0s ease-out infinite}
+.prhb{animation:prhb 9.0s ease-out infinite}
+.prha{animation:prha 9.0s ease-out infinite}
+.prnb{animation:prnb 9.0s ease-out infinite}
+.prna{animation:prna 9.0s ease-out infinite}
+.prgl{animation:prgl 9.0s ease-out infinite}
+@keyframes moe0{0%,8.00%{opacity:0;transform:translateY(-8px)}12.00%,92.00%{opacity:1;transform:none}96.00%,100%{opacity:0;transform:translateY(-8px)}}
+@keyframes moe1{0%,22.00%{opacity:0;transform:translateY(-8px)}26.00%,92.00%{opacity:1;transform:none}96.00%,100%{opacity:0;transform:translateY(-8px)}}
+@keyframes moe2{0%,36.00%{opacity:0;transform:translateY(-8px)}40.00%,92.00%{opacity:1;transform:none}96.00%,100%{opacity:0;transform:translateY(-8px)}}
+@keyframes moe3{0%,50.00%{opacity:0;transform:translateY(-8px)}54.00%,92.00%{opacity:1;transform:none}96.00%,100%{opacity:0;transform:translateY(-8px)}}
+@keyframes livepulse{0%{box-shadow:0 0 0 0 rgba(26,158,92,.55)}70%{box-shadow:0 0 0 7px rgba(26,158,92,0)}100%{box-shadow:0 0 0 0 rgba(26,158,92,0)}}
+.moe0{animation:moe0 10.0s ease-out infinite}
+.moe1{animation:moe1 10.0s ease-out infinite}
+.moe2{animation:moe2 10.0s ease-out infinite}
+.moe3{animation:moe3 10.0s ease-out infinite}
+.livepulse{animation:livepulse 1.6s ease-out infinite}
+.hx-pane{display:none}
+.hx-radio{position:absolute;opacity:0;pointer-events:none}
+.hx-step{position:relative;display:flex;gap:14px;align-items:flex-start;padding:16px 18px;border-radius:10px;cursor:pointer;transition:background .2s,box-shadow .2s;opacity:.55}
+.hx-num{flex:none;width:32px;height:32px;border-radius:50%;background:#f2faf9;box-shadow:inset 0 0 0 1px #c7e6e4;color:#1a7472;display:inline-flex;align-items:center;justify-content:center;font-weight:700;font-size:14px;transition:background .2s,color .2s}
+.hx-txt{display:flex;flex-direction:column;gap:3px}.hx-txt strong{font-size:17px}.hx-txt span{font-size:13.5px;line-height:1.5;color:#5b6b7a}
+.hx:has(#hx1:checked) .hx-p1{display:block}
+.hx:has(#hx1:checked) .hx-s1{opacity:1;background:#fff;box-shadow:0 0 0 1px #e3e7ea,0 10px 24px -14px rgba(10,10,10,.3)}
+.hx:has(#hx1:checked) .hx-s1 .hx-num{background:#1a7472;color:#fff}
+.hx:has(#hx2:checked) .hx-p2{display:block}
+.hx:has(#hx2:checked) .hx-s2{opacity:1;background:#fff;box-shadow:0 0 0 1px #e3e7ea,0 10px 24px -14px rgba(10,10,10,.3)}
+.hx:has(#hx2:checked) .hx-s2 .hx-num{background:#1a7472;color:#fff}
+.hx:has(#hx3:checked) .hx-p3{display:block}
+.hx:has(#hx3:checked) .hx-s3{opacity:1;background:#fff;box-shadow:0 0 0 1px #e3e7ea,0 10px 24px -14px rgba(10,10,10,.3)}
+.hx:has(#hx3:checked) .hx-s3 .hx-num{background:#1a7472;color:#fff}
+.hx:has(#hx4:checked) .hx-p4{display:block}
+.hx:has(#hx4:checked) .hx-s4{opacity:1;background:#fff;box-shadow:0 0 0 1px #e3e7ea,0 10px 24px -14px rgba(10,10,10,.3)}
+.hx:has(#hx4:checked) .hx-s4 .hx-num{background:#1a7472;color:#fff}
+.hx:has(#hx5:checked) .hx-p5{display:block}
+.hx:has(#hx5:checked) .hx-s5{opacity:1;background:#fff;box-shadow:0 0 0 1px #e3e7ea,0 10px 24px -14px rgba(10,10,10,.3)}
+.hx:has(#hx5:checked) .hx-s5 .hx-num{background:#1a7472;color:#fff}
+.hx:has(.hx-step:hover) .hx-pane{display:none !important}.hx:has(.hx-step:hover) .hx-step{opacity:.55 !important;background:transparent !important;box-shadow:none !important}.hx:has(.hx-step:hover) .hx-num{background:#f2faf9 !important;color:#1a7472 !important}
+.hx:has(.hx-s1:hover) .hx-p1{display:block !important}.hx:has(.hx-s1:hover) .hx-s1{opacity:1 !important;background:#fff !important;box-shadow:0 0 0 1px #e3e7ea,0 10px 24px -14px rgba(10,10,10,.3) !important}.hx:has(.hx-s1:hover) .hx-s1 .hx-num{background:#1a7472 !important;color:#fff !important}
+.hx:has(.hx-s2:hover) .hx-p2{display:block !important}.hx:has(.hx-s2:hover) .hx-s2{opacity:1 !important;background:#fff !important;box-shadow:0 0 0 1px #e3e7ea,0 10px 24px -14px rgba(10,10,10,.3) !important}.hx:has(.hx-s2:hover) .hx-s2 .hx-num{background:#1a7472 !important;color:#fff !important}
+.hx:has(.hx-s3:hover) .hx-p3{display:block !important}.hx:has(.hx-s3:hover) .hx-s3{opacity:1 !important;background:#fff !important;box-shadow:0 0 0 1px #e3e7ea,0 10px 24px -14px rgba(10,10,10,.3) !important}.hx:has(.hx-s3:hover) .hx-s3 .hx-num{background:#1a7472 !important;color:#fff !important}
+.hx:has(.hx-s4:hover) .hx-p4{display:block !important}.hx:has(.hx-s4:hover) .hx-s4{opacity:1 !important;background:#fff !important;box-shadow:0 0 0 1px #e3e7ea,0 10px 24px -14px rgba(10,10,10,.3) !important}.hx:has(.hx-s4:hover) .hx-s4 .hx-num{background:#1a7472 !important;color:#fff !important}
+.hx:has(.hx-s5:hover) .hx-p5{display:block !important}.hx:has(.hx-s5:hover) .hx-s5{opacity:1 !important;background:#fff !important;box-shadow:0 0 0 1px #e3e7ea,0 10px 24px -14px rgba(10,10,10,.3) !important}.hx:has(.hx-s5:hover) .hx-s5 .hx-num{background:#1a7472 !important;color:#fff !important}
+.hx-step:focus-within{outline:2px solid #3fbab7;outline-offset:2px}
+@keyframes dot{0%,100%{opacity:.25}50%{opacity:1}}.dot{animation:dot 1.2s ease-in-out infinite}.dot:nth-child(2){animation-delay:.2s}.dot:nth-child(3){animation-delay:.4s}
+@keyframes blink{50%{opacity:0}}.caret{animation:blink 1s steps(1) infinite}
+@media (prefers-reduced-motion: reduce){.anim-poc *{animation:none !important}.anim-poc .rm-hide{display:none !important}}
+
+
+@keyframes qcbrc{0%,17.78%{background:#ffffff;box-shadow:inset 0 0 0 1.5px #8a979f;color:transparent}18.61%,95.56%{background:#1a7472;box-shadow:inset 0 0 0 1.5px #1a7472;color:#ffffff}97.78%,100%{background:#ffffff;box-shadow:inset 0 0 0 1.5px #8a979f;color:transparent}}
+@keyframes qcbex{0%,20.56%{background:#ffffff;box-shadow:inset 0 0 0 1.5px #8a979f;color:transparent}21.39%,95.56%{background:#1a7472;box-shadow:inset 0 0 0 1.5px #1a7472;color:#ffffff}97.78%,100%{background:#ffffff;box-shadow:inset 0 0 0 1.5px #8a979f;color:transparent}}
+@keyframes qcbae{0%,23.33%{background:#ffffff;box-shadow:inset 0 0 0 1.5px #8a979f;color:transparent}24.17%,95.56%{background:#1a7472;box-shadow:inset 0 0 0 1.5px #1a7472;color:#ffffff}97.78%,100%{background:#ffffff;box-shadow:inset 0 0 0 1.5px #8a979f;color:transparent}}
+@keyframes qcbkev{0%,27.78%{background:#ffffff;box-shadow:inset 0 0 0 1.5px #8a979f;color:transparent}28.61%,95.56%{background:#1a7472;box-shadow:inset 0 0 0 1.5px #1a7472;color:#ffffff}97.78%,100%{background:#ffffff;box-shadow:inset 0 0 0 1.5px #8a979f;color:transparent}}
+@keyframes qcbrdy{0%,30.00%{background:#ffffff;box-shadow:inset 0 0 0 1.5px #8a979f;color:transparent}30.83%,95.56%{background:#1a7472;box-shadow:inset 0 0 0 1.5px #1a7472;color:#ffffff}97.78%,100%{background:#ffffff;box-shadow:inset 0 0 0 1.5px #8a979f;color:transparent}}
+@keyframes qcbver{0%,32.22%{background:#ffffff;box-shadow:inset 0 0 0 1.5px #8a979f;color:transparent}33.06%,95.56%{background:#1a7472;box-shadow:inset 0 0 0 1.5px #1a7472;color:#ffffff}97.78%,100%{background:#ffffff;box-shadow:inset 0 0 0 1.5px #8a979f;color:transparent}}
+@keyframes qcbeps{0%,34.44%{background:#ffffff;box-shadow:inset 0 0 0 1.5px #8a979f;color:transparent}35.28%,95.56%{background:#1a7472;box-shadow:inset 0 0 0 1.5px #1a7472;color:#ffffff}97.78%,100%{background:#ffffff;box-shadow:inset 0 0 0 1.5px #8a979f;color:transparent}}
+@keyframes qcbnet{0%,38.89%{background:#ffffff;box-shadow:inset 0 0 0 1.5px #8a979f;color:transparent}39.72%,95.56%{background:#1a7472;box-shadow:inset 0 0 0 1.5px #1a7472;color:#ffffff}97.78%,100%{background:#ffffff;box-shadow:inset 0 0 0 1.5px #8a979f;color:transparent}}
+@keyframes qcbadj{0%,41.11%{background:#ffffff;box-shadow:inset 0 0 0 1.5px #8a979f;color:transparent}41.94%,95.56%{background:#1a7472;box-shadow:inset 0 0 0 1.5px #1a7472;color:#ffffff}97.78%,100%{background:#ffffff;box-shadow:inset 0 0 0 1.5px #8a979f;color:transparent}}
+@keyframes qsave{0%,45.56%{background:#e3e7ea;color:#8a979f}46.67%,95.56%{background:#1a7472;color:#ffffff}97.78%,100%{background:#e3e7ea;color:#8a979f}}
+@keyframes qprs{0%,47.78%{transform:none}48.33%,48.89%{transform:scale(.94)}51.11%,100%{transform:none}}
+@keyframes qdim{0%,14.44%{opacity:.45}16.67%,95.56%{opacity:1}97.78%,100%{opacity:.45}}
+@keyframes qic0{0%,52.22%{opacity:0;transform:scale(.5)}53.89%,95.56%{opacity:1;transform:none}97.78%,100%{opacity:0;transform:scale(.5)}}
+@keyframes qbg0{0%,51.67%{background:#ffffff;box-shadow:inset 3px 0 0 transparent}53.89%,95.56%{background:#fff7f9;box-shadow:inset 3px 0 0 #e0245e}97.78%,100%{background:#ffffff;box-shadow:inset 3px 0 0 transparent}}
+@keyframes qcl1{0%,50.00%{max-height:60px;opacity:1}53.33%,95.56%{max-height:0;opacity:0}97.78%,100%{max-height:60px;opacity:1}}
+@keyframes qic2{0%,52.22%{opacity:0;transform:scale(.5)}53.89%,95.56%{opacity:1;transform:none}97.78%,100%{opacity:0;transform:scale(.5)}}
+@keyframes qbg2{0%,51.67%{background:#ffffff;box-shadow:inset 3px 0 0 transparent}53.89%,95.56%{background:#fff7f9;box-shadow:inset 3px 0 0 #e0245e}97.78%,100%{background:#ffffff;box-shadow:inset 3px 0 0 transparent}}
+@keyframes qcl3{0%,50.00%{max-height:60px;opacity:1}53.33%,95.56%{max-height:0;opacity:0}97.78%,100%{max-height:60px;opacity:1}}
+@keyframes qic4{0%,52.22%{opacity:0;transform:scale(.5)}53.89%,95.56%{opacity:1;transform:none}97.78%,100%{opacity:0;transform:scale(.5)}}
+@keyframes qbg4{0%,51.67%{background:#ffffff;box-shadow:inset 3px 0 0 transparent}53.89%,95.56%{background:#fff7f9;box-shadow:inset 3px 0 0 #e0245e}97.78%,100%{background:#ffffff;box-shadow:inset 3px 0 0 transparent}}
+@keyframes qcl5{0%,50.00%{max-height:60px;opacity:1}53.33%,95.56%{max-height:0;opacity:0}97.78%,100%{max-height:60px;opacity:1}}
+@keyframes qcl6{0%,50.00%{max-height:60px;opacity:1}53.33%,95.56%{max-height:0;opacity:0}97.78%,100%{max-height:60px;opacity:1}}
+@keyframes qmb{0%,51.11%{opacity:1}52.50%,95.56%{opacity:0}97.78%,100%{opacity:1}}
+@keyframes qma{0%,52.22%{opacity:0}53.89%,95.56%{opacity:1}97.78%,100%{opacity:0}}
+@keyframes qhb{0%,51.11%{opacity:1}52.50%,95.56%{opacity:0}97.78%,100%{opacity:1}}
+@keyframes qha{0%,51.67%{opacity:0}53.33%,95.56%{opacity:1}97.78%,100%{opacity:0}}
+@keyframes qlg{0%,52.22%{box-shadow:0 0 0 1px #e3e7ea}55.00%,95.56%{box-shadow:0 0 0 2px #e0245e,0 10px 26px -10px rgba(224,36,94,.5)}97.78%,100%{box-shadow:0 0 0 1px #e3e7ea}}
+@keyframes qcb0{0%,51.11%{opacity:1}52.50%,95.56%{opacity:0}97.78%,100%{opacity:1}}
+@keyframes qca0{0%,52.22%{opacity:0;transform:translateY(6px)}53.89%,95.56%{opacity:1;transform:none}97.78%,100%{opacity:0;transform:translateY(6px)}}
+@keyframes qs0{0%,2.22%{opacity:.4}4.44%,95.56%{opacity:1}97.78%,100%{opacity:.4}}
+@keyframes qc0{0%,3.89%{background:#d5dcdf}5.56%,95.56%{background:#3fbab7}97.78%,100%{background:#d5dcdf}}
+@keyframes qs1{0%,16.67%{opacity:.4}18.89%,95.56%{opacity:1}97.78%,100%{opacity:.4}}
+@keyframes qc1{0%,18.33%{background:#d5dcdf}20.00%,95.56%{background:#3fbab7}97.78%,100%{background:#d5dcdf}}
+@keyframes qs2{0%,38.33%{opacity:.4}40.56%,95.56%{opacity:1}97.78%,100%{opacity:.4}}
+@keyframes qc2{0%,40.00%{background:#d5dcdf}41.67%,95.56%{background:#3fbab7}97.78%,100%{background:#d5dcdf}}
+@keyframes qfin{0%,54.44%{opacity:.4;box-shadow:0 0 0 1px #e3e7ea}57.22%,95.56%{opacity:1;box-shadow:0 0 0 2px #3fbab7,0 8px 24px -8px rgba(63,186,183,.6)}97.78%,100%{opacity:.4;box-shadow:0 0 0 1px #e3e7ea}}
+.qcbrc{animation:qcbrc 18.0s ease-out infinite}
+.qcbex{animation:qcbex 18.0s ease-out infinite}
+.qcbae{animation:qcbae 18.0s ease-out infinite}
+.qcbkev{animation:qcbkev 18.0s ease-out infinite}
+.qcbrdy{animation:qcbrdy 18.0s ease-out infinite}
+.qcbver{animation:qcbver 18.0s ease-out infinite}
+.qcbeps{animation:qcbeps 18.0s ease-out infinite}
+.qcbnet{animation:qcbnet 18.0s ease-out infinite}
+.qcbadj{animation:qcbadj 18.0s ease-out infinite}
+.qsave{animation:qsave 18.0s ease-out infinite}
+.qprs{animation:qprs 18.0s ease-out infinite}
+.qdim{animation:qdim 18.0s ease-out infinite}
+.qic0{animation:qic0 18.0s ease-out infinite}
+.qbg0{animation:qbg0 18.0s ease-out infinite}
+.qcl1{animation:qcl1 18.0s ease-out infinite}
+.qic2{animation:qic2 18.0s ease-out infinite}
+.qbg2{animation:qbg2 18.0s ease-out infinite}
+.qcl3{animation:qcl3 18.0s ease-out infinite}
+.qic4{animation:qic4 18.0s ease-out infinite}
+.qbg4{animation:qbg4 18.0s ease-out infinite}
+.qcl5{animation:qcl5 18.0s ease-out infinite}
+.qcl6{animation:qcl6 18.0s ease-out infinite}
+.qmb{animation:qmb 18.0s ease-out infinite}
+.qma{animation:qma 18.0s ease-out infinite}
+.qhb{animation:qhb 18.0s ease-out infinite}
+.qha{animation:qha 18.0s ease-out infinite}
+.qlg{animation:qlg 18.0s ease-out infinite}
+.qcb0{animation:qcb0 18.0s ease-out infinite}
+.qca0{animation:qca0 18.0s ease-out infinite}
+.qs0{animation:qs0 18.0s ease-out infinite}
+.qc0{animation:qc0 18.0s ease-out infinite}
+.qs1{animation:qs1 18.0s ease-out infinite}
+.qc1{animation:qc1 18.0s ease-out infinite}
+.qs2{animation:qs2 18.0s ease-out infinite}
+.qc2{animation:qc2 18.0s ease-out infinite}
+.qfin{animation:qfin 18.0s ease-out infinite}
+
+@keyframes pzic0{0%,33.33%{opacity:0;transform:scale(.5)}36.67%,91.11%{opacity:1;transform:none}95.56%,100%{opacity:0;transform:scale(.5)}}
+@keyframes pzbg0{0%,32.22%{background:#fff;box-shadow:inset 3px 0 0 transparent}36.67%,91.11%{background:#fff7f9;box-shadow:inset 3px 0 0 #e0245e}95.56%,100%{background:#fff;box-shadow:inset 3px 0 0 transparent}}
+@keyframes pzcl1{0%,28.89%{max-height:60px;opacity:1}35.56%,91.11%{max-height:0;opacity:0}95.56%,100%{max-height:60px;opacity:1}}
+@keyframes pzic2{0%,33.33%{opacity:0;transform:scale(.5)}36.67%,91.11%{opacity:1;transform:none}95.56%,100%{opacity:0;transform:scale(.5)}}
+@keyframes pzbg2{0%,32.22%{background:#fff;box-shadow:inset 3px 0 0 transparent}36.67%,91.11%{background:#fff7f9;box-shadow:inset 3px 0 0 #e0245e}95.56%,100%{background:#fff;box-shadow:inset 3px 0 0 transparent}}
+@keyframes pzcl3{0%,28.89%{max-height:60px;opacity:1}35.56%,91.11%{max-height:0;opacity:0}95.56%,100%{max-height:60px;opacity:1}}
+@keyframes pzic4{0%,33.33%{opacity:0;transform:scale(.5)}36.67%,91.11%{opacity:1;transform:none}95.56%,100%{opacity:0;transform:scale(.5)}}
+@keyframes pzbg4{0%,32.22%{background:#fff;box-shadow:inset 3px 0 0 transparent}36.67%,91.11%{background:#fff7f9;box-shadow:inset 3px 0 0 #e0245e}95.56%,100%{background:#fff;box-shadow:inset 3px 0 0 transparent}}
+@keyframes pzcl5{0%,28.89%{max-height:60px;opacity:1}35.56%,91.11%{max-height:0;opacity:0}95.56%,100%{max-height:60px;opacity:1}}
+@keyframes pzhb{0%,31.11%{opacity:1}33.89%,91.11%{opacity:0}95.56%,100%{opacity:1}}
+@keyframes pzha{0%,32.22%{opacity:0}35.56%,91.11%{opacity:1}95.56%,100%{opacity:0}}
+@keyframes pznb{0%,31.11%{opacity:1}33.89%,91.11%{opacity:0}95.56%,100%{opacity:1}}
+@keyframes pzna{0%,32.22%{opacity:0}35.56%,91.11%{opacity:1}95.56%,100%{opacity:0}}
+@keyframes pzmb{0%,31.11%{opacity:1}33.89%,91.11%{opacity:0}95.56%,100%{opacity:1}}
+@keyframes pzma{0%,32.22%{opacity:0}35.56%,91.11%{opacity:1}95.56%,100%{opacity:0}}
+@keyframes pzgl{0%,33.33%{box-shadow:0 0 0 1px #e3e7ea}38.89%,91.11%{box-shadow:0 0 0 2px #e0245e,0 10px 26px -10px rgba(224,36,94,.5)}95.56%,100%{box-shadow:0 0 0 1px #e3e7ea}}
+.pzic0{animation:pzic0 9.0s ease-out infinite}
+.pzbg0{animation:pzbg0 9.0s ease-out infinite}
+.pzcl1{animation:pzcl1 9.0s ease-out infinite}
+.pzic2{animation:pzic2 9.0s ease-out infinite}
+.pzbg2{animation:pzbg2 9.0s ease-out infinite}
+.pzcl3{animation:pzcl3 9.0s ease-out infinite}
+.pzic4{animation:pzic4 9.0s ease-out infinite}
+.pzbg4{animation:pzbg4 9.0s ease-out infinite}
+.pzcl5{animation:pzcl5 9.0s ease-out infinite}
+.pzhb{animation:pzhb 9.0s ease-out infinite}
+.pzha{animation:pzha 9.0s ease-out infinite}
+.pznb{animation:pznb 9.0s ease-out infinite}
+.pzna{animation:pzna 9.0s ease-out infinite}
+.pzmb{animation:pzmb 9.0s ease-out infinite}
+.pzma{animation:pzma 9.0s ease-out infinite}
+.pzgl{animation:pzgl 9.0s ease-out infinite}
+
+
+@keyframes vst0{0%,18.89%{opacity:1}20.00%,97.78%{opacity:0}100%{opacity:1}}
+@keyframes vst1{0%,18.89%{opacity:0;transform:scale(.9)}20.28%,36.67%{opacity:1;transform:none}37.78%,100%{opacity:0}}
+@keyframes vst2{0%,36.67%{opacity:0;transform:scale(.9)}38.06%,58.89%{opacity:1;transform:none}60.00%,100%{opacity:0}}
+@keyframes vst3{0%,58.89%{opacity:0;transform:scale(.9)}60.28%,96.67%{opacity:1;transform:none}97.78%,100%{opacity:0}}
+@keyframes vvb{0%,57.22%{opacity:1}58.89%,95.56%{opacity:0}97.78%,100%{opacity:1}}
+@keyframes vva{0%,57.22%{opacity:0}58.89%,95.56%{opacity:1}97.78%,100%{opacity:0}}
+@keyframes vdec{0%,38.33%{opacity:0;transform:translateY(8px)}40.28%,95.56%{opacity:1;transform:none}97.78%,100%{opacity:0;transform:translateY(8px)}}
+@keyframes vupd{0%,47.78%{opacity:0;transform:translateY(8px)}49.72%,95.56%{opacity:1;transform:none}97.78%,100%{opacity:0;transform:translateY(8px)}}
+@keyframes vd1{0%,10.56%{opacity:0}11.67%,18.89%{opacity:1}20.00%,100%{opacity:0}}
+@keyframes vd1h{0%,13.33%{background:#ffffff}14.17%,18.89%{background:#eef1f2}21.11%,100%{background:#ffffff}}
+@keyframes vd2{0%,28.33%{opacity:0}29.44%,36.67%{opacity:1}37.78%,100%{opacity:0}}
+@keyframes vd2h{0%,31.11%{background:#ffffff}31.94%,36.67%{background:#eef1f2}38.89%,100%{background:#ffffff}}
+@keyframes ve0{0%,2.22%{opacity:0;transform:translateX(-8px)}4.44%,95.56%{opacity:1;transform:none}97.78%,100%{opacity:0;transform:translateX(-8px)}}
+@keyframes ve1{0%,19.44%{opacity:0;transform:translateX(-8px)}21.67%,95.56%{opacity:1;transform:none}97.78%,100%{opacity:0;transform:translateX(-8px)}}
+@keyframes ve2{0%,37.22%{opacity:0;transform:translateX(-8px)}39.44%,95.56%{opacity:1;transform:none}97.78%,100%{opacity:0;transform:translateX(-8px)}}
+@keyframes ve3{0%,48.89%{opacity:0;transform:translateX(-8px)}51.11%,95.56%{opacity:1;transform:none}97.78%,100%{opacity:0;transform:translateX(-8px)}}
+@keyframes ve4{0%,59.44%{opacity:0;transform:translateX(-8px)}61.67%,95.56%{opacity:1;transform:none}97.78%,100%{opacity:0;transform:translateX(-8px)}}
+@keyframes vs0{0%,2.22%{opacity:.4}4.44%,95.56%{opacity:1}97.78%,100%{opacity:.4}}
+@keyframes vc0{0%,3.89%{background:#d5dcdf}5.56%,95.56%{background:#3fbab7}97.78%,100%{background:#d5dcdf}}
+@keyframes vs1{0%,19.44%{opacity:.4}21.67%,95.56%{opacity:1}97.78%,100%{opacity:.4}}
+@keyframes vc1{0%,21.11%{background:#d5dcdf}22.78%,95.56%{background:#3fbab7}97.78%,100%{background:#d5dcdf}}
+@keyframes vs2{0%,37.22%{opacity:.4}39.44%,95.56%{opacity:1}97.78%,100%{opacity:.4}}
+@keyframes vc2{0%,38.89%{background:#d5dcdf}40.56%,95.56%{background:#3fbab7}97.78%,100%{background:#d5dcdf}}
+@keyframes vs3{0%,48.89%{opacity:.4}51.11%,95.56%{opacity:1}97.78%,100%{opacity:.4}}
+@keyframes vc3{0%,50.56%{background:#d5dcdf}52.22%,95.56%{background:#3fbab7}97.78%,100%{background:#d5dcdf}}
+@keyframes vfin{0%,60.56%{opacity:.4;box-shadow:0 0 0 1px #e3e7ea}63.33%,95.56%{opacity:1;box-shadow:0 0 0 2px #3fbab7,0 8px 24px -8px rgba(63,186,183,.6)}97.78%,100%{opacity:.4;box-shadow:0 0 0 1px #e3e7ea}}
+.vst0{animation:vst0 18.0s linear infinite}
+.vst1{animation:vst1 18.0s ease-out infinite}
+.vst2{animation:vst2 18.0s ease-out infinite}
+.vst3{animation:vst3 18.0s ease-out infinite}
+.vvb{animation:vvb 18.0s ease-out infinite}
+.vva{animation:vva 18.0s ease-out infinite}
+.vdec{animation:vdec 18.0s ease-out infinite}
+.vupd{animation:vupd 18.0s ease-out infinite}
+.vd1{animation:vd1 18.0s linear infinite}
+.vd1h{animation:vd1h 18.0s ease-out infinite}
+.vd2{animation:vd2 18.0s linear infinite}
+.vd2h{animation:vd2h 18.0s ease-out infinite}
+.ve0{animation:ve0 18.0s ease-out infinite}
+.ve1{animation:ve1 18.0s ease-out infinite}
+.ve2{animation:ve2 18.0s ease-out infinite}
+.ve3{animation:ve3 18.0s ease-out infinite}
+.ve4{animation:ve4 18.0s ease-out infinite}
+.vs0{animation:vs0 18.0s ease-out infinite}
+.vc0{animation:vc0 18.0s ease-out infinite}
+.vs1{animation:vs1 18.0s ease-out infinite}
+.vc1{animation:vc1 18.0s ease-out infinite}
+.vs2{animation:vs2 18.0s ease-out infinite}
+.vc2{animation:vc2 18.0s ease-out infinite}
+.vs3{animation:vs3 18.0s ease-out infinite}
+.vc3{animation:vc3 18.0s ease-out infinite}
+.vfin{animation:vfin 18.0s ease-out infinite}
+</style>
 </head>
 <body>
-  <div class="page">
-    <nav class="nav">
-      <a class="logo" aria-label="ARIANNA" href="index.html">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 206.8 67.1" role="img" aria-label="ARIANNA logo">
-          <defs>
-            <style>
-              .cls-1 {
-                fill: #3fbab7;
-              }
-            </style>
-          </defs>
-          <g>
-            <g id="Laag_1">
-              <polygon points="162.1 20.4 159.4 20.4 159.4 31.2 147.7 20.5 147.7 37 150.4 37 150.4 26.3 162.1 36.9 162.1 20.4"/>
-              <path d="M197.8,25.8l2.9,6.3h-5.9l3-6.3ZM189.3,37h2.9l1.3-2.7h8.5l1.3,2.7h2.9l-8.4-16.5-8.4,16.5Z"/>
-              <path d="M136.5,32h-5.9l3-6.3,3,6.3ZM125.1,37h2.9l1.3-2.7h8.5l1.3,2.7h2.9l-8.4-16.5-8.5,16.5Z"/>
-              <polygon points="183.6 20.4 181 20.4 181 31.2 169.3 20.5 169.3 37 172 37 172 26.3 183.6 36.9 183.6 20.4"/>
-              <path d="M98.7,22.7h4.8c.6,0,1.2.1,1.6.4.4.2.7.6.9.9.2.3.3.7.4,1.1,0,.4,0,.7,0,1,0,.5,0,1-.3,1.4-.2.4-.4.7-.7,1-.3.3-.6.5-1,.6-.4.1-.7.2-1,.2h-4.8v-6.5ZM102.6,31.6c.7.9,1.3,1.9,2,2.8.6.9,1.3,1.7,1.9,2.6h3.1c-1.3-1.8-2.6-3.5-3.9-5.3l-.3-.3.4-.2c1-.4,1.8-1.1,2.5-2,.6-.9.9-2,.9-3.2s-.1-1.6-.4-2.3c-.3-.7-.7-1.3-1.1-1.8-.5-.5-1.1-.9-1.8-1.2-.7-.3-1.5-.4-2.3-.4h-7.5v16.6h2.7v-5.5h3.8Z"/>
-              <rect x="116.3" y="20.4" width="2.7" height="16.6"/>
-              <path d="M85.8,32h-5.9l3-6.3,3,6.3ZM74.4,37h2.9l1.3-2.7h8.5l1.3,2.7h2.9l-8.5-16.5-8.4,16.5Z"/>
-              <path class="cls-1" d="M56.8,56.5V.8H1v55.7h20.5v-3.1H4.1V3.9h49.6v49.5h-14.3v-5.6h8.7V9.5H9.7v38.3h13.2c2.4,0,3.9.5,4.7,1.5,1,1.5.8,4.3-.7,8.3-1,2.8-.5,5.7,1.2,7.4,1,.9,2.3,1.4,3.8,1.4s2.8-.4,3.7-.8l-1.2-2.9c-1.9.7-3.4.7-4.3,0-.9-.8-1-2.5-.4-4.1,1.9-5.2,2-8.8.3-11.2-1.3-1.9-3.7-2.8-7.2-2.8h-10.1V12.6h32.2v32.2h-8.7v11.8h20.5Z"/>
-              <polygon class="cls-1" points="36.3 21.3 36.3 36.1 21.5 36.1 21.5 30 30.7 30 30.7 26.9 18.4 26.9 18.4 39.2 39.4 39.2 39.4 18.2 18.4 18.2 18.4 21.3 36.3 21.3"/>
-            </g>
-          </g>
-        </svg>
-      </a>
-      <div class="nav-links">
-        <div class="nav-dropdown">
-          <a class="nav-dropdown-toggle" href="#platform">Platform <span class="nav-dropdown-caret" aria-hidden="true">v</span></a>
-          <div class="nav-dropdown-menu">
-            <a href="#features">Features</a>
-            <a href="#platform">Devices</a>
-            <a href="vulnerability-management-use-cases.html">Vulnerability use cases</a>
-            <a href="#coverage">SBOM support</a>
-          </div>
-        </div>
-        <div class="nav-dropdown">
-          <a class="nav-dropdown-toggle" href="industries.html">Industries <span class="nav-dropdown-caret" aria-hidden="true">v</span></a>
-          <div class="nav-dropdown-menu">
-            <a href="industries.html#automotive">Automotive</a>
-            <a href="industries.html#industrial">Industrial Automation</a>
-            <a href="industries.html#medical">Medical Devices</a>
-            <a href="industries.html#consumer">Consumer Electronics &amp; IoT</a>
-            <a href="industries.html#defense-aerospace">Defense &amp; Aerospace</a>
-            <a href="industries.html#energy-utilities">Energy &amp; Utilities</a>
-            <a href="industries.html#transportation-logistics">Transportation &amp; Logistics</a>
-          </div>
-        </div>
-        <div class="nav-dropdown">
-        <a class="nav-dropdown-toggle" href="resources.html">Resources <span class="nav-dropdown-caret" aria-hidden="true">v</span></a>
-        <div class="nav-dropdown-menu">
-          <a href="resources.html#news">News</a>
-          <a href="resources.html#blog-posts">Blog Posts</a>
-          <a href="resources.html#newsletters">Newsletters</a>
-          <a href="resources.html#articles">Articles</a>
-          <a href="support.html">Support</a>
-          <a href="resources.html#faq">FAQ</a>
-        </div>
-      </div>
-        <div class="nav-dropdown">
-        <a class="nav-dropdown-toggle" href="compliance.html">Compliance <span class="nav-dropdown-caret" aria-hidden="true">v</span></a>
-        <div class="nav-dropdown-menu">
-          <a href="compliance.html">Overview</a>
-          <a href="compliance.html#capabilities">Capabilities</a>
-          <a href="compliance.html#standards">Standards</a>
-          <a href="compliance.html#cra">CRA</a>
-          <a href="compliance.html#red">RED</a>
-        </div>
-      </div>
-        <div class="nav-dropdown">
-        <a class="nav-dropdown-toggle" href="partners.html">Partners <span class="nav-dropdown-caret" aria-hidden="true">v</span></a>
-        <div class="nav-dropdown-menu">
-          <a href="partners.html#partners">Overview</a>
-          <a href="partners.html#implementation-partners">Implementation Partners</a>
-          <a href="partners.html#reseller-partners">Reseller Partners</a>
-          <a href="partners.html#contact">Become a Partner</a>
-        </div>
-      </div>
-      </div>
-      <div style="display: flex; gap: 12px; flex-wrap: wrap; align-items: center;">
-        <a class="nav-cta" href="book-a-demo.html">Book a free Demo</a>
-        <a class="nav-cta" href="free-trial.html">Start a free Trial</a>
-      </div>
-    </nav>
+<a class="skip-link" href="#main" style="position:absolute;left:-9999px;top:8px;z-index:100;padding:10px 16px;background:#0a0a0a;color:#fff;border-radius:6px" onfocus="this.style.left='8px'" onblur="this.style.left='-9999px'">Skip to content</a>
+<div class="site" style="width: 100%; font-family: 'Montserrat', 'Helvetica Neue', Arial, sans-serif; color: #0a0a0a; background: #ffffff; overflow-x: hidden">
 
-    <section class="hero">
-      <div class="hero-content">
-        <div class="eyebrow">Vulnerability Management Platform</div>
-        <h1>The vulnerability management platform designed by experts</h1>
-        <p>
-          ARIANNA helps device manufacturers identify, triage, address, and report vulnerabilities across hardware and software components. Build SBOMs and HBOMs, automate monitoring, and show compliance to global regulations from a single, elegant workspace.
-        </p>
-        <div class="hero-actions">
-          <a class="button primary" href="book-a-demo.html">Book a free Demo</a>
-          <a class="button primary" href="free-trial.html">Start a free Trial</a>
-        </div>
-        <div class="stats">
-          <div class="stat"><strong>250K+</strong><span>Vulnerabilities monitored daily</span></div>
-          <div class="stat"><strong>100+</strong><span>Customers supported globally</span></div>
-          <div class="stat"><strong>7+</strong><span>Years in security research</span></div>
-        </div>
-      </div>
-      <div class="hero-card">
-        <img src="images/ARIANNA_mockup-2_lores.png" alt="ARIANNA platform mockup" width="1000" height="750" fetchpriority="high" decoding="async" />
-      </div>
-    </section>
+<div aria-hidden="true" style="height: 6px; background: linear-gradient(90deg, #7047fd 0%, #b75eee 30%, #5ce1e6 70%, #62ed9c 100%)"></div>
+<header class="site-header" style="background: #ffffff; border-bottom: 1px solid #e3e7ea">
+<div class="site-header-inner" style="max-width: 1240px; margin: 0 auto; padding: 18px 24px; display: flex; flex-wrap: wrap; align-items: center; gap: 16px 32px">
+<a class="site-logo" href="./" aria-label="ARIANNA home" style="display: inline-flex">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 206.8 67.1" role="img" aria-label="ARIANNA logo" style="width: 168px; height: auto; display: block">
+<g fill="#0a0a0a"><polygon points="162.1 20.4 159.4 20.4 159.4 31.2 147.7 20.5 147.7 37 150.4 37 150.4 26.3 162.1 36.9 162.1 20.4"></polygon><path d="M197.8,25.8l2.9,6.3h-5.9l3-6.3ZM189.3,37h2.9l1.3-2.7h8.5l1.3,2.7h2.9l-8.4-16.5-8.4,16.5Z"></path><path d="M136.5,32h-5.9l3-6.3,3,6.3ZM125.1,37h2.9l1.3-2.7h8.5l1.3,2.7h2.9l-8.4-16.5-8.5,16.5Z"></path><polygon points="183.6 20.4 181 20.4 181 31.2 169.3 20.5 169.3 37 172 37 172 26.3 183.6 36.9 183.6 20.4"></polygon><path d="M98.7,22.7h4.8c.6,0,1.2.1,1.6.4.4.2.7.6.9.9.2.3.3.7.4,1.1,0,.4,0,.7,0,1,0,.5,0,1-.3,1.4-.2.4-.4.7-.7,1-.3.3-.6.5-1,.6-.4.1-.7.2-1,.2h-4.8v-6.5ZM102.6,31.6c.7.9,1.3,1.9,2,2.8.6.9,1.3,1.7,1.9,2.6h3.1c-1.3-1.8-2.6-3.5-3.9-5.3l-.3-.3.4-.2c1-.4,1.8-1.1,2.5-2,.6-.9.9-2,.9-3.2s-.1-1.6-.4-2.3c-.3-.7-.7-1.3-1.1-1.8-.5-.5-1.1-.9-1.8-1.2-.7-.3-1.5-.4-2.3-.4h-7.5v16.6h2.7v-5.5h3.8Z"></path><rect x="116.3" y="20.4" width="2.7" height="16.6"></rect><path d="M85.8,32h-5.9l3-6.3,3,6.3ZM74.4,37h2.9l1.3-2.7h8.5l1.3,2.7h2.9l-8.5-16.5-8.4,16.5Z"></path></g>
+<g fill="#3fbab7"><path d="M56.8,56.5V.8H1v55.7h20.5v-3.1H4.1V3.9h49.6v49.5h-14.3v-5.6h8.7V9.5H9.7v38.3h13.2c2.4,0,3.9.5,4.7,1.5,1,1.5.8,4.3-.7,8.3-1,2.8-.5,5.7,1.2,7.4,1,.9,2.3,1.4,3.8,1.4s2.8-.4,3.7-.8l-1.2-2.9c-1.9.7-3.4.7-4.3,0-.9-.8-1-2.5-.4-4.1,1.9-5.2,2-8.8.3-11.2-1.3-1.9-3.7-2.8-7.2-2.8h-10.1V12.6h32.2v32.2h-8.7v11.8h20.5Z"></path><polygon points="36.3 21.3 36.3 36.1 21.5 36.1 21.5 30 30.7 30 30.7 26.9 18.4 26.9 18.4 39.2 39.4 39.2 39.4 18.2 18.4 18.2 18.4 21.3 36.3 21.3"></polygon></g>
+</svg>
+</a>
+<nav id="site-nav" aria-label="Main" style="display: flex; flex-wrap: wrap; gap: 8px 28px; font-size: 15px; font-weight: 500; flex: 1 1 420px">
+<a href="platform.html" style="color: #0a0a0a; text-decoration: none">Platform</a>
+<a href="industries.html" style="color: #0a0a0a; text-decoration: none">Industries</a>
+<a href="compliance.html" style="color: #0a0a0a; text-decoration: none">Compliance</a>
+<a href="resources.html" style="color: #0a0a0a; text-decoration: none">Resources</a>
+<a href="partners.html" style="color: #0a0a0a; text-decoration: none">Partners</a>
+<a href="company.html" style="color: #0a0a0a; text-decoration: none">Company</a>
+</nav>
+<a class="site-header-cta" href="book-a-demo.html" style="min-height: 44px; padding: 0 20px; display: inline-flex; align-items: center; background: #7047fd; color: #ffffff; border-radius: 6px; font-size: 15px; font-weight: 600; text-decoration: none">Book a free demo</a>
+<button class="site-menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Menu"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
+</div>
+</header>
+<main class="site-main" id="main">
 
-    <section class="logo-section is-disabled" aria-labelledby="customer-logos-title">
-      <div class="logo-row" id="customer-logos-title">Companies that work with us:</div>
-      <div class="logos">
-        <div class="logo-card">
-          <img src="images/iseo-logo.svg" alt="ISEO logo" width="220" height="42" decoding="async" />
-        </div>
-        <div class="logo-card">
-          <img src="images/flex-logo.svg" alt="Flex logo" width="220" height="42" decoding="async" />
-        </div>
-        <div class="logo-card">
-          <img src="images/Riello logo.png" alt="Riello logo" width="220" height="42" decoding="async" />
-        </div>
-        <div class="logo-card">
-          <img src="images/Telsy logo.png" alt="Telsy logo" width="220" height="42" decoding="async" />
-        </div>
-        <div class="logo-card">
-          <img src="images/infatron logo.png" alt="Infatron logo" width="220" height="42" decoding="async" />
-        </div>
-        <div class="logo-card">
-          <img src="images/qsd-logo.png" alt="QSD logo" width="220" height="42" decoding="async" />
-        </div>
-        <div class="logo-card">
-          <img src="images/orthofix-logo.svg" alt="Orthofix logo" width="220" height="42" decoding="async" />
-        </div>
-      </div>
-    </section>
+<section style="background: #ffffff; position: relative; overflow: hidden">
+<div style="position: relative; max-width: 1240px; margin: 0 auto; padding: 88px 24px 80px; display: flex; flex-wrap: wrap; gap: 56px; align-items: center">
+<div style="flex: 1 1 560px; min-width: 0; display: flex; flex-direction: column; gap: 24px">
+<div style="font-size: 12px; font-weight: 600; letter-spacing: 0.24em; text-transform: uppercase; color: #1a7472">VULNERABILITY MANAGEMENT PLATFORM</div>
+<h1 style="margin: 0; font-size: 56px; line-height: 1.07; font-weight: 700">We help keep <br>your devices secure and CRA compliant <br>throughout their lifecycle</h1>
+<p style="margin: 0; font-size: 20px; line-height: 1.6; color: #33414c; max-width: 640px">ARIANNA monitors the vulnerabilities in your devices, shows you which ones really matter, and keeps the evidence ready, throughout their entire lifecycle.</p>
+<div style="display: flex; flex-wrap: wrap; gap: 16px 24px; align-items: center">
+<a href="book-a-demo.html" style="min-height: 52px; padding: 0 28px; display: inline-flex; align-items: center; background: #7047fd; color: #ffffff; border-radius: 6px; font-size: 16px; font-weight: 600; text-decoration: none">Book a free demo</a>
+<a href="#how" style="font-size: 16px; font-weight: 600">See how it works ↓</a>
+</div>
+<div style="display: flex; flex-wrap: wrap; gap: 8px; padding-top: 8px">
+<span style="padding: 8px 12px; background: #e8f6f5; border-radius: 4px; font-size: 13px; font-weight: 500; color: #0a0a0a">Consumer Electronics &amp; Smart Building</span>
+<span style="padding: 8px 12px; background: #e8f6f5; border-radius: 4px; font-size: 13px; font-weight: 500; color: #0a0a0a">Energy &amp; Utility</span>
+<span style="padding: 8px 12px; background: #e8f6f5; border-radius: 4px; font-size: 13px; font-weight: 500; color: #0a0a0a">Medical</span>
+<span style="padding: 8px 12px; background: #e8f6f5; border-radius: 4px; font-size: 13px; font-weight: 500; color: #0a0a0a">Commercial &amp; Professional</span>
+<span style="padding: 8px 12px; background: #e8f6f5; border-radius: 4px; font-size: 13px; font-weight: 500; color: #0a0a0a">Industrial Control</span>
+<span style="padding: 8px 12px; background: #e8f6f5; border-radius: 4px; font-size: 13px; font-weight: 500; color: #0a0a0a">Automotive</span>
+</div>
+</div>
+<div style="flex: 1 1 380px; min-width: 0; max-width: 460px; margin-left: auto; background: #f2faf9; box-shadow: 0 0 0 1px #c7e6e4; border-radius: 10px; padding: 28px; display: flex; flex-direction: column; gap: 4px">
+<span style="font-size: 12px; font-weight: 600; letter-spacing: 0.2em; text-transform: uppercase; color: #1a7472; padding-bottom: 12px">How ARIANNA gets you there</span>
+<ol style="margin: 0; padding: 0; list-style: none; display: flex; flex-direction: column">
+<li style="display: flex; gap: 16px; padding: 16px 0; border-top: 1px solid #c7e6e4"><span style="flex: none; width: 32px; height: 32px; border-radius: 50%; background: #1a7472; color: #ffffff; font-size: 14px; font-weight: 700; display: inline-flex; align-items: center; justify-content: center">1</span><div style="display: flex; flex-direction: column; gap: 4px"><strong style="font-size: 17px">Know what is inside</strong><span style="font-size: 14px; line-height: 1.55; color: #33414c">SBOM and HBOM for every device and firmware version.</span></div></li>
+<li style="display: flex; gap: 16px; padding: 16px 0; border-top: 1px solid #c7e6e4"><span style="flex: none; width: 32px; height: 32px; border-radius: 50%; background: #1a7472; color: #ffffff; font-size: 14px; font-weight: 700; display: inline-flex; align-items: center; justify-content: center">2</span><div style="display: flex; flex-direction: column; gap: 4px"><strong style="font-size: 17px">Catch every new vulnerability</strong><span style="font-size: 14px; line-height: 1.55; color: #33414c">Monitored every day and ranked by real risk to your devices.</span></div></li>
+<li style="display: flex; gap: 16px; padding: 16px 0; border-top: 1px solid #c7e6e4"><span style="flex: none; width: 32px; height: 32px; border-radius: 50%; background: #1a7472; color: #ffffff; font-size: 14px; font-weight: 700; display: inline-flex; align-items: center; justify-content: center">3</span><div style="display: flex; flex-direction: column; gap: 4px"><strong style="font-size: 17px">Prove compliance</strong><span style="font-size: 14px; line-height: 1.55; color: #33414c">Audit-ready reports and evidence for the CRA and other regulations.</span></div></li>
+</ol>
+</div>
+</div>
+</section>
 
-    <section class="section" id="platform">
-      <div class="section-title">
-        <h2>Device manufacturers rely on ARIANNA to keep products secure and prove compliance.</h2>
-        <p>Designed around a robust vulnerability management process for connected devices and systems.</p>
-      </div>
-      <div class="feature-grid">
-        <div class="feature-card">
-          <div class="icon"></div>
-          <h3>Save time and reduce cost</h3>
-          <p>Automate vulnerability tracking and prioritize fixes using enriched exploit intelligence and contextual risk scoring.</p>
-        </div>
-        <div class="feature-card">
-          <div class="icon"></div>
-          <h3>Reach compliance faster</h3>
-          <p>Generate SBOM, HBOM, and VEX reports that align with major regulations including RED DA, FDA, and CRA.</p>
-        </div>
-        <div class="feature-card">
-          <div class="icon"></div>
-          <h3>Accurate device visibility</h3>
-          <p>Build complete device models from software and hardware artifacts to close gaps between engineering and compliance.</p>
-        </div>
-      </div>
-    </section>
+<section aria-labelledby="cra-status-title" style="background: #ffffff">
+<div style="max-width: 1240px; margin: 0 auto; padding: 8px 24px 72px">
+<div style="background: #f2faf9; box-shadow: 0 0 0 1px #c7e6e4; border-radius: 10px; padding: 32px; display: flex; flex-direction: column; gap: 22px">
+<div style="display: flex; justify-content: space-between; align-items: center; gap: 12px">
+<h2 id="cra-status-title" style="margin: 0; font-size: 13px; font-weight: 600; letter-spacing: 0.2em; text-transform: uppercase; color: #1a7472">Where the CRA stands</h2>
+</div>
+<ol style="margin: 0; padding: 0; list-style: none; display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 0 32px">
+<li style="display: flex; gap: 16px; padding: 18px 0; border-top: 1px solid #c7e6e4">
+<span style="font-size: 14px; font-weight: 700; color: #1a7472; min-width: 22px">01</span>
+<div style="display: flex; flex-direction: column; gap: 4px"><strong style="font-size: 18px">Aug 2025</strong><span style="font-size: 14px; line-height: 1.55; color: #33414c">RED cybersecurity requirements apply.</span></div>
+</li>
+<li style="display: flex; gap: 16px; padding: 18px 0; border-top: 1px solid #c7e6e4">
+<span style="font-size: 14px; font-weight: 700; color: #1a7472; min-width: 22px">02</span>
+<div style="display: flex; flex-direction: column; gap: 4px"><strong style="font-size: 18px">Sep 2026 <span style="margin-left: 6px; padding: 3px 8px; background: #1a7472; color: #ffffff; border-radius: 3px; font-size: 11px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; vertical-align: middle">In force now</span></strong><span style="font-size: 14px; line-height: 1.55; color: #33414c">CRA vulnerability reporting: actively exploited vulnerabilities reported to ENISA within 24 hours.</span></div>
+</li>
+<li style="display: flex; gap: 16px; padding: 18px 0; border-top: 1px solid #c7e6e4">
+<span style="font-size: 14px; font-weight: 700; color: #1a7472; min-width: 22px">03</span>
+<div style="display: flex; flex-direction: column; gap: 4px"><strong style="font-size: 18px">Dec 2027</strong><span style="font-size: 14px; line-height: 1.55; color: #33414c">The CRA fully applies to every connected product sold in the EU.</span></div>
+</li>
+</ol>
+<p style="margin: 0; padding-top: 18px; border-top: 1px solid #c7e6e4; font-size: 14px; line-height: 1.55; color: #33414c">Fines reach <strong style="color: #0a0a0a">€15M or 2.5% of global turnover</strong>, and non-compliant products lose CE marking.</p>
+</div>
+</div>
+</section>
 
-    <section class="section" id="features">
-      <div class="section-title">
-        <h2>Key features</h2>
-        <p>Your complete solution for SBOM, HBOM, and vulnerability management.</p>
-      </div>
-      <div class="feature-grid">
-        <div class="feature-card" id="sbom">
-          <div class="icon"></div>
-          <h3>SBOM & HBOM governance</h3>
-          <p>Maintain accurate software and hardware component inventories with automated updates through APIs or the ARIANNA workspace.</p>
-        </div>
-        <div class="feature-card" id="hbom">
-          <div class="icon"></div>
-          <h3>SBOM creation support</h3>
-          <p>The SBOM is generated from trusted data collected by ARIANNA SCA tools: no source code disclosure, no reverse engineering of binaries, and no agents installed on target devices.</p>
-        </div>
-        <div class="feature-card">
-          <div class="icon"></div>
-          <h3>Continuous vulnerability monitoring</h3>
-          <p>Identify known vulnerabilities in third-party components by integrating with public databases such as the NVD, GHSA, CVE.org, and the EUVD.</p>
-        </div>
-        <div class="feature-card">
-          <div class="icon"></div>
-          <h3>False-positive detection</h3>
-          <p>Automatically identify patched vulnerabilities and findings rejected by trusted external intelligence, keeping remediation queues accurate.</p>
-        </div>
-        <div class="feature-card">
-          <div class="icon"></div>
-          <h3>Workflow-driven remediation</h3>
-          <p>Assign owners, track deadlines, and export audit-ready reports for every vulnerability lifecycle step.</p>
-        </div>
-        <div class="feature-card">
-          <div class="icon"></div>
-          <h3>Exploitable vulnerability detection</h3>
-          <p>Prioritize vulnerability triage using exploitability evidence such as KEV listings, weaponized exploits, attack vectors, and EPSS scores.</p>
-        </div>
-        <div class="feature-card">
-          <div class="icon"></div>
-          <h3>Policy management</h3>
-          <p>Map internal and external requirements to enforce SLAs and stay ahead of compliance deadlines.</p>
-        </div>
-        <div class="feature-card">
-          <div class="icon"></div>
-          <h3>API and integrations</h3>
-          <p>Connect ARIANNA with your existing tooling through APIs and integrations that keep vulnerability data synchronized across your workflow.</p>
-        </div>
-        <div class="feature-card">
-          <div class="icon"></div>
-          <h3>Reporting</h3>
-          <p>Generate clear, audit-ready reports for security, engineering, and compliance teams without manual consolidation.</p>
-        </div>
-        <div class="feature-card">
-          <div class="icon"></div>
-          <h3>Hosted in the EU</h3>
-          <p>Your data is hosted and processed within the European Union, helping you maintain regional data residency and privacy requirements.</p>
-        </div>
-      </div>
-    </section>
+<section aria-labelledby="customers-title" style="background: #ffffff; border-top: 1px solid #e3e7ea; border-bottom: 1px solid #e3e7ea">
+<div style="max-width: 1240px; margin: 0 auto; padding: 48px 24px 40px; display: flex; flex-direction: column; gap: 28px">
+<h2 id="customers-title" style="margin: 0; font-size: 13px; font-weight: 600; letter-spacing: 0.2em; text-transform: uppercase; color: #5b6b7a; text-align: center">Trusted by device manufacturers</h2>
+<div class="logo-marquee" style="overflow: hidden; -webkit-mask-image: linear-gradient(90deg, transparent, #000 8%, #000 92%, transparent); mask-image: linear-gradient(90deg, transparent, #000 8%, #000 92%, transparent)">
+<div class="logo-track" style="display: flex; gap: 24px; width: max-content">
+<div style="display: flex; gap: 24px">
+<div style="flex: none; width: 200px; height: 96px; display: flex; align-items: center; justify-content: center; padding: 16px 28px"><img src="images/site/logo-iseo.webp" alt="ISEO" style="max-width: 100%; max-height: 64px; width: auto; height: auto; display: block; filter: grayscale(1); mix-blend-mode: multiply"></div>
+<div style="flex: none; width: 200px; height: 96px; display: flex; align-items: center; justify-content: center; padding: 16px 28px"><img src="images/site/logo-seitron.webp" alt="Seitron" style="max-width: 100%; max-height: 40px; width: auto; height: auto; display: block; filter: brightness(0)"></div>
+<div style="flex: none; width: 200px; height: 96px; display: flex; align-items: center; justify-content: center; padding: 16px 28px"><img src="images/site/logo-siare.webp" alt="Siare Engineering" style="max-width: 100%; max-height: 52px; width: auto; height: auto; display: block; filter: grayscale(1) brightness(0.6)"></div>
+<div style="flex: none; width: 200px; height: 96px; display: flex; align-items: center; justify-content: center; padding: 16px 28px"><img src="images/site/logo-thytronic.webp" alt="Thytronic" style="max-width: 100%; max-height: 30px; width: auto; height: auto; display: block; filter: grayscale(1) brightness(0.6)"></div>
+<div style="flex: none; width: 200px; height: 96px; display: flex; align-items: center; justify-content: center; padding: 16px 28px"><img src="images/site/logo-satelicom.svg" alt="Satelicom" style="max-width: 100%; max-height: 48px; width: auto; height: auto; display: block; filter: grayscale(1) brightness(0.6)"></div>
+<div style="flex: none; width: 200px; height: 96px; display: flex; align-items: center; justify-content: center; padding: 16px 28px"><img src="images/site/logo-iseo.webp" alt="" style="max-width: 100%; max-height: 64px; width: auto; height: auto; display: block; filter: grayscale(1); mix-blend-mode: multiply"></div>
+<div style="flex: none; width: 200px; height: 96px; display: flex; align-items: center; justify-content: center; padding: 16px 28px"><img src="images/site/logo-seitron.webp" alt="" style="max-width: 100%; max-height: 40px; width: auto; height: auto; display: block; filter: brightness(0)"></div>
+<div style="flex: none; width: 200px; height: 96px; display: flex; align-items: center; justify-content: center; padding: 16px 28px"><img src="images/site/logo-siare.webp" alt="" style="max-width: 100%; max-height: 52px; width: auto; height: auto; display: block; filter: grayscale(1) brightness(0.6)"></div>
+<div style="flex: none; width: 200px; height: 96px; display: flex; align-items: center; justify-content: center; padding: 16px 28px"><img src="images/site/logo-thytronic.webp" alt="" style="max-width: 100%; max-height: 30px; width: auto; height: auto; display: block; filter: grayscale(1) brightness(0.6)"></div>
+<div style="flex: none; width: 200px; height: 96px; display: flex; align-items: center; justify-content: center; padding: 16px 28px"><img src="images/site/logo-satelicom.svg" alt="" style="max-width: 100%; max-height: 48px; width: auto; height: auto; display: block; filter: grayscale(1) brightness(0.6)"></div>
+</div>
+<div aria-hidden="true" style="display: flex; gap: 24px">
+<div style="flex: none; width: 200px; height: 96px; display: flex; align-items: center; justify-content: center; padding: 16px 28px"><img src="images/site/logo-iseo.webp" alt="" style="max-width: 100%; max-height: 64px; width: auto; height: auto; display: block; filter: grayscale(1); mix-blend-mode: multiply"></div>
+<div style="flex: none; width: 200px; height: 96px; display: flex; align-items: center; justify-content: center; padding: 16px 28px"><img src="images/site/logo-seitron.webp" alt="" style="max-width: 100%; max-height: 40px; width: auto; height: auto; display: block; filter: brightness(0)"></div>
+<div style="flex: none; width: 200px; height: 96px; display: flex; align-items: center; justify-content: center; padding: 16px 28px"><img src="images/site/logo-siare.webp" alt="" style="max-width: 100%; max-height: 52px; width: auto; height: auto; display: block; filter: grayscale(1) brightness(0.6)"></div>
+<div style="flex: none; width: 200px; height: 96px; display: flex; align-items: center; justify-content: center; padding: 16px 28px"><img src="images/site/logo-thytronic.webp" alt="" style="max-width: 100%; max-height: 30px; width: auto; height: auto; display: block; filter: grayscale(1) brightness(0.6)"></div>
+<div style="flex: none; width: 200px; height: 96px; display: flex; align-items: center; justify-content: center; padding: 16px 28px"><img src="images/site/logo-satelicom.svg" alt="" style="max-width: 100%; max-height: 48px; width: auto; height: auto; display: block; filter: grayscale(1) brightness(0.6)"></div>
+<div style="flex: none; width: 200px; height: 96px; display: flex; align-items: center; justify-content: center; padding: 16px 28px"><img src="images/site/logo-iseo.webp" alt="" style="max-width: 100%; max-height: 64px; width: auto; height: auto; display: block; filter: grayscale(1); mix-blend-mode: multiply"></div>
+<div style="flex: none; width: 200px; height: 96px; display: flex; align-items: center; justify-content: center; padding: 16px 28px"><img src="images/site/logo-seitron.webp" alt="" style="max-width: 100%; max-height: 40px; width: auto; height: auto; display: block; filter: brightness(0)"></div>
+<div style="flex: none; width: 200px; height: 96px; display: flex; align-items: center; justify-content: center; padding: 16px 28px"><img src="images/site/logo-siare.webp" alt="" style="max-width: 100%; max-height: 52px; width: auto; height: auto; display: block; filter: grayscale(1) brightness(0.6)"></div>
+<div style="flex: none; width: 200px; height: 96px; display: flex; align-items: center; justify-content: center; padding: 16px 28px"><img src="images/site/logo-thytronic.webp" alt="" style="max-width: 100%; max-height: 30px; width: auto; height: auto; display: block; filter: grayscale(1) brightness(0.6)"></div>
+<div style="flex: none; width: 200px; height: 96px; display: flex; align-items: center; justify-content: center; padding: 16px 28px"><img src="images/site/logo-satelicom.svg" alt="" style="max-width: 100%; max-height: 48px; width: auto; height: auto; display: block; filter: grayscale(1) brightness(0.6)"></div>
+</div>
+</div>
+</div>
+</div>
+</section>
 
-    <section class="section" id="coverage">
-      <div class="split">
-        <div>
-          <h2>Extensive support across ecosystems and development frameworks</h2>
-          <p style="color: var(--muted); line-height: 1.7;">
-            ARIANNA provides proprietary SCA tools that analyze build artifacts to generate a complete SBOM with accurate and reliable vulnerability mapping.
-          </p>
-          <p style="color: var(--muted); line-height: 1.7;">
-            Unlike traditional approaches, ARIANNA requires no source code disclosure, avoids reverse engineering of binaries, which often leads to incomplete or inaccurate SBOMs, and does not rely on agents installed on target devices, eliminating operational overhead and lifecycle maintenance complexity.
-          </p>
-          <div class="pill-list" style="margin-top: 20px;">
-            <span class="pill">Yocto</span>
-            <span class="pill">Debian</span>
-            <span class="pill">Ubuntu</span>
-            <span class="pill">Alpine</span>
-            <span class="pill">Red Hat</span>
-            <span class="pill">Gentoo</span>
-            <span class="pill">Buildroot</span>
-            <span class="pill">OpenWRT</span>
-            <span class="pill">Android</span>
-            <span class="pill">Windows</span>
-            <span class="pill">C/C++</span>
-            <span class="pill">C#</span>
-            <span class="pill">Go</span>
-            <span class="pill">Gradle</span>
-            <span class="pill">Java</span>
-            <span class="pill">JavaScript</span>
-            <span class="pill">Maven</span>
-            <span class="pill">.NET</span>
-            <span class="pill">PHP</span>
-            <span class="pill">Python</span>
-            <span class="pill">Rust</span>            
-            <span class="pill">RTOS systems</span>
-            <span class="pill">STM32 SDK</span>
-            <span class="pill">Espressif SDK</span>
-            <span class="pill">Silicon Labs SDK</span>
-            <span class="pill">Nordic SDK</span>
-            <span class="pill">Texas Instruments SDK</span>
-            <span class="pill">Microchip SDK</span>
-            <span class="pill">NXP SDK</span>
-            <span class="pill">IAR Embedded Workbench</span>
-            <span class="pill">Keil</span>
-            <span class="pill">Zephyr</span>
-          </div>
-        </div>
-        <blockquote>
-          <span>Customers are facing a wide variety of cybersecurity challenges, due to increased connectivity, technological developments, and emerging regulations. Product security and compliance are complex to navigate, like a labyrinth: our platform’s goal is to show you the way. The ARIANNA platform has been developed by experts and side-by-side with the final user, a unique combination that results in an incredible, robust, and innovative product for device manufacturers.</span>
-          <div class="quote-name">ARIANNA Product Team</div>
-        </blockquote>
-      </div>
-    </section>
-    <section class="cta">
-      <div>
-      </div>
-      <div>
-        <div style="display: flex; gap: 12px; flex-wrap: wrap;">
-          <a href="book-a-demo.html">Book a free Demo</a>
-          <a href="free-trial.html">Start a free Trial</a>
-        </div>
-      </div>
-    </section>
-    <footer>
-      <div>
-        <h4><a href="company.html">Company</a></h4>
-        <p><a href="company.html#about">About ARIANNA</a></p>
-        <p><a href="company.html#careers">Careers</a></p>
-        <p><a href="resources.html">Resources</a></p>
-      </div>
-      <div class="footer-contact">
-        <h4><a href="contact.html">Contact</a></h4>
-      <p><a href="support.html">Support</a></p>
-        <p><a href="mailto:hello@ariannateam.ai">hello@ariannateam.ai</a></p>
-        <p><a href="tel:+393313482583">+39 331 3482583</a></p>
-      </div>
-    </footer>
-    <div class="newsletter-overlay" id="newsletterOverlay" aria-hidden="true">
-      <div class="newsletter-modal" role="dialog" aria-modal="true" aria-labelledby="newsletterTitle">
-        <button class="newsletter-close" type="button" aria-label="Close">×</button>
-        <h3 id="newsletterTitle">Subscribe to the ARIANNA Newsletter</h3>
-        <p>Get monthly updates on vulnerability management, compliance changes, and product security insights.</p>
-        <div class="newsletter-form newsletter-form-embed">
-          <div id="arianna-form-newsletter"></div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <script src="site-shell.js"></script>
-  <script src="attribution.js"></script>
+<section id="how" style="background: #ffffff">
+<div style="max-width: 1240px; margin: 0 auto; padding: 96px 24px; display: flex; flex-direction: column; gap: 40px">
+<div style="display: flex; flex-wrap: wrap; gap: 16px 64px; align-items: end">
+<div style="flex: 1 1 480px; display: flex; flex-direction: column; gap: 14px">
+<div style="font-size: 12px; font-weight: 600; letter-spacing: 0.24em; text-transform: uppercase; color: #1a7472">How it works</div>
+<h2 style="margin: 0; font-size: 40px; line-height: 1.15; font-weight: 700">What the CRA requires, and how ARIANNA does it</h2>
+</div>
+<p style="margin: 0; flex: 1 1 360px; font-size: 16px; line-height: 1.65; color: #33414c">&nbsp;</p>
+</div>
+<div style="display: flex; flex-direction: column; border-top: 2px solid #0a0a0a">
+<div style="display: flex; flex-wrap: wrap; gap: 12px 40px; padding: 28px 0; border-bottom: 1px solid #e3e7ea">
+<div style="flex: 1 1 280px; display: flex; gap: 16px; align-items: baseline"><span style="font-size: 14px; font-weight: 700; color: #1a7472">01</span><h3 style="margin: 0; font-size: 22px; font-weight: 600">Know every component</h3></div>
+<p style="flex: 2 1 480px; margin: 0; font-size: 16px; line-height: 1.65; color: #33414c">Each device holds hundreds of third-party software components. ARIANNA builds an exact SBOM for every firmware version with proprietary SCA tools: microcontroller firmware, embedded Linux, Windows, cloud and mobile apps. No binaries or source code are shared.</p>
+</div>
+<div style="display: flex; flex-wrap: wrap; gap: 12px 40px; padding: 28px 0; border-bottom: 1px solid #e3e7ea">
+<div style="flex: 1 1 280px; display: flex; gap: 16px; align-items: baseline"><span style="font-size: 14px; font-weight: 700; color: #1a7472">02</span><h3 style="margin: 0; font-size: 22px; font-weight: 600">Monitor for 5+ years</h3></div>
+<p style="flex: 2 1 480px; margin: 0; font-size: 16px; line-height: 1.65; color: #33414c">Third-party components can introduce security vulnerabilities into your products. ARIANNA checks every component daily against public vulnerabilities databases, including NIST NVD, CVE.org, GitHub Security Advisories and ENISA's EUVD. Its prioritisation engine assess findings based on exploitability and device-specific security context, identifying the threats that genuinely metter to your products. ARIANNA helps your team focus its time and expertise where they are actually needed, rather than spending hours reviewing vulnerabilities that pose no real risk.</p>
+</div>
+<div style="display: flex; flex-wrap: wrap; gap: 12px 40px; padding: 28px 0; border-bottom: 1px solid #e3e7ea">
+<div style="flex: 1 1 280px; display: flex; gap: 16px; align-items: baseline"><span style="font-size: 14px; font-weight: 700; color: #1a7472">03</span><h3 style="margin: 0; font-size: 22px; font-weight: 600">Fix without delay</h3></div>
+<p style="flex: 2 1 480px; margin: 0; font-size: 16px; line-height: 1.65; color: #33414c">ARIANNA gives engineering a prioritised list per product and version, with known patches and mitigations. Remediation deadlines follow your vulnerability management policy, with a reminder before each one is due.</p>
+</div>
+<div style="display: flex; flex-wrap: wrap; gap: 12px 40px; padding: 28px 0; border-bottom: 1px solid #e3e7ea">
+<div style="flex: 1 1 280px; display: flex; gap: 16px; align-items: baseline"><span style="font-size: 14px; font-weight: 700; color: #1a7472">04</span><h3 style="margin: 0; font-size: 22px; font-weight: 600">Report and keep evidence</h3></div>
+<p style="flex: 2 1 480px; margin: 0; font-size: 16px; line-height: 1.65; color: #33414c">ARIANNA records every triage decision and status change as an auditable history, flags known exploited vulnerabilities, and exports reports as PDF, CSV, CycloneDX, SPDX and VEX.</p>
+</div>
+</div>
+</div>
+</section>
+
+<section id="platform" style="background: #f5f7f7">
+<div style="max-width: 1240px; margin: 0 auto; padding: 96px 24px; display: flex; flex-direction: column; gap: 40px">
+<div style="display: flex; flex-wrap: wrap; gap: 16px 64px; align-items: end">
+<div style="flex: 1 1 480px; display: flex; flex-direction: column; gap: 14px">
+<div style="font-size: 12px; font-weight: 600; letter-spacing: 0.24em; text-transform: uppercase; color: #1a7472">See it in action</div>
+<h2 style="margin: 0; font-size: 40px; line-height: 1.15; font-weight: 700">All you need in one platform</h2>
+</div>
+<p style="margin: 0; flex: 1 1 360px; font-size: 16px; line-height: 1.65; color: #33414c">&nbsp;</p>
+</div>
+<div style="width:100%"><div class="hx anim-poc" style="display:grid;grid-template-columns:minmax(0,0.85fr) minmax(0,1.6fr);gap:28px;align-items:start">
+<div style="display:flex;flex-direction:column;gap:6px"><span style="font-size: 11px; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; color: #5b6b7a;margin:0 0 8px 18px">How ARIANNA works · hover or click a step</span><label class="hx-step hx-s1" for="hx1"><input type="radio" name="hx" id="hx1" checked="" class="hx-radio"><span class="hx-num">1</span><span class="hx-txt"><strong>Describe your hardware</strong><span>List all MCUs, MPUs, secure elements and memories in your device using the ARIANNA hardware catalog.</span></span></label>
+<label class="hx-step hx-s2" for="hx2"><input type="radio" name="hx" id="hx2" class="hx-radio"><span class="hx-num">2</span><span class="hx-txt"><strong>Describe your software</strong><span>Automatically identify software components straight from your build, with the ARIANNA SCA tools.</span></span></label>
+<label class="hx-step hx-s3" for="hx3"><input type="radio" name="hx" id="hx3" class="hx-radio"><span class="hx-num">3</span><span class="hx-txt"><strong>Identify vulnerabilities</strong><span>Automatically checks every component daily against public vulnerability databases.</span></span></label>
+<label class="hx-step hx-s4" for="hx4"><input type="radio" name="hx" id="hx4" class="hx-radio"><span class="hx-num">4</span><span class="hx-txt"><strong>Focus on what matters</strong><span>Automatically prioritise vulnerabilities to focus your time where it's most needed.</span></span></label>
+<label class="hx-step hx-s5" for="hx5"><input type="radio" name="hx" id="hx5" class="hx-radio"><span class="hx-num">5</span><span class="hx-txt"><strong>Record every decision</strong><span>Keep track of every triage decision and status change as an auditable history.</span></span></label>
+</div>
+<div style="background:#f5f7f7;box-shadow:0 0 0 1px #e3e7ea;border-radius:12px;padding:24px;min-height:590px"><div class="hx-pane hx-p1" role="img" aria-label="Step 1: Describe your hardware"><div style="display:grid;grid-template-columns:minmax(0,1fr);gap:16px;align-items:start"><div style="background:#fff;border-radius:10px;box-shadow:0 0 0 1px #e3e7ea;padding:14px 16px;display:flex;flex-direction:column;gap:12px"><strong style="font-size:14px">Add Processing Unit</strong>
+<div style="display:grid;grid-template-columns:1fr 1fr;gap:12px 10px"><div style="position:relative;min-height:38px;padding:9px 10px 5px;border-radius:5px;box-shadow:inset 0 0 0 1px #c3cbd0;background:#fff;font-size:12.5px;display:flex;align-items:center;flex-wrap:wrap;gap:6px"><span style="position:absolute;top:-7px;left:8px;padding:0 4px;background:#fff;font-size:10px;color:#5b6b7a">PU Type *</span><span class="hapu">Microprocessor (MPU)</span></div><div style="position:relative;min-height:38px;padding:9px 10px 5px;border-radius:5px;box-shadow:inset 0 0 0 1px #c3cbd0;background:#fff;font-size:12.5px;display:flex;align-items:center;flex-wrap:wrap;gap:6px"><span style="position:absolute;top:-7px;left:8px;padding:0 4px;background:#fff;font-size:10px;color:#5b6b7a">System Type *</span><span class="hasy">Linux system</span></div><div style="position:relative;min-height:38px;padding:9px 10px 5px;border-radius:5px;box-shadow:inset 0 0 0 1px #c3cbd0;background:#fff;font-size:12.5px;display:flex;align-items:center;flex-wrap:wrap;gap:6px"><span style="position:absolute;top:-7px;left:8px;padding:0 4px;background:#fff;font-size:10px;color:#5b6b7a">Hardware Vendor *</span><span class="havn" style="display:inline-block;overflow:hidden;white-space:nowrap;vertical-align:bottom;max-width:4ch">nxp</span></div><div style="position:relative;min-height:38px;padding:9px 10px 5px;border-radius:5px;box-shadow:inset 0 0 0 1px #c3cbd0;background:#fff;font-size:12.5px;display:flex;align-items:center;flex-wrap:wrap;gap:6px"><span style="position:absolute;top:-7px;left:8px;padding:0 4px;background:#fff;font-size:10px;color:#5b6b7a">Component *</span><span class="hacn" style="display:inline-block;overflow:hidden;white-space:nowrap;vertical-align:bottom;max-width:13ch">i.MX 8M Mini</span></div><div style="position:relative;grid-column:1 / -1;min-height:38px;padding:9px 10px 5px;border-radius:5px;box-shadow:inset 0 0 0 1px #c3cbd0;background:#fff;font-size:12.5px;display:flex;align-items:center;flex-wrap:wrap;gap:6px"><span style="position:absolute;top:-7px;left:8px;padding:0 4px;background:#fff;font-size:10px;color:#5b6b7a">Communication Interfaces</span><span class="hach0"><span style="padding:2px 8px;border-radius:999px;background:#f2faf9;box-shadow:inset 0 0 0 1px #c7e6e4;font-size:11px;color:#1a7472">Bluetooth Classic</span></span><span class="hach1"><span style="padding:2px 8px;border-radius:999px;background:#f2faf9;box-shadow:inset 0 0 0 1px #c7e6e4;font-size:11px;color:#1a7472">Ethernet</span></span><span class="hach2"><span style="padding:2px 8px;border-radius:999px;background:#f2faf9;box-shadow:inset 0 0 0 1px #c7e6e4;font-size:11px;color:#1a7472">Wi-Fi</span></span></div></div>
+<div style="display:flex;justify-content:flex-end"><span class="habtn" style="padding:6px 14px;border-radius:5px;font-size:11.5px;font-weight:600;letter-spacing:.04em">CONFIRM</span></div></div><div style="border-radius:8px;overflow:hidden;box-shadow:0 0 0 1px #e3e7ea;background:#fff"><div style="display:flex;justify-content:space-between;align-items:center;gap:12px;padding:10px 14px;background:#e4e8ea"><span style="display:flex;flex-direction:column;gap:4px"><span style="font-size:10px;letter-spacing:.06em;text-transform:uppercase;color:#33414c">Hardware layer group</span><strong style="font-size:12.5px">PU 1 · Main processor</strong></span><span style="display:flex;gap:18px;align-items:center;font-size:9.5px;letter-spacing:.06em;text-transform:uppercase;color:#33414c"><span style="display:flex;flex-direction:column;align-items:center;gap:4px">Components<span style="position:relative;display:inline-flex;justify-content:center"><span class="hahcb rm-hide" style="position:absolute;inset:0;display:inline-flex;align-items:center;justify-content:center"><span style="min-width:40px;height:28px;padding:0 8px;border-radius:6px;background:#a3acb2;color:#fff;display:inline-flex;align-items:center;justify-content:center;font-size:11.5px;font-weight:600">0</span></span><span class="hahca" style="display:inline-flex"><span style="min-width:40px;height:28px;padding:0 8px;border-radius:6px;background:#8a979f;color:#fff;display:inline-flex;align-items:center;justify-content:center;font-size:11.5px;font-weight:600">4</span></span></span></span></span></div><div class="har1"><div class="" style="display:flex;align-items:center;justify-content:space-between;gap:10px;padding:8px 14px;border-top:1px solid #eef1f2"><span style="display:flex;align-items:center;gap:10px;min-width:0"><span style="flex:none;width:13px;height:13px;border:1.5px solid #5b6b7a;border-radius:2px"></span><span style="display:flex;flex-direction:column;gap:1px;min-width:0"><span style="font-size:12px;font-weight:600;white-space:nowrap;overflow:hidden;text-overflow:ellipsis">C0001 | HW / MPU / nxp - i.MX 8M Mini / - <span style="display:inline-flex;width:14px;height:14px;border-radius:50%;background:#3fbab7;color:#fff;font-size:8.5px;align-items:center;justify-content:center;vertical-align:-2px">★</span></span><span style="font-size:10px;font-style:italic;color:#5b6b7a">PROCESSOR</span></span></span></div></div><div class="har2"><div class="" style="display:flex;align-items:center;justify-content:space-between;gap:10px;padding:8px 14px;border-top:1px solid #eef1f2"><span style="display:flex;align-items:center;gap:10px;min-width:0"><span style="flex:none;width:13px;height:13px;border:1.5px solid #5b6b7a;border-radius:2px"></span><span style="display:flex;flex-direction:column;gap:1px;min-width:0"><span style="font-size:12px;font-weight:600;white-space:nowrap;overflow:hidden;text-overflow:ellipsis">C0002 | HW / INTERFACE / bluetooth classic / - <span style="display:inline-flex;width:14px;height:14px;border-radius:50%;background:#3fbab7;color:#fff;font-size:8.5px;align-items:center;justify-content:center;vertical-align:-2px">★</span></span><span style="font-size:10px;font-style:italic;color:#5b6b7a">INTERFACE</span></span></span></div></div><div class="har3"><div class="" style="display:flex;align-items:center;justify-content:space-between;gap:10px;padding:8px 14px;border-top:1px solid #eef1f2"><span style="display:flex;align-items:center;gap:10px;min-width:0"><span style="flex:none;width:13px;height:13px;border:1.5px solid #5b6b7a;border-radius:2px"></span><span style="display:flex;flex-direction:column;gap:1px;min-width:0"><span style="font-size:12px;font-weight:600;white-space:nowrap;overflow:hidden;text-overflow:ellipsis">C0003 | HW / INTERFACE / ethernet / - <span style="display:inline-flex;width:14px;height:14px;border-radius:50%;background:#3fbab7;color:#fff;font-size:8.5px;align-items:center;justify-content:center;vertical-align:-2px">★</span></span><span style="font-size:10px;font-style:italic;color:#5b6b7a">INTERFACE</span></span></span></div></div><div class="har4"><div class="" style="display:flex;align-items:center;justify-content:space-between;gap:10px;padding:8px 14px;border-top:1px solid #eef1f2"><span style="display:flex;align-items:center;gap:10px;min-width:0"><span style="flex:none;width:13px;height:13px;border:1.5px solid #5b6b7a;border-radius:2px"></span><span style="display:flex;flex-direction:column;gap:1px;min-width:0"><span style="font-size:12px;font-weight:600;white-space:nowrap;overflow:hidden;text-overflow:ellipsis">C0004 | HW / INTERFACE / wi-fi / - <span style="display:inline-flex;width:14px;height:14px;border-radius:50%;background:#3fbab7;color:#fff;font-size:8.5px;align-items:center;justify-content:center;vertical-align:-2px">★</span></span><span style="font-size:10px;font-style:italic;color:#5b6b7a">INTERFACE</span></span></span></div></div></div></div></div>
+<div class="hx-pane hx-p2" role="img" aria-label="Step 2: Add your software"><div style="display:grid;grid-template-columns:minmax(0,1fr);gap:16px;align-items:start"><div style="display:flex;flex-direction:column;gap:8px"><div style="display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap"><span style="display:inline-flex;align-items:center;gap:8px;font-size:11px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:#1a7472"><svg viewBox="0 0 24 24" width="14" height="14" aria-hidden="true" style="flex:none"><path fill="none" stroke="#1a7472" stroke-width="2" d="M6 11h12v9H6zM8.5 11V8a3.5 3.5 0 0 1 7 0v3"></path></svg>Runs in your own build environment</span><span style="font-size:12px;color:#5b6b7a">Your source code never leaves your premises</span></div><div style="background:#0d1b1b;border-radius:10px;padding:12px 14px;display:flex;flex-direction:column;gap:6px;font-size:11.5px;line-height:1.5;color:#e6f2f1;font-family:ui-monospace,Menlo,Consolas,monospace;min-height:0"><div style="display:flex;gap:5px;margin-bottom:2px"><span style="width:8px;height:8px;border-radius:50%;background:#ff5f57"></span><span style="width:8px;height:8px;border-radius:50%;background:#febc2e"></span><span style="width:8px;height:8px;border-radius:50%;background:#28c840"></span></div><div class="sbt0" style="white-space:nowrap;overflow:hidden;text-overflow:ellipsis"><span style="color:#62ed9c">ci</span>:<span style="color:#8fd7d9">~/gw</span>$ ./arianna-sca-yocto.sh</div><div class="sbt1" style="white-space:nowrap;overflow:hidden;text-overflow:ellipsis"><span style="color:#7d9592">›</span> Reading Yocto build manifest…</div><div class="sbt2" style="white-space:nowrap;overflow:hidden;text-overflow:ellipsis"><span style="color:#62ed9c">✓</span> 1,284 components</div><div class="sbt3" style="white-space:nowrap;overflow:hidden;text-overflow:ellipsis"><span style="color:#62ed9c">ci</span>:<span style="color:#8fd7d9">~/gw</span>$ ./arianna-sca-python.sh app/</div><div class="sbt4" style="white-space:nowrap;overflow:hidden;text-overflow:ellipsis"><span style="color:#62ed9c">✓</span> 37 components</div><div class="sbt5" style="white-space:nowrap;overflow:hidden;text-overflow:ellipsis"><span style="color:#62ed9c">✓</span> SBOM uploaded to ARIANNA</div></div></div><div style="border-radius:8px;overflow:hidden;box-shadow:0 0 0 1px #e3e7ea;background:#fff"><div style="display:flex;justify-content:space-between;align-items:center;gap:12px;padding:10px 14px;background:#e4e8ea"><span style="display:flex;flex-direction:column;gap:4px"><span style="font-size:10px;letter-spacing:.06em;text-transform:uppercase;color:#33414c">Software layer group</span><strong style="font-size:12.5px">gateway firmware · v2.0</strong></span><span style="display:flex;gap:18px;align-items:center;font-size:9.5px;letter-spacing:.06em;text-transform:uppercase;color:#33414c"><span style="display:flex;flex-direction:column;align-items:center;gap:4px">Components<span style="position:relative;display:inline-flex;justify-content:center"><span class="sbscb rm-hide" style="position:absolute;inset:0;display:inline-flex;align-items:center;justify-content:center"><span style="min-width:40px;height:28px;padding:0 8px;border-radius:6px;background:#a3acb2;color:#fff;display:inline-flex;align-items:center;justify-content:center;font-size:11.5px;font-weight:600">0</span></span><span class="sbsca" style="display:inline-flex"><span style="min-width:40px;height:28px;padding:0 8px;border-radius:6px;background:#8a979f;color:#fff;display:inline-flex;align-items:center;justify-content:center;font-size:11.5px;font-weight:600">1,321</span></span></span></span></span></div><div class="sbr1"><div class="" style="display:flex;align-items:center;justify-content:space-between;gap:10px;padding:8px 14px;border-top:1px solid #eef1f2"><span style="display:flex;align-items:center;gap:10px;min-width:0"><span style="flex:none;width:13px;height:13px;border:1.5px solid #5b6b7a;border-radius:2px"></span><span style="display:flex;flex-direction:column;gap:1px;min-width:0"><span style="font-size:12px;font-weight:600;white-space:nowrap;overflow:hidden;text-overflow:ellipsis">C0005 | OS / GENERIC / Linux - kernel / 6.1.55 <span style="display:inline-flex;width:14px;height:14px;border-radius:50%;background:#3fbab7;color:#fff;font-size:8.5px;align-items:center;justify-content:center;vertical-align:-2px">★</span></span><span style="font-size:10px;font-style:italic;color:#5b6b7a">LICENSE: GPL-2.0</span></span></span></div></div><div class="sbr2"><div class="" style="display:flex;align-items:center;justify-content:space-between;gap:10px;padding:8px 14px;border-top:1px solid #eef1f2"><span style="display:flex;align-items:center;gap:10px;min-width:0"><span style="flex:none;width:13px;height:13px;border:1.5px solid #5b6b7a;border-radius:2px"></span><span style="display:flex;flex-direction:column;gap:1px;min-width:0"><span style="font-size:12px;font-weight:600;white-space:nowrap;overflow:hidden;text-overflow:ellipsis">C0006 | OS / YOCTO / OpenSSL - openssl / 3.0.2 <span style="display:inline-flex;width:14px;height:14px;border-radius:50%;background:#3fbab7;color:#fff;font-size:8.5px;align-items:center;justify-content:center;vertical-align:-2px">★</span></span><span style="font-size:10px;font-style:italic;color:#5b6b7a">LICENSE: Apache-2.0</span></span></span></div></div><div class="sbr3"><div class="" style="display:flex;align-items:center;justify-content:space-between;gap:10px;padding:8px 14px;border-top:1px solid #eef1f2"><span style="display:flex;align-items:center;gap:10px;min-width:0"><span style="flex:none;width:13px;height:13px;border:1.5px solid #5b6b7a;border-radius:2px"></span><span style="display:flex;flex-direction:column;gap:1px;min-width:0"><span style="font-size:12px;font-weight:600;white-space:nowrap;overflow:hidden;text-overflow:ellipsis">C1289 | APP / PYPI / urllib3 / 1.26.5 <span style="display:inline-flex;width:14px;height:14px;border-radius:50%;background:#3fbab7;color:#fff;font-size:8.5px;align-items:center;justify-content:center;vertical-align:-2px">★</span></span><span style="font-size:10px;font-style:italic;color:#5b6b7a">LICENSE: MIT</span></span></span></div></div><div class="sbm" style="padding:6px 14px 9px 37px;border-top:1px solid #eef1f2;font-size:11px;color:#5b6b7a">+ 1,318 more components</div></div></div></div>
+<div class="hx-pane hx-p3" role="img" aria-label="Step 3: Map vulnerabilities automatically"><div style="display:flex;flex-direction:column;gap:12px"><div style="display:flex;justify-content:space-between;align-items:center;gap:10px;min-height:22px"><div style="display:flex;gap:12px;flex-wrap:wrap;font-size:10.5px;color:#5b6b7a"><span style="display:inline-flex;align-items:center;gap:5px"><span style="width:9px;height:9px;border-radius:50%;background:#9b1c1c"></span>Critical</span><span style="display:inline-flex;align-items:center;gap:5px"><span style="width:9px;height:9px;border-radius:50%;background:#e53935"></span>High</span><span style="display:inline-flex;align-items:center;gap:5px"><span style="width:9px;height:9px;border-radius:50%;background:#f4511e"></span>Medium</span><span style="display:inline-flex;align-items:center;gap:5px"><span style="width:9px;height:9px;border-radius:50%;background:#f9a825"></span>Low</span></div><span class="mplbl rm-hide" style="display:inline-flex;align-items:center;gap:8px;padding:3px 10px;border-radius:999px;background:#1a7472;color:#fff;font-size:11px;font-weight:600">Mapping vulnerabilities <span class="dot" style="width:5px;height:5px;border-radius:50%;background:#fff"></span><span class="dot" style="width:5px;height:5px;border-radius:50%;background:#fff"></span><span class="dot" style="width:5px;height:5px;border-radius:50%;background:#fff"></span></span></div>
+<div style="border-radius:8px;overflow:hidden;box-shadow:0 0 0 1px #e3e7ea;background:#fff"><div style="display:flex;justify-content:space-between;align-items:center;gap:12px;padding:10px 14px;background:#e4e8ea"><span style="display:flex;flex-direction:column;gap:4px"><span style="font-size:10px;letter-spacing:.06em;text-transform:uppercase;color:#33414c">Hardware layer group</span><strong style="font-size:12.5px">PU 1 · Main processor</strong></span><span style="display:flex;gap:18px;align-items:center;font-size:9.5px;letter-spacing:.06em;text-transform:uppercase;color:#33414c"><span style="display:flex;flex-direction:column;align-items:center;gap:4px">Components<span style="min-width:40px;height:28px;padding:0 8px;border-radius:6px;background:#8a979f;color:#fff;display:inline-flex;align-items:center;justify-content:center;font-size:11.5px;font-weight:600">4</span></span><span style="display:flex;flex-direction:column;align-items:center;gap:4px">Vulnerabilities<span style="position:relative;display:inline-flex;justify-content:center"><span class="mphvb rm-hide" style="position:absolute;inset:0;display:inline-flex;align-items:center;justify-content:center"><span style="min-width:40px;height:28px;padding:0 8px;border-radius:999px;background:#a3acb2;color:#fff;display:inline-flex;align-items:center;justify-content:center;font-size:11.5px;font-weight:600">-</span></span><span class="mphva" style="display:inline-flex"><span style="min-width:40px;height:28px;padding:0 8px;border-radius:999px;background:#8a979f;color:#fff;display:inline-flex;align-items:center;justify-content:center;font-size:11.5px;font-weight:600">21</span></span></span></span></span></div><div class=""><div class="" style="display:flex;align-items:center;justify-content:space-between;gap:10px;padding:8px 14px;border-top:1px solid #eef1f2"><span style="display:flex;align-items:center;gap:10px;min-width:0"><span style="flex:none;width:13px;height:13px;border:1.5px solid #5b6b7a;border-radius:2px"></span><span style="display:flex;flex-direction:column;gap:1px;min-width:0"><span style="font-size:12px;font-weight:600;white-space:nowrap;overflow:hidden;text-overflow:ellipsis">C0001 | HW / MPU / nxp - i.MX 8M Mini / - <span style="display:inline-flex;width:14px;height:14px;border-radius:50%;background:#3fbab7;color:#fff;font-size:8.5px;align-items:center;justify-content:center;vertical-align:-2px">★</span></span><span style="font-size:10px;font-style:italic;color:#5b6b7a">PROCESSOR</span></span></span><div style="display:grid;grid-template-columns:32px 6px repeat(4,28px);gap:4px;align-items:center;justify-items:center"><span style="position:relative;display:inline-flex"><span class="mph1tb rm-hide" style="position:absolute;inset:0;display:inline-flex;align-items:center;justify-content:center;color:#b5bec4">·</span><span class="mph1ta" style="display:inline-flex"><span style="width:30px;height:30px;border-radius:50%;box-shadow:inset 0 0 0 1.5px #0a0a0a;display:inline-flex;align-items:center;justify-content:center;font-size:10.5px;font-weight:700">4</span></span></span><span style="width:1.5px;height:18px;background:#8a979f"></span><span style="position:relative;display:inline-flex"><span class="mph1s0b rm-hide" style="position:absolute;inset:0;display:inline-flex;align-items:center;justify-content:center;color:#b5bec4">·</span><span class="mph1s0a" style="display:inline-flex"><span style="width:28px;height:28px;display:inline-flex;align-items:center;justify-content:center;font-size:12px;color:#8a979f">-</span></span></span><span style="position:relative;display:inline-flex"><span class="mph1s1b rm-hide" style="position:absolute;inset:0;display:inline-flex;align-items:center;justify-content:center;color:#b5bec4">·</span><span class="mph1s1a" style="display:inline-flex"><span style="width:28px;height:28px;border-radius:50%;background:#e53935;display:inline-flex;align-items:center;justify-content:center;font-size:10px;font-weight:700;color:#fff">1</span></span></span><span style="position:relative;display:inline-flex"><span class="mph1s2b rm-hide" style="position:absolute;inset:0;display:inline-flex;align-items:center;justify-content:center;color:#b5bec4">·</span><span class="mph1s2a" style="display:inline-flex"><span style="width:28px;height:28px;border-radius:50%;background:#f4511e;display:inline-flex;align-items:center;justify-content:center;font-size:10px;font-weight:700;color:#fff">3</span></span></span><span style="position:relative;display:inline-flex"><span class="mph1s3b rm-hide" style="position:absolute;inset:0;display:inline-flex;align-items:center;justify-content:center;color:#b5bec4">·</span><span class="mph1s3a" style="display:inline-flex"><span style="width:28px;height:28px;display:inline-flex;align-items:center;justify-content:center;font-size:12px;color:#8a979f">-</span></span></span></div></div></div><div class=""><div class="" style="display:flex;align-items:center;justify-content:space-between;gap:10px;padding:8px 14px;border-top:1px solid #eef1f2"><span style="display:flex;align-items:center;gap:10px;min-width:0"><span style="flex:none;width:13px;height:13px;border:1.5px solid #5b6b7a;border-radius:2px"></span><span style="display:flex;flex-direction:column;gap:1px;min-width:0"><span style="font-size:12px;font-weight:600;white-space:nowrap;overflow:hidden;text-overflow:ellipsis">C0002 | HW / INTERFACE / bluetooth classic / - <span style="display:inline-flex;width:14px;height:14px;border-radius:50%;background:#3fbab7;color:#fff;font-size:8.5px;align-items:center;justify-content:center;vertical-align:-2px">★</span></span><span style="font-size:10px;font-style:italic;color:#5b6b7a">INTERFACE</span></span></span><div style="display:grid;grid-template-columns:32px 6px repeat(4,28px);gap:4px;align-items:center;justify-items:center"><span style="position:relative;display:inline-flex"><span class="mph2tb rm-hide" style="position:absolute;inset:0;display:inline-flex;align-items:center;justify-content:center;color:#b5bec4">·</span><span class="mph2ta" style="display:inline-flex"><span style="width:30px;height:30px;border-radius:50%;box-shadow:inset 0 0 0 1.5px #0a0a0a;display:inline-flex;align-items:center;justify-content:center;font-size:10.5px;font-weight:700">11</span></span></span><span style="width:1.5px;height:18px;background:#8a979f"></span><span style="position:relative;display:inline-flex"><span class="mph2s0b rm-hide" style="position:absolute;inset:0;display:inline-flex;align-items:center;justify-content:center;color:#b5bec4">·</span><span class="mph2s0a" style="display:inline-flex"><span style="width:28px;height:28px;display:inline-flex;align-items:center;justify-content:center;font-size:12px;color:#8a979f">-</span></span></span><span style="position:relative;display:inline-flex"><span class="mph2s1b rm-hide" style="position:absolute;inset:0;display:inline-flex;align-items:center;justify-content:center;color:#b5bec4">·</span><span class="mph2s1a" style="display:inline-flex"><span style="width:28px;height:28px;border-radius:50%;background:#e53935;display:inline-flex;align-items:center;justify-content:center;font-size:10px;font-weight:700;color:#fff">2</span></span></span><span style="position:relative;display:inline-flex"><span class="mph2s2b rm-hide" style="position:absolute;inset:0;display:inline-flex;align-items:center;justify-content:center;color:#b5bec4">·</span><span class="mph2s2a" style="display:inline-flex"><span style="width:28px;height:28px;border-radius:50%;background:#f4511e;display:inline-flex;align-items:center;justify-content:center;font-size:10px;font-weight:700;color:#fff">9</span></span></span><span style="position:relative;display:inline-flex"><span class="mph2s3b rm-hide" style="position:absolute;inset:0;display:inline-flex;align-items:center;justify-content:center;color:#b5bec4">·</span><span class="mph2s3a" style="display:inline-flex"><span style="width:28px;height:28px;display:inline-flex;align-items:center;justify-content:center;font-size:12px;color:#8a979f">-</span></span></span></div></div></div><div class="" style="padding:6px 14px 9px 37px;border-top:1px solid #eef1f2;font-size:11px;color:#5b6b7a">+ 2 more components</div></div><div style="border-radius:8px;overflow:hidden;box-shadow:0 0 0 1px #e3e7ea;background:#fff"><div style="display:flex;justify-content:space-between;align-items:center;gap:12px;padding:10px 14px;background:#e4e8ea"><span style="display:flex;flex-direction:column;gap:4px"><span style="font-size:10px;letter-spacing:.06em;text-transform:uppercase;color:#33414c">Software layer group</span><strong style="font-size:12.5px">gateway firmware · v2.0</strong></span><span style="display:flex;gap:18px;align-items:center;font-size:9.5px;letter-spacing:.06em;text-transform:uppercase;color:#33414c"><span style="display:flex;flex-direction:column;align-items:center;gap:4px">Components<span style="min-width:40px;height:28px;padding:0 8px;border-radius:6px;background:#8a979f;color:#fff;display:inline-flex;align-items:center;justify-content:center;font-size:11.5px;font-weight:600">1,321</span></span><span style="display:flex;flex-direction:column;align-items:center;gap:4px">Vulnerabilities<span style="position:relative;display:inline-flex;justify-content:center"><span class="mpsvb rm-hide" style="position:absolute;inset:0;display:inline-flex;align-items:center;justify-content:center"><span style="min-width:40px;height:28px;padding:0 8px;border-radius:999px;background:#a3acb2;color:#fff;display:inline-flex;align-items:center;justify-content:center;font-size:11.5px;font-weight:600">-</span></span><span class="mpsva" style="display:inline-flex"><span style="min-width:40px;height:28px;padding:0 8px;border-radius:999px;background:#8a979f;color:#fff;display:inline-flex;align-items:center;justify-content:center;font-size:11.5px;font-weight:600">1,495</span></span></span></span></span></div><div class=""><div class="" style="display:flex;align-items:center;justify-content:space-between;gap:10px;padding:8px 14px;border-top:1px solid #eef1f2"><span style="display:flex;align-items:center;gap:10px;min-width:0"><span style="flex:none;width:13px;height:13px;border:1.5px solid #5b6b7a;border-radius:2px"></span><span style="display:flex;flex-direction:column;gap:1px;min-width:0"><span style="font-size:12px;font-weight:600;white-space:nowrap;overflow:hidden;text-overflow:ellipsis">C0005 | OS / GENERIC / Linux - kernel / 6.1.55 <span style="display:inline-flex;width:14px;height:14px;border-radius:50%;background:#3fbab7;color:#fff;font-size:8.5px;align-items:center;justify-content:center;vertical-align:-2px">★</span></span><span style="font-size:10px;font-style:italic;color:#5b6b7a">LICENSE: GPL-2.0</span></span></span><div style="display:grid;grid-template-columns:32px 6px repeat(4,28px);gap:4px;align-items:center;justify-items:center"><span style="position:relative;display:inline-flex"><span class="mps1tb rm-hide" style="position:absolute;inset:0;display:inline-flex;align-items:center;justify-content:center;color:#b5bec4">·</span><span class="mps1ta" style="display:inline-flex"><span style="width:30px;height:30px;border-radius:50%;box-shadow:inset 0 0 0 1.5px #0a0a0a;display:inline-flex;align-items:center;justify-content:center;font-size:10.5px;font-weight:700">1352</span></span></span><span style="width:1.5px;height:18px;background:#8a979f"></span><span style="position:relative;display:inline-flex"><span class="mps1s0b rm-hide" style="position:absolute;inset:0;display:inline-flex;align-items:center;justify-content:center;color:#b5bec4">·</span><span class="mps1s0a" style="display:inline-flex"><span style="width:28px;height:28px;border-radius:50%;background:#9b1c1c;display:inline-flex;align-items:center;justify-content:center;font-size:10px;font-weight:700;color:#fff">93</span></span></span><span style="position:relative;display:inline-flex"><span class="mps1s1b rm-hide" style="position:absolute;inset:0;display:inline-flex;align-items:center;justify-content:center;color:#b5bec4">·</span><span class="mps1s1a" style="display:inline-flex"><span style="width:28px;height:28px;border-radius:50%;background:#e53935;display:inline-flex;align-items:center;justify-content:center;font-size:10px;font-weight:700;color:#fff">636</span></span></span><span style="position:relative;display:inline-flex"><span class="mps1s2b rm-hide" style="position:absolute;inset:0;display:inline-flex;align-items:center;justify-content:center;color:#b5bec4">·</span><span class="mps1s2a" style="display:inline-flex"><span style="width:28px;height:28px;border-radius:50%;background:#f4511e;display:inline-flex;align-items:center;justify-content:center;font-size:10px;font-weight:700;color:#fff">617</span></span></span><span style="position:relative;display:inline-flex"><span class="mps1s3b rm-hide" style="position:absolute;inset:0;display:inline-flex;align-items:center;justify-content:center;color:#b5bec4">·</span><span class="mps1s3a" style="display:inline-flex"><span style="width:28px;height:28px;border-radius:50%;background:#f9a825;display:inline-flex;align-items:center;justify-content:center;font-size:10px;font-weight:700;color:#fff">6</span></span></span></div></div></div><div class=""><div class="" style="display:flex;align-items:center;justify-content:space-between;gap:10px;padding:8px 14px;border-top:1px solid #eef1f2"><span style="display:flex;align-items:center;gap:10px;min-width:0"><span style="flex:none;width:13px;height:13px;border:1.5px solid #5b6b7a;border-radius:2px"></span><span style="display:flex;flex-direction:column;gap:1px;min-width:0"><span style="font-size:12px;font-weight:600;white-space:nowrap;overflow:hidden;text-overflow:ellipsis">C0006 | OS / YOCTO / OpenSSL - openssl / 3.0.2 <span style="display:inline-flex;width:14px;height:14px;border-radius:50%;background:#3fbab7;color:#fff;font-size:8.5px;align-items:center;justify-content:center;vertical-align:-2px">★</span></span><span style="font-size:10px;font-style:italic;color:#5b6b7a">LICENSE: Apache-2.0</span></span></span><div style="display:grid;grid-template-columns:32px 6px repeat(4,28px);gap:4px;align-items:center;justify-items:center"><span style="position:relative;display:inline-flex"><span class="mps2tb rm-hide" style="position:absolute;inset:0;display:inline-flex;align-items:center;justify-content:center;color:#b5bec4">·</span><span class="mps2ta" style="display:inline-flex"><span style="width:30px;height:30px;border-radius:50%;box-shadow:inset 0 0 0 1.5px #0a0a0a;display:inline-flex;align-items:center;justify-content:center;font-size:10.5px;font-weight:700">24</span></span></span><span style="width:1.5px;height:18px;background:#8a979f"></span><span style="position:relative;display:inline-flex"><span class="mps2s0b rm-hide" style="position:absolute;inset:0;display:inline-flex;align-items:center;justify-content:center;color:#b5bec4">·</span><span class="mps2s0a" style="display:inline-flex"><span style="width:28px;height:28px;border-radius:50%;background:#9b1c1c;display:inline-flex;align-items:center;justify-content:center;font-size:10px;font-weight:700;color:#fff">1</span></span></span><span style="position:relative;display:inline-flex"><span class="mps2s1b rm-hide" style="position:absolute;inset:0;display:inline-flex;align-items:center;justify-content:center;color:#b5bec4">·</span><span class="mps2s1a" style="display:inline-flex"><span style="width:28px;height:28px;border-radius:50%;background:#e53935;display:inline-flex;align-items:center;justify-content:center;font-size:10px;font-weight:700;color:#fff">8</span></span></span><span style="position:relative;display:inline-flex"><span class="mps2s2b rm-hide" style="position:absolute;inset:0;display:inline-flex;align-items:center;justify-content:center;color:#b5bec4">·</span><span class="mps2s2a" style="display:inline-flex"><span style="width:28px;height:28px;border-radius:50%;background:#f4511e;display:inline-flex;align-items:center;justify-content:center;font-size:10px;font-weight:700;color:#fff">13</span></span></span><span style="position:relative;display:inline-flex"><span class="mps2s3b rm-hide" style="position:absolute;inset:0;display:inline-flex;align-items:center;justify-content:center;color:#b5bec4">·</span><span class="mps2s3a" style="display:inline-flex"><span style="width:28px;height:28px;border-radius:50%;background:#f9a825;display:inline-flex;align-items:center;justify-content:center;font-size:10px;font-weight:700;color:#fff">2</span></span></span></div></div></div><div class="" style="padding:6px 14px 9px 37px;border-top:1px solid #eef1f2;font-size:11px;color:#5b6b7a">+ 1,319 more components</div></div></div></div>
+<div class="hx-pane hx-p4" role="img" aria-label="Step 4: Focus on what matters"><div style="display:flex;flex-direction:column;gap:12px"><span style="font-size: 11px; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; color: #5b6b7a">In ARIANNA · vulnerabilities · PU 1: Main processor</span>
+<div class="pzgl" style="border-radius:8px;overflow:hidden;background:#fff">
+<div style="position:relative;display:flex;justify-content:space-between;align-items:center;padding:10px 14px;background:#f7f9f9;border-bottom:1px solid #e3e7ea;min-height:42px"><span class="pzhb rm-hide" style="position:absolute;left:14px;font-size:12.5px;font-weight:700;letter-spacing:.04em">ALL VULNERABILITIES</span><span class="pzha" style="display:flex;align-items:center;gap:8px;font-size:12.5px;font-weight:700;letter-spacing:.04em;color:#e0245e"><svg viewBox="0 0 24 24" width="15" height="15" aria-hidden="true" style="flex:none"><path fill="#e0245e" d="M12 6a6 6 0 0 0-6 6v5h12v-5a6 6 0 0 0-6-6zm-8 13h16v2H4zM11 1h2v3h-2zM3.5 4.9l1.4-1.4 2.1 2.1-1.4 1.4zM17 5.6l2.1-2.1 1.4 1.4-2.1 2.1zM1 11h3v2H1zm19 0h3v2h-3z"></path></svg> HIGH PRIORITY</span><span style="position:relative;font-size:11.5px;font-style:italic"><span class="pznb rm-hide" style="position:absolute;right:0;white-space:nowrap">1,516/1,516 vulnerabilities</span><span class="pzna" style="white-space:nowrap">38/1,516 vulnerabilities</span></span></div>
+<div style="display:grid;grid-template-columns:minmax(0,1fr) 30px 30px 40px 30px 34px 30px;gap:6px;align-items:center;justify-items:center;padding:6px 14px"><span style="justify-self:start"><span style="font-size:9.5px;font-weight:600;letter-spacing:.06em;color:#5b6b7a">VULNERABILITY</span></span><span style="font-size:9.5px;font-weight:600;letter-spacing:.06em;color:#5b6b7a">KEV</span><span style="font-size:9.5px;font-weight:600;letter-spacing:.06em;color:#5b6b7a">EXP</span><span style="font-size:9.5px;font-weight:600;letter-spacing:.06em;color:#5b6b7a">EPSS</span><span style="font-size:9.5px;font-weight:600;letter-spacing:.06em;color:#5b6b7a">AV</span><span style="font-size:9.5px;font-weight:600;letter-spacing:.06em;color:#5b6b7a">SEV</span><span style="font-size:9.5px;font-weight:600;letter-spacing:.06em;color:#5b6b7a">RISK</span></div><div class="pzbg0" style="display:grid;grid-template-columns:minmax(0,1fr) 30px 30px 40px 30px 34px 30px;gap:6px;align-items:center;justify-items:center;padding:8px 14px;border-top:1px solid #eef1f2"><span style="justify-self:stretch;display:flex;flex-direction:column;gap:1px;min-width:0"><span style="display:flex;align-items:center;gap:6px;font-size:12px;font-weight:600">V0012 | CVE-20••-•••• <span class="pzic0" style="display:inline-flex"><svg viewBox="0 0 24 24" width="15" height="15" aria-hidden="true" style="flex:none"><path fill="#e0245e" d="M12 6a6 6 0 0 0-6 6v5h12v-5a6 6 0 0 0-6-6zm-8 13h16v2H4zM11 1h2v3h-2zM3.5 4.9l1.4-1.4 2.1 2.1-1.4 1.4zM17 5.6l2.1-2.1 1.4 1.4-2.1 2.1zM1 11h3v2H1zm19 0h3v2h-3z"></path></svg></span></span><span style="display:block;font-size:10px;font-style:italic;color:#5b6b7a;white-space:nowrap;overflow:hidden;text-overflow:ellipsis">PU01 | C0006 | OS / YOCTO / OpenSSL - openssl / 3.0.2</span></span><span style="font-size:11px">-</span><span style="font-size:11px">✓</span><span style="width:28px;height:28px;border-radius:50%;background:#e0245e;color:#fff;display:inline-flex;align-items:center;justify-content:center;font-size:9.5px;font-weight:700">32%</span><span style="width:28px;height:28px;border-radius:50%;box-shadow:inset 0 0 0 1.5px #0a0a0a;color:#0a0a0a;display:inline-flex;align-items:center;justify-content:center;font-size:9.5px;font-weight:700">N</span><span style="width:28px;height:28px;border-radius:50%;box-shadow:inset 0 0 0 1.5px #e53935;color:#e53935;display:inline-flex;align-items:center;justify-content:center;font-size:9.5px;font-weight:700">7.5</span><span style="width:28px;height:28px;border-radius:50%;box-shadow:inset 0 0 0 1.5px #e53935;color:#e53935;display:inline-flex;align-items:center;justify-content:center;font-size:9.5px;font-weight:700">H</span></div><div class="pzcl1" style="overflow:hidden"><div class="" style="display:grid;grid-template-columns:minmax(0,1fr) 30px 30px 40px 30px 34px 30px;gap:6px;align-items:center;justify-items:center;padding:8px 14px;border-top:1px solid #eef1f2"><span style="justify-self:stretch;display:flex;flex-direction:column;gap:1px;min-width:0"><span style="display:flex;align-items:center;gap:6px;font-size:12px;font-weight:600">V0027 | CVE-20••-•••• </span><span style="display:block;font-size:10px;font-style:italic;color:#5b6b7a;white-space:nowrap;overflow:hidden;text-overflow:ellipsis">PU01 | C0005 | OS / GENERIC / Linux - kernel / 6.1.55</span></span><span style="font-size:11px">-</span><span style="font-size:11px">-</span><span style="width:28px;height:28px;border-radius:50%;box-shadow:inset 0 0 0 1.5px #0a0a0a;color:#0a0a0a;display:inline-flex;align-items:center;justify-content:center;font-size:9.5px;font-weight:700">&lt;1%</span><span style="width:28px;height:28px;border-radius:50%;box-shadow:inset 0 0 0 1.5px #0a0a0a;color:#0a0a0a;display:inline-flex;align-items:center;justify-content:center;font-size:9.5px;font-weight:700">L</span><span style="width:28px;height:28px;border-radius:50%;box-shadow:inset 0 0 0 1.5px #f4511e;color:#f4511e;display:inline-flex;align-items:center;justify-content:center;font-size:9.5px;font-weight:700">5.5</span><span style="width:28px;height:28px;border-radius:50%;box-shadow:inset 0 0 0 1.5px #f4511e;color:#f4511e;display:inline-flex;align-items:center;justify-content:center;font-size:9.5px;font-weight:700">M</span></div></div><div class="pzbg2" style="display:grid;grid-template-columns:minmax(0,1fr) 30px 30px 40px 30px 34px 30px;gap:6px;align-items:center;justify-items:center;padding:8px 14px;border-top:1px solid #eef1f2"><span style="justify-self:stretch;display:flex;flex-direction:column;gap:1px;min-width:0"><span style="display:flex;align-items:center;gap:6px;font-size:12px;font-weight:600">V0041 | CVE-20••-•••• <span class="pzic2" style="display:inline-flex"><svg viewBox="0 0 24 24" width="15" height="15" aria-hidden="true" style="flex:none"><path fill="#e0245e" d="M12 6a6 6 0 0 0-6 6v5h12v-5a6 6 0 0 0-6-6zm-8 13h16v2H4zM11 1h2v3h-2zM3.5 4.9l1.4-1.4 2.1 2.1-1.4 1.4zM17 5.6l2.1-2.1 1.4 1.4-2.1 2.1zM1 11h3v2H1zm19 0h3v2h-3z"></path></svg></span></span><span style="display:block;font-size:10px;font-style:italic;color:#5b6b7a;white-space:nowrap;overflow:hidden;text-overflow:ellipsis">PU01 | C0005 | OS / GENERIC / Linux - kernel / 6.1.55</span></span><span style="font-size:11px">✓</span><span style="font-size:11px">✓</span><span style="width:28px;height:28px;border-radius:50%;background:#e0245e;color:#fff;display:inline-flex;align-items:center;justify-content:center;font-size:9.5px;font-weight:700">12%</span><span style="width:28px;height:28px;border-radius:50%;box-shadow:inset 0 0 0 1.5px #0a0a0a;color:#0a0a0a;display:inline-flex;align-items:center;justify-content:center;font-size:9.5px;font-weight:700">N</span><span style="width:28px;height:28px;border-radius:50%;box-shadow:inset 0 0 0 1.5px #9b1c1c;color:#9b1c1c;display:inline-flex;align-items:center;justify-content:center;font-size:9.5px;font-weight:700">9.8</span><span style="width:28px;height:28px;border-radius:50%;box-shadow:inset 0 0 0 1.5px #9b1c1c;color:#9b1c1c;display:inline-flex;align-items:center;justify-content:center;font-size:9.5px;font-weight:700">C</span></div><div class="pzcl3" style="overflow:hidden"><div class="" style="display:grid;grid-template-columns:minmax(0,1fr) 30px 30px 40px 30px 34px 30px;gap:6px;align-items:center;justify-items:center;padding:8px 14px;border-top:1px solid #eef1f2"><span style="justify-self:stretch;display:flex;flex-direction:column;gap:1px;min-width:0"><span style="display:flex;align-items:center;gap:6px;font-size:12px;font-weight:600">V0058 | CVE-20••-•••• </span><span style="display:block;font-size:10px;font-style:italic;color:#5b6b7a;white-space:nowrap;overflow:hidden;text-overflow:ellipsis">PU01 | C0001 | HW / MPU / nxp - i.MX 8M Mini</span></span><span style="font-size:11px">-</span><span style="font-size:11px">-</span><span style="width:28px;height:28px;border-radius:50%;box-shadow:inset 0 0 0 1.5px #0a0a0a;color:#0a0a0a;display:inline-flex;align-items:center;justify-content:center;font-size:9.5px;font-weight:700">&lt;1%</span><span style="width:28px;height:28px;border-radius:50%;box-shadow:inset 0 0 0 1.5px #0a0a0a;color:#0a0a0a;display:inline-flex;align-items:center;justify-content:center;font-size:9.5px;font-weight:700">P</span><span style="width:28px;height:28px;border-radius:50%;box-shadow:inset 0 0 0 1.5px #f4511e;color:#f4511e;display:inline-flex;align-items:center;justify-content:center;font-size:9.5px;font-weight:700">4.6</span><span style="width:28px;height:28px;border-radius:50%;box-shadow:inset 0 0 0 1.5px #f4511e;color:#f4511e;display:inline-flex;align-items:center;justify-content:center;font-size:9.5px;font-weight:700">M</span></div></div><div class="pzbg4" style="display:grid;grid-template-columns:minmax(0,1fr) 30px 30px 40px 30px 34px 30px;gap:6px;align-items:center;justify-items:center;padding:8px 14px;border-top:1px solid #eef1f2"><span style="justify-self:stretch;display:flex;flex-direction:column;gap:1px;min-width:0"><span style="display:flex;align-items:center;gap:6px;font-size:12px;font-weight:600">V0063 | CVE-20••-•••• <span class="pzic4" style="display:inline-flex"><svg viewBox="0 0 24 24" width="15" height="15" aria-hidden="true" style="flex:none"><path fill="#e0245e" d="M12 6a6 6 0 0 0-6 6v5h12v-5a6 6 0 0 0-6-6zm-8 13h16v2H4zM11 1h2v3h-2zM3.5 4.9l1.4-1.4 2.1 2.1-1.4 1.4zM17 5.6l2.1-2.1 1.4 1.4-2.1 2.1zM1 11h3v2H1zm19 0h3v2h-3z"></path></svg></span></span><span style="display:block;font-size:10px;font-style:italic;color:#5b6b7a;white-space:nowrap;overflow:hidden;text-overflow:ellipsis">PU01 | C0002 | HW / INTERFACE / bluetooth classic</span></span><span style="font-size:11px">✓</span><span style="font-size:11px">✓</span><span style="width:28px;height:28px;border-radius:50%;box-shadow:inset 0 0 0 1.5px #0a0a0a;color:#0a0a0a;display:inline-flex;align-items:center;justify-content:center;font-size:9.5px;font-weight:700">4%</span><span style="width:28px;height:28px;border-radius:50%;box-shadow:inset 0 0 0 1.5px #0a0a0a;color:#0a0a0a;display:inline-flex;align-items:center;justify-content:center;font-size:9.5px;font-weight:700">A</span><span style="width:28px;height:28px;border-radius:50%;box-shadow:inset 0 0 0 1.5px #e53935;color:#e53935;display:inline-flex;align-items:center;justify-content:center;font-size:9.5px;font-weight:700">8.1</span><span style="width:28px;height:28px;border-radius:50%;box-shadow:inset 0 0 0 1.5px #e53935;color:#e53935;display:inline-flex;align-items:center;justify-content:center;font-size:9.5px;font-weight:700">H</span></div><div class="pzcl5" style="overflow:hidden"><div class="" style="display:grid;grid-template-columns:minmax(0,1fr) 30px 30px 40px 30px 34px 30px;gap:6px;align-items:center;justify-items:center;padding:8px 14px;border-top:1px solid #eef1f2"><span style="justify-self:stretch;display:flex;flex-direction:column;gap:1px;min-width:0"><span style="display:flex;align-items:center;gap:6px;font-size:12px;font-weight:600">V0071 | CVE-20••-•••• </span><span style="display:block;font-size:10px;font-style:italic;color:#5b6b7a;white-space:nowrap;overflow:hidden;text-overflow:ellipsis">PU01 | C0006 | OS / YOCTO / OpenSSL - openssl / 3.0.2</span></span><span style="font-size:11px">-</span><span style="font-size:11px">-</span><span style="width:28px;height:28px;border-radius:50%;box-shadow:inset 0 0 0 1.5px #0a0a0a;color:#0a0a0a;display:inline-flex;align-items:center;justify-content:center;font-size:9.5px;font-weight:700">&lt;1%</span><span style="width:28px;height:28px;border-radius:50%;box-shadow:inset 0 0 0 1.5px #0a0a0a;color:#0a0a0a;display:inline-flex;align-items:center;justify-content:center;font-size:9.5px;font-weight:700">L</span><span style="width:28px;height:28px;border-radius:50%;box-shadow:inset 0 0 0 1.5px #f9a825;color:#f9a825;display:inline-flex;align-items:center;justify-content:center;font-size:9.5px;font-weight:700">3.7</span><span style="width:28px;height:28px;border-radius:50%;box-shadow:inset 0 0 0 1.5px #f9a825;color:#f9a825;display:inline-flex;align-items:center;justify-content:center;font-size:9.5px;font-weight:700">L</span></div></div>
+<div style="position:relative;padding:8px 14px 10px;border-top:1px solid #eef1f2;font-size:11px;color:#5b6b7a;min-height:34px"><span class="pzmb rm-hide" style="position:absolute;left:14px">+ 1,510 more vulnerabilities</span><span class="pzma">+ 35 more high-priority vulnerabilities</span></div></div></div></div>
+<div class="hx-pane hx-p5" role="img" aria-label="Step 5: Record every decision"><div style="display:flex;flex-direction:column;gap:14px">
+<div style="display:flex;flex-direction:column;gap:12px"><span style="font-size: 11px; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; color: #5b6b7a">In ARIANNA · vulnerability</span><div style="background:#fff;border-radius:10px;box-shadow:0 0 0 1px #e3e7ea,0 18px 40px -24px rgba(10,10,10,.35);padding:20px 22px;display:flex;flex-direction:column;gap:16px">
+<div style="display:flex;justify-content:space-between;align-items:flex-start;gap:16px">
+<div style="display:flex;flex-direction:column;gap:4px;min-width:0"><span style="display:flex;align-items:center;gap:8px;font-size:15px;font-weight:700">V0012 | CVE-20••-•••• <svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true" style="flex:none"><path fill="#e0245e" d="M12 6a6 6 0 0 0-6 6v5h12v-5a6 6 0 0 0-6-6zm-8 13h16v2H4zM11 1h2v3h-2zM3.5 4.9l1.4-1.4 2.1 2.1-1.4 1.4zM17 5.6l2.1-2.1 1.4 1.4-2.1 2.1zM1 11h3v2H1zm19 0h3v2h-3z"></path></svg></span>
+<span style="font-size:11.5px;font-style:italic;color:#5b6b7a">PU01 | C0006 | OS / YOCTO / OpenSSL - openssl / <span style="position:relative;display:inline-block"><span class="vvb rm-hide" style="position:absolute;left:0">3.0.2</span><span class="vva" style="font-weight:700;font-style:normal;color:#1a9e5c">3.0.13</span></span></span></div>
+<div style="position:relative;flex:none;display:flex;flex-direction:column;align-items:flex-end;gap:4px"><span style="font-size:10px;font-weight:600;letter-spacing:.06em;color:#5b6b7a">STATUS</span><span style="position:relative;display:block;width:250px;height:34px"><span class="vst0 rm-hide" style="position:absolute;inset:0;display:flex;align-items:center;justify-content:center;border-radius:6px;background:#8a979f;color:#fff;font-size:11.5px;font-weight:700;letter-spacing:.04em;white-space:nowrap">UNMANAGED</span><span class="vst1 rm-hide" style="position:absolute;inset:0;display:flex;align-items:center;justify-content:center;border-radius:6px;background:#e09a1e;color:#fff;font-size:11.5px;font-weight:700;letter-spacing:.04em;white-space:nowrap">IN TRIAGE</span><span class="vst2 rm-hide" style="position:absolute;inset:0;display:flex;align-items:center;justify-content:center;border-radius:6px;background:#2f6fd6;color:#fff;font-size:11.5px;font-weight:700;letter-spacing:.04em;white-space:nowrap">IN PROGRESS</span><span class="vst3" style="position:absolute;inset:0;display:flex;align-items:center;justify-content:center;border-radius:6px;background:#1a9e5c;color:#fff;font-size:11.5px;font-weight:700;letter-spacing:.04em;white-space:nowrap">CLOSED due to component update</span></span><div class="vd1 rm-hide" style="position:absolute;z-index:3;right:0;top:46px;width:200px;background:#fff;border-radius:6px;box-shadow:0 0 0 1px #e3e7ea,0 14px 28px -10px rgba(10,10,10,.3)"><div class="" style="padding:8px 14px;font-size:13px;text-align:left">Unmanaged</div><div class="vd1h" style="padding:8px 14px;font-size:13px;text-align:left">In triage</div><div class="" style="padding:8px 14px;font-size:13px;text-align:left">In progress</div><div class="" style="padding:8px 14px;font-size:13px;text-align:left">Planned closure</div><div class="" style="padding:8px 14px;font-size:13px;text-align:left">Closed</div></div><div class="vd2 rm-hide" style="position:absolute;z-index:3;right:0;top:46px;width:200px;background:#fff;border-radius:6px;box-shadow:0 0 0 1px #e3e7ea,0 14px 28px -10px rgba(10,10,10,.3)"><div class="" style="padding:8px 14px;font-size:13px;text-align:left">Unmanaged</div><div class="" style="padding:8px 14px;font-size:13px;text-align:left">In triage</div><div class="vd2h" style="padding:8px 14px;font-size:13px;text-align:left">In progress</div><div class="" style="padding:8px 14px;font-size:13px;text-align:left">Planned closure</div><div class="" style="padding:8px 14px;font-size:13px;text-align:left">Closed</div></div></div></div>
+<div style="display:flex;flex-wrap:wrap;gap:8px 18px;font-size:12px;color:#33414c"><span>EXP <strong>✓</strong></span><span>EPSS <strong style="color:#e0245e">32%</strong></span><span>AV <strong>Network</strong></span><span>SEV <strong style="color:#e53935">7.5</strong></span><span>RISK <strong style="color:#e53935">HIGH</strong></span><span style="color:#e0245e;font-weight:600">High priority</span></div>
+<div class="vdec" style="display:flex;align-items:center;gap:10px;padding:10px 12px;border-radius:6px;background:#eef4fd;box-shadow:inset 0 0 0 1px #c9dbf7;font-size:12.5px"><span style="font-size:10px;font-weight:700;letter-spacing:.06em;color:#2f6fd6">DECISION</span>Update component: openssl 3.0.2 → 3.0.13</div>
+<div class="vupd" style="display:flex;align-items:center;gap:10px;padding:10px 12px;border-radius:6px;background:#0d1b1b;color:#e6f2f1;font-size:12px;font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace"><span style="color:#62ed9c">✓</span>New SBOM uploaded · Yocto Linux v2.1 · openssl 3.0.13</div>
+</div></div>
+
+<div style="display:flex;flex-direction:column;gap:12px"><span style="font-size: 11px; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; color: #5b6b7a">Timeline · audit trail</span><div style="background:#fff;border-radius:8px;box-shadow:0 0 0 1px #e3e7ea;padding:16px 18px 2px"><div class="ve0" style="position:relative;display:grid;grid-template-columns:14px 92px minmax(0,1fr);gap:12px;align-items:start;padding-bottom:14px"><span style="position:absolute;left:6px;top:20px;bottom:-14px;width:2px;background:#d5dcdf"></span><span style="margin-top:4px;width:14px;height:14px;border-radius:50%;background:#8a979f;box-shadow:0 0 0 3px #fff,0 0 0 4px #8a979f33"></span><span style="font-size:12px;color:#5b6b7a;padding-top:1px">2 Nov 2026</span><span style="display:flex;flex-direction:column;gap:2px"><strong style="font-size:13.5px">Detected · Unmanaged</strong><span style="font-size:12px;color:#5b6b7a">Mapped to openssl 3.0.2 on PU 1 by ARIANNA</span></span></div>
+<div class="ve1" style="position:relative;display:grid;grid-template-columns:14px 92px minmax(0,1fr);gap:12px;align-items:start;padding-bottom:14px"><span style="position:absolute;left:6px;top:20px;bottom:-14px;width:2px;background:#d5dcdf"></span><span style="margin-top:4px;width:14px;height:14px;border-radius:50%;background:#e09a1e;box-shadow:0 0 0 3px #fff,0 0 0 4px #e09a1e33"></span><span style="font-size:12px;color:#5b6b7a;padding-top:1px">3 Nov 2026</span><span style="display:flex;flex-direction:column;gap:2px"><strong style="font-size:13.5px">Status changed to In triage</strong><span style="font-size:12px;color:#5b6b7a">Security team · "Reachable from the network, assess impact"</span></span></div>
+<div class="ve2" style="position:relative;display:grid;grid-template-columns:14px 92px minmax(0,1fr);gap:12px;align-items:start;padding-bottom:14px"><span style="position:absolute;left:6px;top:20px;bottom:-14px;width:2px;background:#d5dcdf"></span><span style="margin-top:4px;width:14px;height:14px;border-radius:50%;background:#2f6fd6;box-shadow:0 0 0 3px #fff,0 0 0 4px #2f6fd633"></span><span style="font-size:12px;color:#5b6b7a;padding-top:1px">4 Nov 2026</span><span style="display:flex;flex-direction:column;gap:2px"><strong style="font-size:13.5px">Status changed to In progress</strong><span style="font-size:12px;color:#5b6b7a">Decision: update component to openssl 3.0.13</span></span></div>
+<div class="ve3" style="position:relative;display:grid;grid-template-columns:14px 92px minmax(0,1fr);gap:12px;align-items:start;padding-bottom:14px"><span style="position:absolute;left:6px;top:20px;bottom:-14px;width:2px;background:#d5dcdf"></span><span style="margin-top:4px;width:14px;height:14px;border-radius:50%;background:#1a7472;box-shadow:0 0 0 3px #fff,0 0 0 4px #1a747233"></span><span style="font-size:12px;color:#5b6b7a;padding-top:1px">9 Nov 2026</span><span style="display:flex;flex-direction:column;gap:2px"><strong style="font-size:13.5px">New SBOM uploaded</strong><span style="font-size:12px;color:#5b6b7a">Yocto Linux v2.1 · openssl 3.0.2 → 3.0.13</span></span></div>
+<div class="ve4" style="position:relative;display:grid;grid-template-columns:14px 92px minmax(0,1fr);gap:12px;align-items:start;padding-bottom:14px"><span style="margin-top:4px;width:14px;height:14px;border-radius:50%;background:#1a9e5c;box-shadow:0 0 0 3px #fff,0 0 0 4px #1a9e5c33"></span><span style="font-size:12px;color:#5b6b7a;padding-top:1px">9 Nov 2026</span><span style="display:flex;flex-direction:column;gap:2px"><strong style="font-size:13.5px">Closed due to component update</strong><span style="font-size:12px;color:#5b6b7a">Automatic: the fixed version is in the new SBOM</span></span></div>
+</div></div></div></div>
+</div></div></div>
+</div>
+</section>
+
+<section id="why" style="background: #ffffff">
+<div style="max-width: 1240px; margin: 0 auto; padding: 96px 24px; display: flex; flex-direction: column; gap: 40px">
+<div style="display: flex; flex-direction: column; gap: 14px; max-width: 720px">
+<div style="font-size: 12px; font-weight: 600; letter-spacing: 0.24em; text-transform: uppercase; color: #1a7472">Why ARIANNA</div>
+<h2 style="margin: 0; font-size: 40px; line-height: 1.15; font-weight: 700">From microcontroller to cloud, without exposing your IP</h2>
+</div>
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 20px">
+<div style="background: #e8f6f5; border-radius: 8px; padding: 28px; display: flex; flex-direction: column; gap: 12px">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" style="width: 28px; height: 28px" fill="none" stroke="#1a7472" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="11" width="16" height="10" rx="2"></rect><path d="M8 11V7a4 4 0 0 1 8 0v4"></path></svg>
+<h3 style="margin: 0; font-size: 20px; font-weight: 600">SBOM without IP exposure</h3>
+<p style="margin: 0; font-size: 15px; line-height: 1.6; color: #33414c">Generated from the build environment, so you never hand over binaries or source code.</p>
+</div>
+<div style="background: #e8f6f5; border-radius: 8px; padding: 28px; display: flex; flex-direction: column; gap: 12px">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" style="width: 28px; height: 28px" fill="none" stroke="#1a7472" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="6" width="12" height="12" rx="1.5"></rect><rect x="9.5" y="9.5" width="5" height="5"></rect><path d="M9 2v4M15 2v4M9 18v4M15 18v4M2 9h4M2 15h4M18 9h4M18 15h4"></path></svg>
+<h3 style="margin: 0; font-size: 20px; font-weight: 600">Bring hardware into the picture</h3>
+<p style="margin: 0; font-size: 15px; line-height: 1.6; color: #33414c">Every MCU, MPU, secure element and interface in your device goes into an HBOM, so hardware vulnerabilities are monitored just like software.</p>
+</div>
+<div style="background: #e8f6f5; border-radius: 8px; padding: 28px; display: flex; flex-direction: column; gap: 12px">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" style="width: 28px; height: 28px" fill="none" stroke="#1a7472" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M7 18a4.5 4.5 0 0 1-.6-8.96A6 6 0 0 1 18 9.5a4 4 0 0 1-.5 8.5H7Z"></path></svg>
+<h3 style="margin: 0; font-size: 20px; font-weight: 600">One view from device to cloud</h3>
+<p style="margin: 0; font-size: 15px; line-height: 1.6; color: #33414c">Protect RTOS and bare-metal firmware, embedded Linux, companion app and cloud backend in a single risk view.</p>
+</div>
+<div style="background: #e8f6f5; border-radius: 8px; padding: 28px; display: flex; flex-direction: column; gap: 12px">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" style="width: 28px; height: 28px" fill="none" stroke="#1a7472" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 4h18l-7 8.5V19l-4 2v-8.5L3 4Z"></path><path d="M19 15v3M19 21h.01"></path></svg>
+<h3 style="margin: 0; font-size: 20px; font-weight: 600">Context-based prioritisation</h3>
+<p style="margin: 0; font-size: 15px; line-height: 1.6; color: #33414c">Automatically flags the high-priority vulnerabilities, based on your device's security context, its characteristics and real-world exploitation data.</p>
+</div>
+</div>
+<div style="display: flex; flex-wrap: wrap; gap: 8px; align-items: center"><span style="font-size: 14px; font-weight: 600; margin-right: 8px">Supported ecosystems</span><span style="padding: 8px 14px; border: 1px solid rgb(227, 231, 234); border-radius: 4px; font-size: 13px">Yocto</span><span style="padding: 8px 14px; border: 1px solid rgb(227, 231, 234); border-radius: 4px; font-size: 13px">Buildroot</span><span style="padding: 8px 14px; border: 1px solid rgb(227, 231, 234); border-radius: 4px; font-size: 13px">Zephyr</span><span style="padding: 8px 14px; border: 1px solid rgb(227, 231, 234); border-radius: 4px; font-size: 13px">STM32 SDK</span><span style="padding: 8px 14px; border: 1px solid rgb(227, 231, 234); border-radius: 4px; font-size: 13px">Espressif SDK</span><span style="padding: 8px 14px; border: 1px solid rgb(227, 231, 234); border-radius: 4px; font-size: 13px">Nordic SDK</span><span style="padding: 8px 14px; border: 1px solid rgb(227, 231, 234); border-radius: 4px; font-size: 13px">NXP SDK</span><span style="padding: 8px 14px; border: 1px solid rgb(227, 231, 234); border-radius: 4px; font-size: 13px">IAR EW</span><span style="padding: 8px 14px; border: 1px solid rgb(227, 231, 234); border-radius: 4px; font-size: 13px">Windows</span><a href="platform.html#sca-tools" style="padding: 8px 14px; background: rgb(10, 10, 10); color: rgb(255, 255, 255); border-radius: 4px; font-size: 13px; text-decoration: none">+ 23 more</a></div>
+</div>
+</section>
+
+<section id="solutions" style="background: #f5f7f7">
+<div style="max-width: 1240px; margin: 0 auto; padding: 96px 24px; display: flex; flex-direction: column; gap: 36px">
+<div style="max-width: 760px; display: flex; flex-direction: column; gap: 18px">
+<div style="font-size: 12px; font-weight: 600; letter-spacing: 0.24em; text-transform: uppercase; color: #1a7472">Industries</div>
+<h2 style="margin: 0; font-size: 40px; line-height: 1.15; font-weight: 700">Built for device manufacturers in these industries</h2>
+</div>
+<div style="display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 20px">
+<a href="industries.html#smart-home" style="background: #ffffff; border-radius: 8px; padding: 28px; display: flex; flex-direction: column; gap: 8px; text-decoration: none; color: #0a0a0a"><strong style="font-size: 20px">Consumer Electronics &amp; Smart Building</strong><span style="font-size: 14px; line-height: 1.6; color: #5b6770">Smart home, building automation &amp; access control</span></a>
+<a href="industries.html#energy" style="background: #ffffff; border-radius: 8px; padding: 28px; display: flex; flex-direction: column; gap: 8px; text-decoration: none; color: #0a0a0a"><strong style="font-size: 20px">Energy &amp; Utility</strong><span style="font-size: 14px; line-height: 1.6; color: #5b6770">Energy management, heating &amp; power grids</span></a>
+<a href="industries.html#medical" style="background: #ffffff; border-radius: 8px; padding: 28px; display: flex; flex-direction: column; gap: 8px; text-decoration: none; color: #0a0a0a"><strong style="font-size: 20px">Medical</strong><span style="font-size: 14px; line-height: 1.6; color: #5b6770">Connected medical equipment, patient monitoring &amp; healthcare systems</span></a>
+<a href="industries.html#appliances" style="background: #ffffff; border-radius: 8px; padding: 28px; display: flex; flex-direction: column; gap: 8px; text-decoration: none; color: #0a0a0a"><strong style="font-size: 20px">Commercial &amp; Professional</strong><span style="font-size: 14px; line-height: 1.6; color: #5b6770">Professional appliances &amp; business-critical devices</span></a>
+<a href="industries.html#industrial" style="background: #ffffff; border-radius: 8px; padding: 28px; display: flex; flex-direction: column; gap: 8px; text-decoration: none; color: #0a0a0a"><strong style="font-size: 20px">Industrial Control</strong><span style="font-size: 14px; line-height: 1.6; color: #5b6770">Industrial automation, process control &amp; Operational Technology</span></a>
+<a href="industries.html#automotive" style="background: #ffffff; border-radius: 8px; padding: 28px; display: flex; flex-direction: column; gap: 8px; text-decoration: none; color: #0a0a0a"><strong style="font-size: 20px">Automotive</strong><span style="font-size: 14px; line-height: 1.6; color: #5b6770">Automotive electronics, connected vehicles &amp; transportation systems</span></a>
+</div>
+<a href="industries.html" style="font-size: 15px; font-weight: 600; color: #1a7472">Industries overview →</a>
+</div>
+</section>
+
+<section id="compliance" style="background: #0a0a0a; color: #ffffff">
+<div style="max-width: 1240px; margin: 0 auto; padding: 96px 24px; display: flex; flex-direction: column; gap: 36px">
+<div style="max-width: 760px; display: flex; flex-direction: column; gap: 18px">
+<div style="font-size: 12px; font-weight: 600; letter-spacing: 0.24em; text-transform: uppercase; color: #3fbab7">Compliance</div>
+<h2 style="margin: 0; font-size: 40px; line-height: 1.15; font-weight: 700">One platform for every regulation your devices face</h2>
+<p style="margin: 0; font-size: 16px; line-height: 1.65; color: #c9d0d4">Device manufacturers are liable for device security across the whole product life cycle. ARIANNA helps you reach compliance with ease.</p>
+</div>
+<div style="display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 20px">
+<a href="compliance.html#cra" style="background: #1a1f23; border-radius: 8px; padding: 28px; display: flex; flex-direction: column; gap: 8px; text-decoration: none; color: #ffffff"><strong style="font-size: 20px">CRA</strong><span style="font-size: 14px; line-height: 1.6; color: #a3acb2">EU Cyber Resilience Act</span></a>
+<a href="compliance.html#red" style="background: #1a1f23; border-radius: 8px; padding: 28px; display: flex; flex-direction: column; gap: 8px; text-decoration: none; color: #ffffff"><strong style="font-size: 20px">RED DA</strong><span style="font-size: 14px; line-height: 1.6; color: #a3acb2">Radio Equipment Directive, Delegated Act</span></a>
+<a href="compliance.html#iec62443" style="background: #1a1f23; border-radius: 8px; padding: 28px; display: flex; flex-direction: column; gap: 8px; text-decoration: none; color: #ffffff"><strong style="font-size: 20px">IEC 62443</strong><span style="font-size: 14px; line-height: 1.6; color: #a3acb2">The bar in industrial markets</span></a>
+<a href="compliance.html#fda" style="background: #1a1f23; border-radius: 8px; padding: 28px; display: flex; flex-direction: column; gap: 8px; text-decoration: none; color: #ffffff"><strong style="font-size: 20px">FDA</strong><span style="font-size: 14px; line-height: 1.6; color: #a3acb2">Medical device cybersecurity</span></a>
+</div>
+<a href="compliance.html" style="font-size: 15px; font-weight: 600; color: #3fbab7">Compliance overview →</a>
+</div>
+</section>
+
+<section style="background: #f2faf9; border-top: 1px solid #c7e6e4; border-bottom: 1px solid #c7e6e4">
+<div style="max-width: 1040px; margin: 0 auto; padding: 104px 24px; display: flex; flex-wrap: wrap; align-items: center; gap: 40px 64px">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 58 67" aria-hidden="true" style="width: 112px; height: auto; flex: none">
+<path fill="#3fbab7" d="M56.8,56.5V.8H1v55.7h20.5v-3.1H4.1V3.9h49.6v49.5h-14.3v-5.6h8.7V9.5H9.7v38.3h13.2c2.4,0,3.9.5,4.7,1.5,1,1.5.8,4.3-.7,8.3-1,2.8-.5,5.7,1.2,7.4,1,.9,2.3,1.4,3.8,1.4s2.8-.4,3.7-.8l-1.2-2.9c-1.9.7-3.4.7-4.3,0-.9-.8-1-2.5-.4-4.1,1.9-5.2,2-8.8.3-11.2-1.3-1.9-3.7-2.8-7.2-2.8h-10.1V12.6h32.2v32.2h-8.7v11.8h20.5Z"></path>
+<polygon fill="#3fbab7" points="36.3 21.3 36.3 36.1 21.5 36.1 21.5 30 30.7 30 30.7 26.9 18.4 26.9 18.4 39.2 39.4 39.2 39.4 18.2 18.4 18.2 18.4 21.3 36.3 21.3"></polygon>
+</svg>
+<figure style="margin: 0; flex: 1 1 520px; display: flex; flex-direction: column; gap: 24px">
+<blockquote style="margin: 0; font-size: 34px; line-height: 1.35; font-weight: 300; color: #0a0a0a">“Product security and compliance are complex to navigate, like a labyrinth: our platform’s goal is to show you the way.”</blockquote>
+<figcaption style="display: flex; align-items: center; gap: 12px; font-size: 13px; font-weight: 600; letter-spacing: 0.16em; text-transform: uppercase; color: #1a7472"><span aria-hidden="true" style="width: 32px; height: 2px; background: #3fbab7"></span>ARIANNA Product Team</figcaption>
+</figure>
+</div>
+</section>
+
+<section id="resources" style="background: #ffffff">
+<div style="max-width: 1240px; margin: 0 auto; padding: 96px 24px; display: flex; flex-direction: column; gap: 40px">
+<div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: end; gap: 16px">
+<div style="display: flex; flex-direction: column; gap: 14px">
+<div style="font-size: 12px; font-weight: 600; letter-spacing: 0.24em; text-transform: uppercase; color: #1a7472">NEWS &amp; ARTICLES</div>
+<h2 style="margin: 0; font-size: 40px; line-height: 1.15; font-weight: 700">Latest from ARIANNA</h2>
+</div>
+<a href="resources.html" style="font-size: 15px; font-weight: 600">All insights →</a>
+</div>
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px">
+<a href="blog-refrigeration-vulnerabilities.html" style="border: 1px solid #e3e7ea; border-radius: 8px; padding: 26px; display: flex; flex-direction: column; gap: 14px; text-decoration: none; color: #0a0a0a; min-height: 200px">
+<span style="font-size: 12px; font-weight: 600; letter-spacing: 0.16em; text-transform: uppercase; color: #1a7472">Blog</span>
+<strong style="font-size: 19px; line-height: 1.4">The refrigeration systems behind the attacks: known vulnerabilities, ignored security advisories?</strong>
+</a>
+<a href="blog-refrigeration-attacks.html" style="border: 1px solid #e3e7ea; border-radius: 8px; padding: 26px; display: flex; flex-direction: column; gap: 14px; text-decoration: none; color: #0a0a0a; min-height: 200px">
+<span style="font-size: 12px; font-weight: 600; letter-spacing: 0.16em; text-transform: uppercase; color: #1a7472">Blog</span>
+<strong style="font-size: 19px; line-height: 1.4">When cyberattacks become physical: lessons from the supermarket refrigeration attacks</strong>
+</a>
+<a href="blog-cra-24-hour-exploit-reporting-rule.html" style="border: 1px solid #e3e7ea; border-radius: 8px; padding: 26px; display: flex; flex-direction: column; gap: 14px; text-decoration: none; color: #0a0a0a; min-height: 200px">
+<span style="font-size: 12px; font-weight: 600; letter-spacing: 0.16em; text-transform: uppercase; color: #1a7472">Blog</span>
+<strong style="font-size: 19px; line-height: 1.4">CRA's 24-hour exploit reporting rule is going to expose a major industry problem</strong>
+</a>
+</div>
+</div>
+</section>
+
+</main>
+<footer class="site-footer" style="background: #0a0a0a; color: #a3acb2">
+<div style="max-width: 1240px; margin: 0 auto; padding: 56px 24px 40px; display: flex; flex-direction: column; gap: 40px">
+<div style="display: flex; flex-wrap: wrap; gap: 40px 64px; justify-content: space-between">
+<div style="flex: 1 1 260px; display: flex; flex-direction: column; gap: 16px">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 206.8 67.1" role="img" aria-label="ARIANNA logo" style="width: 200px; height: auto">
+<g fill="#ffffff"><polygon points="162.1 20.4 159.4 20.4 159.4 31.2 147.7 20.5 147.7 37 150.4 37 150.4 26.3 162.1 36.9 162.1 20.4"></polygon><path d="M197.8,25.8l2.9,6.3h-5.9l3-6.3ZM189.3,37h2.9l1.3-2.7h8.5l1.3,2.7h2.9l-8.4-16.5-8.4,16.5Z"></path><path d="M136.5,32h-5.9l3-6.3,3,6.3ZM125.1,37h2.9l1.3-2.7h8.5l1.3,2.7h2.9l-8.4-16.5-8.5,16.5Z"></path><polygon points="183.6 20.4 181 20.4 181 31.2 169.3 20.5 169.3 37 172 37 172 26.3 183.6 36.9 183.6 20.4"></polygon><path d="M98.7,22.7h4.8c.6,0,1.2.1,1.6.4.4.2.7.6.9.9.2.3.3.7.4,1.1,0,.4,0,.7,0,1,0,.5,0,1-.3,1.4-.2.4-.4.7-.7,1-.3.3-.6.5-1,.6-.4.1-.7.2-1,.2h-4.8v-6.5ZM102.6,31.6c.7.9,1.3,1.9,2,2.8.6.9,1.3,1.7,1.9,2.6h3.1c-1.3-1.8-2.6-3.5-3.9-5.3l-.3-.3.4-.2c1-.4,1.8-1.1,2.5-2,.6-.9.9-2,.9-3.2s-.1-1.6-.4-2.3c-.3-.7-.7-1.3-1.1-1.8-.5-.5-1.1-.9-1.8-1.2-.7-.3-1.5-.4-2.3-.4h-7.5v16.6h2.7v-5.5h3.8Z"></path><rect x="116.3" y="20.4" width="2.7" height="16.6"></rect><path d="M85.8,32h-5.9l3-6.3,3,6.3ZM74.4,37h2.9l1.3-2.7h8.5l1.3,2.7h2.9l-8.5-16.5-8.4,16.5Z"></path></g>
+<g fill="#3fbab7"><path d="M56.8,56.5V.8H1v55.7h20.5v-3.1H4.1V3.9h49.6v49.5h-14.3v-5.6h8.7V9.5H9.7v38.3h13.2c2.4,0,3.9.5,4.7,1.5,1,1.5.8,4.3-.7,8.3-1,2.8-.5,5.7,1.2,7.4,1,.9,2.3,1.4,3.8,1.4s2.8-.4,3.7-.8l-1.2-2.9c-1.9.7-3.4.7-4.3,0-.9-.8-1-2.5-.4-4.1,1.9-5.2,2-8.8.3-11.2-1.3-1.9-3.7-2.8-7.2-2.8h-10.1V12.6h32.2v32.2h-8.7v11.8h20.5Z"></path><polygon points="36.3 21.3 36.3 36.1 21.5 36.1 21.5 30 30.7 30 30.7 26.9 18.4 26.9 18.4 39.2 39.4 39.2 39.4 18.2 18.4 18.2 18.4 21.3 36.3 21.3"></polygon></g>
+</svg>
+</div>
+<div style="flex: 2 1 560px; display: flex; flex-wrap: wrap; justify-content: flex-end; gap: 32px 56px; font-size: 14px; line-height: 1.5">
+<div style="display: flex; flex-direction: column; gap: 10px"><strong style="color: #ffffff; font-size: 14px">Platform</strong><a href="platform.html#device-model" style="color: #a3acb2; text-decoration: none">SBOM &amp; HBOM</a><a href="platform.html#monitoring" style="color: #a3acb2; text-decoration: none">Monitoring</a><a href="platform.html#remediation" style="color: #a3acb2; text-decoration: none">Remediation</a><a href="platform.html#integrations" style="color: #a3acb2; text-decoration: none">Integrations</a></div>
+<div style="display: flex; flex-direction: column; gap: 10px"><strong style="color: #ffffff; font-size: 14px">Compliance</strong><a href="compliance.html#cra" style="color: #a3acb2; text-decoration: none">CRA</a><a href="compliance.html#red" style="color: #a3acb2; text-decoration: none">RED DA</a><a href="compliance.html#iec62443" style="color: #a3acb2; text-decoration: none">IEC 62443</a><a href="compliance.html#fda" style="color: #a3acb2; text-decoration: none">FDA</a></div>
+<div style="display: flex; flex-direction: column; gap: 10px"><strong style="color: #ffffff; font-size: 14px">Company</strong><a href="company.html" style="color: #a3acb2; text-decoration: none">About</a><a href="partners.html" style="color: #a3acb2; text-decoration: none">Partners</a><a href="company.html#careers" style="color: #a3acb2; text-decoration: none">Careers</a><a href="company.html#events" style="color: #a3acb2; text-decoration: none">Events</a></div>
+<div style="display: flex; flex-direction: column; gap: 10px"><strong style="color: #ffffff; font-size: 14px">Contact</strong><span style="white-space: nowrap"><strong style="color: #ffffff">email</strong> | hello@ariannateam.ai</span><span style="white-space: nowrap"><strong style="color: #ffffff">phone</strong> | +39 331 3482583</span><a href="contact.html" style="color: #a3acb2; text-decoration: none">Contact form</a><a href="https://www.linkedin.com/company/arianna-team" style="margin-top: 4px; align-self: flex-start; display: inline-flex; align-items: center; gap: 10px; padding: 8px 14px 8px 8px; border: 1px solid #3a4248; border-radius: 6px; color: #ffffff; font-weight: 600; text-decoration: none"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" style="width: 24px; height: 24px; flex: none; display: block"><rect width="24" height="24" rx="4" fill="#a3acb2"></rect><path fill="#0a0a0a" d="M7.1 9.6h2.6v8.3H7.1zM8.4 5.5a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3zM11.3 9.6h2.5v1.1h.04c.35-.66 1.2-1.36 2.47-1.36 2.64 0 3.13 1.74 3.13 4v4.55h-2.6v-4.03c0-.96-.02-2.2-1.34-2.2-1.34 0-1.55 1.05-1.55 2.13v4.1h-2.6z"></path></svg>Follow us on LinkedIn</a></div>
+</div>
+</div>
+<div style="border-top: 1px solid #2a2f33; padding-top: 20px; display: flex; flex-wrap: wrap; justify-content: space-between; gap: 12px; font-size: 13px">
+<span>ARIANNA Team SRL | VAT 04809390984 | Italy</span>
+<span><a href="privacy.html" style="color: #a3acb2">Privacy &amp; GDPR</a> · <a href="#cookie-settings" data-cookie-settings style="color: #a3acb2">Cookie settings</a></span>
+</div>
+</div>
+</footer>
+</div>
+<script src="site-shell.js"></script>
+<script src="attribution.js"></script>
+<script src="assets/site.js"></script>
 </body>
 </html>

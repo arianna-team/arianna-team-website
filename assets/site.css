@@ -1,0 +1,115 @@
+/* Shared styles for the 2026 site design. Page content uses inline styles
+   from the design boards; this file adds the base, header behaviour and the
+   small-screen overrides those inline styles cannot express. */
+html { scroll-behavior: smooth; }
+body { margin: 0; background: #ffffff; -webkit-text-size-adjust: 100%; font-family: 'Montserrat', 'Helvetica Neue', Arial, sans-serif; }
+.cookie-banner, .cookie-banner h3, .cookie-banner p, .cookie-banner button { font-family: inherit !important; }
+* { box-sizing: border-box; }
+img { max-width: 100%; }
+a { color: #1a7472; }
+a:hover { color: #0a0a0a; }
+:target { scroll-margin-top: 96px; }
+
+.site-header { position: sticky; top: 0; z-index: 50; }
+.site-header nav a { transition: color .15s; }
+.site-header nav a:hover,
+.site-header nav a[aria-current="page"] {
+  color: #1a7472 !important;
+  text-decoration: underline !important;
+  text-decoration-color: #3fbab7 !important;
+  text-decoration-thickness: 2px !important;
+  text-underline-offset: 8px;
+}
+.site-footer a:hover { color: #ffffff !important; }
+.site-menu-toggle { display: none; }
+
+a:focus-visible, button:focus-visible, label:focus-visible {
+  outline: 2px solid #3fbab7;
+  outline-offset: 3px;
+}
+
+/* Article text for pages converted from the previous site */
+.prose { display: flex; flex-direction: column; gap: 18px; font-size: 16px; line-height: 1.75; color: #33414c; }
+.prose p, .prose ul, .prose ol, .prose blockquote { margin: 0; }
+.prose h2 { margin: 16px 0 0; font-size: 24px; line-height: 1.3; font-weight: 700; color: #0a0a0a; }
+.prose h3 { margin: 8px 0 0; font-size: 19px; line-height: 1.35; font-weight: 700; color: #0a0a0a; }
+.prose ul, .prose ol { padding-left: 22px; display: flex; flex-direction: column; gap: 6px; }
+.prose strong { color: #0a0a0a; }
+.prose blockquote { padding: 14px 18px; background: #f2faf9; border-left: 3px solid #3fbab7; border-radius: 4px; color: #0a0a0a; }
+.prose code { font-size: .92em; padding: 1px 6px; background: #f5f7f7; border-radius: 4px; }
+.prose .press-label { font-size: 12px; font-weight: 600; letter-spacing: .16em; text-transform: uppercase; color: #1a7472; }
+.prose .contact-block { padding: 16px 18px; background: #f5f7f7; border-radius: 8px; font-size: 15px; }
+.prose .quote-name { font-size: 14px; color: #5b6b7a; }
+
+/* User manual contents */
+.manual-index { top: 96px !important; max-height: calc(100vh - 120px); overflow-y: auto; }
+
+/* Tablet */
+@media (max-width: 1024px) {
+  .site-main [style*="grid-template-columns: repeat(4, minmax(0, 1fr))"] { grid-template-columns: repeat(2, minmax(0, 1fr)) !important; }
+  .site-main [style*="grid-template-columns: repeat(3, minmax(0, 1fr))"] { grid-template-columns: repeat(2, minmax(0, 1fr)) !important; }
+}
+
+/* Header collapses into a menu */
+@media (max-width: 960px) {
+  .site-header-inner { flex-wrap: nowrap !important; }
+  .site-header .site-logo { margin-right: auto; }
+  .site-header nav {
+    display: none !important;
+    position: absolute; left: 0; right: 0; top: 100%;
+    flex-direction: column; gap: 0 !important;
+    background: #ffffff; border-bottom: 1px solid #e3e7ea;
+    padding: 8px 24px 16px;
+    box-shadow: 0 16px 24px -16px rgba(10, 10, 10, .25);
+  }
+  .site-header nav a { padding: 12px 0; border-bottom: 1px solid #eef1f2; font-size: 16px; }
+  .site-header.is-open nav { display: flex !important; }
+  .site-menu-toggle {
+    display: inline-flex; align-items: center; justify-content: center;
+    width: 44px; height: 44px; padding: 0; border: 1px solid #d5dbdf; border-radius: 6px;
+    background: #ffffff; color: #0a0a0a; cursor: pointer;
+  }
+  .site-menu-toggle svg { width: 22px; height: 22px; }
+  .site-header .site-header-cta { min-height: 44px !important; padding: 0 14px !important; font-size: 14px !important; }
+}
+
+/* Interactive "how it works" steps (Home): stack on tablets */
+@media (max-width: 960px) {
+  .hx { grid-template-columns: minmax(0, 1fr) !important; }
+  .hx > div:last-child { zoom: .86; }
+}
+
+/* Phone */
+@media (max-width: 640px) {
+  /* The step animations need a wide screen; on phones the steps read as a list. */
+  .hx > div:last-child { display: none !important; }
+  .hx > div:first-child > span:first-child { display: none !important; }
+  .site-main .hx:not(#x) .hx-step { opacity: 1 !important; background: #ffffff !important; box-shadow: 0 0 0 1px #e3e7ea !important; cursor: default; margin-bottom: 10px; }
+  .site-main .hx:not(#x) .hx-step .hx-num { background: #1a7472 !important; color: #ffffff !important; }
+  .site-footer [style*="justify-content: flex-end"] { justify-content: flex-start !important; }
+  .ptg-tabs label { padding: 8px 12px !important; font-size: 13px !important; white-space: nowrap; }
+}
+@media (max-width: 720px) {
+  .site-main h1 { font-size: clamp(32px, 9vw, 44px) !important; }
+  .site-main h2[style*="font-size: 40px"] { font-size: clamp(26px, 7vw, 32px) !important; }
+  .site-main section > div[style*="max-width: 1240px"] { padding-top: 56px !important; padding-bottom: 56px !important; }
+  .site-main [style*="grid-template-columns: repeat(4, minmax(0, 1fr))"],
+  .site-main [style*="grid-template-columns: repeat(3, minmax(0, 1fr))"],
+  .site-main [style*="grid-template-columns: repeat(2, minmax(0, 1fr))"] { grid-template-columns: minmax(0, 1fr) !important; }
+  .site-main [style*="minmax(260px, 1fr)"],
+  .site-main [style*="minmax(280px, 1fr)"],
+  .site-main [style*="minmax(300px, 1fr)"],
+  .site-main [style*="minmax(320px, 1fr)"] { grid-template-columns: minmax(0, 1fr) !important; }
+  .site-main figure { padding: 16px !important; }
+  .site-main table { display: block; max-width: 100%; overflow-x: auto; -webkit-overflow-scrolling: touch; }
+  .manual-index { position: static !important; flex: 1 1 100% !important; max-height: 50vh; }
+  .site-main h1[style*="font-size: 44px"] { font-size: clamp(28px, 8vw, 36px) !important; }
+  .site-header .site-logo svg { width: 132px !important; }
+}
+@media (max-width: 420px) {
+  .site-header .site-header-cta { display: none !important; }
+}
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after { animation-duration: .01ms !important; animation-iteration-count: 1 !important; transition-duration: .01ms !important; }
+}
