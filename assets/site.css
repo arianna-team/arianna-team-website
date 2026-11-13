@@ -41,6 +41,15 @@ a:focus-visible, button:focus-visible, label:focus-visible {
 .prose .contact-block { padding: 16px 18px; background: #f5f7f7; border-radius: 8px; font-size: 15px; }
 .prose .quote-name { font-size: 14px; color: #5b6b7a; }
 
+/* Nutshell form: let the site's panel show through Nutshell's own background colour */
+[data-nutshell-form] form,
+[data-nutshell-form] form > div,
+[data-nutshell-form] form > fieldset,
+[data-nutshell-form] > div,
+[data-nutshell-form] > div > div { background: transparent !important; background-color: transparent !important; }
+[data-nutshell-form] button[type="submit"],
+[data-nutshell-form] input[type="submit"] { color: #ffffff !important; }
+
 /* User manual contents */
 .manual-index { top: 96px !important; max-height: calc(100vh - 120px); overflow-y: auto; }
 
