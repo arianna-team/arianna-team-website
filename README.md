@@ -39,3 +39,7 @@ Pages are linked without ".html" (for example `/platform`, `/contact`). GitHub P
 1. Open `/contact` and `/book-a-demo` and confirm the Nutshell form renders; on `/contact` also the meeting scheduler.
 2. Submit a test entry and confirm it arrives in Nutshell.
 3. Accept cookies and confirm the chat loads; choose "Only necessary" and confirm it does not.
+
+## Redirects for removed pages
+
+Pages from the previous site (old articles, newsletters, use cases, free trial, support) are kept as small redirect files that send visitors to the home page and are excluded from search (`noindex`, canonical to `/`). `404.html` does the same for any other address that no longer exists. These files are not in `sitemap.xml`.
