@@ -30,8 +30,12 @@ Every page uses the 2026 design: page content with inline styles, plus the share
 
 `site-shell.js` adds the cookie banner, Google Analytics (after consent), the Nutshell contact/demo form (`data-nutshell-form`), the CEO meeting scheduler (`data-nutshell-scheduler`) and the Nutshell chat (only after "Accept all"). `attribution.js` attaches campaign attribution to form submissions after consent.
 
+### Page addresses
+
+Pages are linked without ".html" (for example `/platform`, `/contact`). GitHub Pages serves `platform.html` for `/platform`, and the old `.html` addresses keep working. Canonical URLs, Open Graph URLs and `sitemap.xml` use the clean form.
+
 ### Verify after deploy
 
-1. Open `contact.html` and `book-a-demo.html` and confirm the Nutshell form renders; on `contact.html` also the meeting scheduler.
+1. Open `/contact` and `/book-a-demo` and confirm the Nutshell form renders; on `/contact` also the meeting scheduler.
 2. Submit a test entry and confirm it arrives in Nutshell.
 3. Accept cookies and confirm the chat loads; choose "Only necessary" and confirm it does not.
