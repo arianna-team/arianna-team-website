@@ -616,7 +616,7 @@
       banner.setAttribute("aria-label", "Cookie preferences");
       banner.innerHTML = [
         '<h3>Cookie preferences</h3>',
-        '<p>We use necessary browser storage to keep the site working. With your approval, we also load our website chat and store attribution details so we can understand which campaigns lead to demo or contact requests. See our <a href="privacy.html#privacy-storage">privacy notice</a>.</p>',
+        '<p>We use necessary browser storage to keep the site working. With your approval, we also load our website chat and store attribution details so we can understand which campaigns lead to demo or contact requests. See our <a href="/privacy#privacy-storage">privacy notice</a>.</p>',
         '<div class="cookie-banner-actions">',
         '  <button class="cookie-banner-accept" type="button" data-consent-action="accepted">Accept all</button>',
         '  <button class="cookie-banner-necessary" type="button" data-consent-action="necessary">Only necessary</button>',
