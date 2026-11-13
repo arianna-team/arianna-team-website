@@ -477,127 +477,35 @@
     style.id = "site-cookie-banner-styles";
     style.textContent = [
       ".cookie-banner {",
-      "  position: fixed;",
-      "  right: 24px;",
-      "  bottom: 24px;",
-      "  width: min(420px, calc(100vw - 32px));",
-      "  padding: 22px;",
-      "  border-radius: 24px;",
-      "  background: rgba(11, 24, 35, 0.96);",
-      "  color: rgba(255, 255, 255, 0.86);",
-      "  box-shadow: 0 24px 60px rgba(15, 30, 43, 0.28);",
-      "  z-index: 40;",
+      "  position: fixed; right: 24px; bottom: 24px; z-index: 60;",
+      "  width: min(400px, calc(100vw - 32px)); padding: 24px;",
+      "  background: #ffffff; color: #33414c;",
+      "  border: 1px solid #e3e7ea; border-radius: 10px;",
+      "  box-shadow: 0 18px 40px -18px rgba(10, 10, 10, 0.35);",
+      "  font-family: 'Montserrat', 'Helvetica Neue', Arial, sans-serif;",
       "  display: none;",
       "}",
-      ".cookie-banner.is-visible {",
-      "  display: block;",
-      "}",
-      ".cookie-banner h3 {",
-      "  margin: 0 0 10px;",
-      "  color: #ffffff;",
-      "  font-size: 18px;",
-      "}",
-      ".cookie-banner p {",
-      "  margin: 0;",
-      "  font-size: 14px;",
-      "  line-height: 1.65;",
-      "}",
-      ".cookie-banner a {",
-      "  color: #8fd7d9;",
-      "  text-decoration: none;",
-      "}",
-      ".cookie-banner a:hover {",
-      "  color: #ffffff;",
-      "}",
-      ".cookie-banner-actions {",
-      "  display: flex;",
-      "  gap: 10px;",
-      "  flex-wrap: wrap;",
-      "  margin-top: 18px;",
-      "}",
+      ".cookie-banner.is-visible { display: block; }",
+      ".cookie-banner h3 { margin: 0 0 8px; color: #0a0a0a; font-size: 16px; font-weight: 700; letter-spacing: 0; text-transform: none; }",
+      ".cookie-banner p { margin: 0; font-size: 14px; line-height: 1.6; }",
+      ".cookie-banner a { color: #1a7472; text-decoration: underline; }",
+      ".cookie-banner a:hover { color: #0a0a0a; }",
+      ".cookie-banner-actions { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 18px; }",
       ".cookie-banner-actions button {",
-      "  min-height: 44px;",
-      "  padding: 12px 18px;",
-      "  border-radius: 999px;",
-      "  font-size: 13px;",
-      "  font-weight: 600;",
-      "  cursor: pointer;",
-      "  transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease, color 0.2s ease;",
+      "  min-height: 44px; padding: 0 18px; border-radius: 6px;",
+      "  font: inherit; font-size: 14px; font-weight: 600; cursor: pointer;",
+      "  transition: background 0.15s ease, border-color 0.15s ease, color 0.15s ease;",
       "}",
-      ".cookie-banner-actions button:hover {",
-      "  transform: translateY(-1px);",
-      "}",
-      ".cookie-banner-accept {",
-      "  background: #f28a1a;",
-      "  color: #ffffff;",
-      "}",
-      ".cookie-banner-accept:hover {",
-      "  background: #1aa5a7;",
-      "  box-shadow: 0 12px 24px rgba(15, 30, 43, 0.18);",
-      "}",
-      ".cookie-banner-necessary {",
-      "  background: rgba(255, 255, 255, 0.1);",
-      "  color: #ffffff;",
-      "}",
-      ".cookie-banner-necessary:hover {",
-      "  background: rgba(255, 255, 255, 0.18);",
-      "}",
-      ".cookie-banner-status {",
-      "  margin-top: 12px;",
-      "  color: rgba(255, 255, 255, 0.62);",
-      "  font-size: 12px;",
-      "}",
-      ".cookie-settings-trigger {",
-      "  position: fixed;",
-      "  left: 24px;",
-      "  bottom: 24px;",
-      "  min-height: 44px;",
-      "  padding: 12px 18px;",
-      "  border-radius: 999px;",
-      "  background: rgba(11, 24, 35, 0.92);",
-      "  color: #ffffff;",
-      "  font-size: 13px;",
-      "  font-weight: 600;",
-      "  box-shadow: 0 18px 42px rgba(15, 30, 43, 0.2);",
-      "  cursor: pointer;",
-      "  z-index: 39;",
-      "  display: none;",
-      "}",
-      ".cookie-settings-trigger.is-visible {",
-      "  display: inline-flex;",
-      "  align-items: center;",
-      "  justify-content: center;",
-      "}",
-      ".cookie-settings-trigger:hover {",
-      "  background: #1aa5a7;",
-      "}",
+      ".cookie-banner-accept { background: #7047fd; color: #ffffff; border: 1px solid #7047fd; }",
+      ".cookie-banner-accept:hover { background: #5b36e0; border-color: #5b36e0; }",
+      ".cookie-banner-necessary { background: #ffffff; color: #0a0a0a; border: 1px solid #d5dbdf; }",
+      ".cookie-banner-necessary:hover { border-color: #1a7472; color: #1a7472; }",
+      ".cookie-banner-actions button:focus-visible { outline: 2px solid #3fbab7; outline-offset: 3px; }",
+      ".cookie-banner-status { margin-top: 12px !important; color: #5b6b7a; font-size: 12px !important; }",
+      ".cookie-banner-status:empty { display: none; }",
       "@media (max-width: 720px) {",
-      "  .cookie-banner {",
-      "    left: 16px;",
-      "    right: 16px;",
-      "    bottom: 16px;",
-      "    width: auto;",
-      "    padding: 18px;",
-      "    border-radius: 20px;",
-      "  }",
-      "  .cookie-banner-actions {",
-      "    flex-direction: column;",
-      "  }",
-      "  .cookie-banner-actions button {",
-      "    width: 100%;",
-      "  }",
-      "  .cookie-settings-trigger {",
-      "    left: 16px;",
-      "    bottom: 16px;",
-      "  }",
-      "}",
-      "body.cookie-banner-open {",
-      "  padding-bottom: 220px;",
-      "}",
-      "@media (max-width: 720px) {",
-      "  body.cookie-banner-open {",
-      "    padding-bottom: 280px;",
-      "  }",
+      "  .cookie-banner { left: 16px; right: 16px; bottom: 16px; width: auto; padding: 20px; }",
+      "  .cookie-banner-actions button { flex: 1 1 140px; }",
       "}"
     ].join("\n");
     document.head.appendChild(style);
@@ -627,32 +535,14 @@
     }
 
     var statusNode = banner.querySelector("#cookieBannerStatus");
-    var floatingTrigger = document.getElementById("cookieSettingsTrigger");
-
-    if (!floatingTrigger) {
-      floatingTrigger = document.createElement("button");
-      floatingTrigger.id = "cookieSettingsTrigger";
-      floatingTrigger.type = "button";
-      floatingTrigger.className = "cookie-settings-trigger";
-      floatingTrigger.textContent = "Cookie preferences";
-      document.body.appendChild(floatingTrigger);
-    }
-
     function statusText(status) {
       if (status === "accepted") return "Optional attribution storage is enabled.";
       if (status === "necessary") return "Only necessary storage is enabled.";
       return "";
     }
 
-    function syncFloatingTrigger() {
-      if (!floatingTrigger) return;
-      var shouldShow = !!consentStatus() && !banner.classList.contains("is-visible");
-      floatingTrigger.classList.toggle("is-visible", shouldShow);
-    }
-
     function syncBannerMessage() {
       if (statusNode) statusNode.textContent = statusText(consentStatus());
-      syncFloatingTrigger();
     }
 
     function openBanner(force) {
@@ -660,14 +550,10 @@
       if (!force && status) return;
       syncBannerMessage();
       banner.classList.add("is-visible");
-      document.body.classList.add("cookie-banner-open");
-      syncFloatingTrigger();
     }
 
     function closeBanner() {
       banner.classList.remove("is-visible");
-      document.body.classList.remove("cookie-banner-open");
-      syncFloatingTrigger();
     }
 
     function setConsent(status) {
@@ -684,10 +570,6 @@
       var action = event.target && event.target.getAttribute("data-consent-action");
       if (!action) return;
       setConsent(action);
-    });
-
-    floatingTrigger.addEventListener("click", function () {
-      openBanner(true);
     });
 
     document.addEventListener("arianna:open-cookie-settings", function () {
