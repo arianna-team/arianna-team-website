@@ -50,6 +50,9 @@ a:focus-visible, button:focus-visible, label:focus-visible {
 [data-nutshell-form] button[type="submit"],
 [data-nutshell-form] input[type="submit"] { color: #ffffff !important; }
 
+/* Event names link to the event website */
+#events h3 a:hover { text-decoration: underline !important; text-decoration-color: #3fbab7 !important; text-underline-offset: 6px; }
+
 /* User manual contents */
 .manual-index { top: 96px !important; max-height: calc(100vh - 120px); overflow-y: auto; }
 
